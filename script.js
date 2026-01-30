@@ -29,6 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
             membersContainer.classList.remove('members-grid');
             renderRanking();
             return;
+        } else if (type === 'Links') {
+            membersContainer.classList.remove('members-grid');
+            renderLinks();
+            return;
         } else {
             membersContainer.classList.add('members-grid');
         }
@@ -278,5 +282,48 @@ document.addEventListener('DOMContentLoaded', () => {
         growthContainer.appendChild(factory('TikTok Growth (Daily)', tkSort, m => m.stats.tiktok, m => m.stats.tk_diff, 'fa-brands fa-tiktok'));
 
         membersContainer.appendChild(growthContainer);
+    }
+
+    function renderLinks() {
+        membersContainer.innerHTML = '';
+
+        // Header
+        const header = document.createElement('h2');
+        header.textContent = 'Recommended Links';
+        header.style.color = '#fff';
+        header.style.fontFamily = 'var(--font-heading)';
+        header.style.marginBottom = '1.5rem';
+        header.style.borderLeft = '5px solid var(--primary)';
+        header.style.paddingLeft = '1rem';
+        membersContainer.appendChild(header);
+
+        if (typeof linksData === 'undefined' || !linksData) {
+            membersContainer.innerHTML += '<p style="color:var(--text-muted)">No links data found.</p>';
+            return;
+        }
+
+        const grid = document.createElement('div');
+        grid.className = 'links-container';
+
+        linksData.forEach(cat => {
+            const section = document.createElement('div');
+            section.className = 'link-section';
+
+            section.innerHTML = `
+                <h3 class="link-cat-title">${cat.category}</h3>
+                <p class="link-cat-desc">${cat.description || ''}</p>
+                <div class="link-list">
+                    ${cat.items.map(item => `
+                        <a href="${item.url}" target="_blank" class="link-item">
+                            <span class="link-title"><i class="fa-solid fa-link"></i> ${item.title}</span>
+                            <span class="link-note">${item.note || ''}</span>
+                        </a>
+                    `).join('')}
+                </div>
+            `;
+            grid.appendChild(section);
+        });
+
+        membersContainer.appendChild(grid);
     }
 });
