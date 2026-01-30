@@ -1,0 +1,39 @@
+name: Daily SNS Update
+
+on:
+  schedule:
+    # 毎日 午前0時 (JST) 頃に実行
+    # GitHub ActionsはUTCなので、JST-9時間 = 15:00 UTC
+    - cron: '0 15 * * *'
+  workflow_dispatch: # 手動実行ボタンも有効にする
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run update script
+        run: npm run update-stats
+        env:
+            # 必要ならここに環境変数を追加
+            CI: true
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add sns_data.js
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update SNS stats [skip ci]" && git push)

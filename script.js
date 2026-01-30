@@ -1,0 +1,282 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const membersContainer = document.getElementById('members-container');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+
+    let allMembers = (typeof membersData !== 'undefined') ? membersData : [];
+
+    if (allMembers.length === 0) {
+        console.error('No membersData found. Please ensure members.js is loaded.');
+        return;
+    }
+
+    // Initial load: Show Regular by default since All is removed
+    filterMembers('Regular');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filterType = btn.getAttribute('data-filter');
+            filterMembers(filterType);
+        });
+    });
+
+    function filterMembers(type) {
+        if (type === 'Ranking') {
+            membersContainer.classList.remove('members-grid');
+            renderRanking();
+            return;
+        } else {
+            membersContainer.classList.add('members-grid');
+        }
+
+        const filtered = allMembers.filter(member => member.status === type);
+
+        if (type === 'Graduate') {
+            renderGrouped(filtered, 'generation', (key) =>
+                key === 'Unknown' ? 'Others' : `${key}th Generation`
+            );
+        } else if (type === 'Regular') {
+            const teamOrder = ['Tim Love', 'Tim Dream', 'Tim Passion', 'JKT48V'];
+            renderGrouped(filtered, 'team', (key) =>
+                key === 'Unknown' ? 'No Team' : key,
+                (a, b) => {
+                    const idxA = teamOrder.indexOf(a);
+                    const idxB = teamOrder.indexOf(b);
+                    if (idxA !== -1 && idxB !== -1) return idxA - idxB;
+                    if (idxA !== -1) return -1;
+                    if (idxB !== -1) return 1;
+                    return a.localeCompare(b);
+                }
+            );
+        } else {
+            renderGrid(filtered, type === 'Staff');
+        }
+    }
+
+
+    function renderGrid(members, isStaff) {
+        membersContainer.innerHTML = '';
+        if (members.length === 0) {
+            membersContainer.innerHTML = '<p style="color:var(--text-muted); text-align:center; grid-column: 1/-1;">No members found.</p>';
+            return;
+        }
+
+        members.forEach((member, index) => {
+            membersContainer.appendChild(createCard(member, isStaff, index));
+        });
+    }
+
+    function renderGrouped(members, field, titleFn, sortFn = null) {
+        membersContainer.innerHTML = '';
+
+        // グループ化
+        const grouped = {};
+        members.forEach(m => {
+            const key = (m[field] && String(m[field]).trim())
+                ? String(m[field]).trim()
+                : 'Unknown';
+            if (!grouped[key]) grouped[key] = [];
+            grouped[key].push(m);
+        });
+
+        // 並び順
+        const keys = Object.keys(grouped);
+        if (sortFn) {
+            keys.sort(sortFn);
+        } else {
+            keys.sort((a, b) => a.localeCompare(b));
+        }
+
+        keys.forEach(key => {
+            // 見出し
+            const header = document.createElement('div');
+            header.className = 'generation-section';
+            header.innerHTML = `<h3 class="generation-title">${titleFn(key)}</h3>`;
+            membersContainer.appendChild(header);
+
+            // 中身
+            grouped[key].forEach((member, i) => {
+                membersContainer.appendChild(createCard(member, false, i));
+            });
+        });
+    }
+
+    function createCard(member, isStaff, delayIndex) {
+        const card = document.createElement('article');
+        card.className = 'member-card';
+        // Reset delay for each section if grouped, but simple delay works too
+        card.style.animationDelay = `${(delayIndex % 20) * 0.05}s`;
+
+        let socialHtml = '';
+        if (member.socials) {
+            // Helper to get non-empty link
+            const getLink = (keys) => {
+                if (!Array.isArray(keys)) keys = [keys];
+                for (const key of keys) {
+                    const val = member.socials[key];
+                    if (val && val.trim() !== "") return val;
+                }
+                return null;
+            };
+
+            const xLink = getLink(['x', 'twitter']);
+            // Support both 'instagram' and 'ig' just in case
+            const igLink = getLink(['instagram', 'ig']);
+            const ttLink = getLink('tiktok');
+            const ytLink = getLink('youtube');
+
+            if (xLink) socialHtml += `<a href="${xLink}" target="_blank" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>`;
+            if (igLink) socialHtml += `<a href="${igLink}" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>`;
+            if (ttLink) socialHtml += `<a href="${ttLink}" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>`;
+            if (ytLink) socialHtml += `<a href="${ytLink}" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>`;
+        }
+
+        // Detail Fields
+        let detailsHtml = '';
+        if (isStaff) {
+            detailsHtml += `<span><span class="label">Role:</span> ${member.relationship || 'Staff'}</span>`;
+        } else {
+            detailsHtml += `<span><span class="label">Gen:</span> ${member.generation}</span>`;
+            detailsHtml += `<span><span class="label">Birthday:</span> ${member.birthdate}</span>`;
+            detailsHtml += `<span><span class="label">Origin:</span> ${member.birthplace || '-'}</span>`; // Separated
+            if (member.graduation_date) {
+                detailsHtml += `<span><span class="label">Graduated:</span> ${member.graduation_date}</span>`;
+            }
+        }
+
+        if (member.remarks) {
+            detailsHtml += `<span class="member-remarks">Note: ${member.remarks}</span>`;
+        }
+
+        card.innerHTML = `
+            <div class="card-content">
+                <span class="status-badge status-${member.status}">${member.status}</span>
+                <h3 class="member-name">${member.name}</h3>
+                ${!isStaff ? `<p class="member-nickname">${member.nickname}</p>` : ''}
+                
+                <div class="member-details">
+                    ${detailsHtml}
+                </div>
+
+                <div class="social-links">
+                    ${socialHtml}
+                </div>
+            </div>
+        `;
+        return card;
+    }
+
+    function renderRanking() {
+        membersContainer.innerHTML = '';
+
+        // Helper to attach stats
+        const attachStats = (members) => members.map(m => {
+            const stats = (typeof snsStats !== 'undefined' && snsStats[m.id]) ? snsStats[m.id] : null;
+            return {
+                ...m,
+                stats: stats || { x: 0, instagram: 0, tiktok: 0, total: 0, x_diff: 0, ig_diff: 0, tk_diff: 0, total_diff: 0 }
+            };
+        });
+
+        // SECTION 1: ACTIVE MEMBERS (Regular + Trainee)
+        // Note: Filter excludes only Staff and Graduate, so Trainees are automatically included if they exist.
+        // Explicitly ensuring Trainees are included by logic: !(Staff or Graduate)
+        const activeMembers = allMembers.filter(m => m.status !== 'Staff' && m.status !== 'Graduate');
+        const activeData = attachStats(activeMembers);
+
+        renderRankingGroup('Active Members Ranking (Regular + Trainee)', activeData);
+
+        // SECTION 2: GRADUATES
+        const gradMembers = allMembers.filter(m => m.status === 'Graduate');
+        const gradData = attachStats(gradMembers);
+
+        // Spacer
+        const spacer = document.createElement('div');
+        spacer.style.height = '4rem';
+        membersContainer.appendChild(spacer);
+
+        renderRankingGroup('Graduates Ranking', gradData);
+    }
+
+    function renderRankingGroup(groupTitle, membersData) {
+        // Group Header
+        const header = document.createElement('h2');
+        header.textContent = groupTitle;
+        header.style.color = '#fff';
+        header.style.fontFamily = 'var(--font-heading)';
+        header.style.marginBottom = '1.5rem';
+        header.style.borderLeft = '5px solid var(--primary)';
+        header.style.paddingLeft = '1rem';
+        membersContainer.appendChild(header);
+
+        if (membersData.length === 0) {
+            const msg = document.createElement('p');
+            msg.textContent = 'No data available.';
+            msg.style.color = 'var(--text-muted)';
+            membersContainer.appendChild(msg);
+            return;
+        }
+
+        const factory = (title, data, valueFn, diffFn, iconClass) => {
+            const section = document.createElement('div');
+            section.className = 'ranking-section';
+
+            let html = `
+                <div class="ranking-header">
+                    <h3><i class="${iconClass}"></i> ${title}</h3>
+                </div>
+                <div class="ranking-list">
+            `;
+
+            data.forEach((m, idx) => {
+                const val = valueFn(m);
+                const diff = diffFn ? diffFn(m) : null;
+                const rank = idx + 1;
+                let rankClass = 'rank-other';
+                if (rank === 1) rankClass = 'rank-1';
+                else if (rank === 2) rankClass = 'rank-2';
+                else if (rank === 3) rankClass = 'rank-3';
+
+                html += `
+                    <div class="ranking-item ${rankClass}">
+                        <div class="rank-num">${rank}</div>
+                        <div class="rank-name">${m.name} <span class="rank-team">${m.team || m.status}</span></div>
+                        <div class="rank-val">
+                            <span class="main-val">${val.toLocaleString()}</span>
+                            ${diff !== null ? `<span class="diff-val ${diff >= 0 ? 'pos' : 'neg'}">${diff >= 0 ? '+' : ''}${diff.toLocaleString()}</span>` : ''}
+                        </div>
+                    </div>
+                `;
+            });
+            html += '</div>';
+            section.innerHTML = html;
+            return section;
+        };
+
+        // 1. Total Follower Ranking
+        const totalSort = [...membersData].sort((a, b) => b.stats.total - a.stats.total).slice(0, 10);
+        membersContainer.appendChild(factory('Total Followers', totalSort, m => m.stats.total, m => m.stats.total_diff, 'fa-solid fa-users'));
+
+        // 2. Growth Rankings
+        const growthContainer = document.createElement('div');
+        growthContainer.className = 'growth-rankings-grid';
+
+        // IG Growth
+        const igSort = [...membersData].sort((a, b) => b.stats.ig_diff - a.stats.ig_diff).slice(0, 10);
+        growthContainer.appendChild(factory('Instagram Growth (Daily)', igSort, m => m.stats.instagram, m => m.stats.ig_diff, 'fa-brands fa-instagram'));
+
+        // X Growth
+        const xSort = [...membersData].sort((a, b) => b.stats.x_diff - a.stats.x_diff).slice(0, 10);
+        growthContainer.appendChild(factory('X Growth (Daily)', xSort, m => m.stats.x, m => m.stats.x_diff, 'fa-brands fa-x-twitter'));
+
+        // TikTok Growth
+        const tkSort = [...membersData].sort((a, b) => b.stats.tk_diff - a.stats.tk_diff).slice(0, 10);
+        growthContainer.appendChild(factory('TikTok Growth (Daily)', tkSort, m => m.stats.tiktok, m => m.stats.tk_diff, 'fa-brands fa-tiktok'));
+
+        membersContainer.appendChild(growthContainer);
+    }
+});

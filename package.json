@@ -1,0 +1,12 @@
+{
+    "name": "jkt48-fanpage-updater",
+    "version": "1.0.0",
+    "description": "Daily SNS stats updater for JKT48 Fan Page",
+    "main": "index.js",
+    "scripts": {
+        "update-stats": "node scripts/update_stats.js"
+    },
+    "dependencies": {
+        "puppeteer": "^22.0.0"
+    }
+}

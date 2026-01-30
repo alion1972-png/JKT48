@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JKT48 Member Directory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>JKT48 <span>MEMBERS</span></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#regular" class="filter-btn active" data-filter="Regular">Regular</a></li>
+                    <li><a href="#trainee" class="filter-btn" data-filter="Trainee">Trainee</a></li>
+                    <li><a href="#graduate" class="filter-btn" data-filter="Graduate">Graduates</a></li>
+                    <li><a href="#staff" class="filter-btn" data-filter="Staff">Staff</a></li>
+                    <li><a href="#ranking" class="filter-btn" data-filter="Ranking">SNS Ranking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>JKT48 Official Member List</h2>
+                <p>Idol Group from Jakarta, Indonesia</p>
+            </div>
+        </section>
+
+        <section class="members-grid" id="members-container">
+            <!-- Members will be injected here via JS -->
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>JKT48 Official</h3>
+                <div class="social-links large">
+                    <a href="https://jkt48.com" target="_blank" title="Official Website"><i
+                            class="fa-solid fa-globe"></i></a>
+                    <a href="https://www.youtube.com/user/JKT48" target="_blank" title="YouTube"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="https://twitter.com/officialJKT48" target="_blank" title="X (Twitter)"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/jkt48/" target="_blank" title="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@jkt48.official" target="_blank" title="TikTok"><i
+                            class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>System Info</h3>
+                <p>Data Source: members.js</p>
+
+                <p>Edit the JSON file to update member status and links.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 JKT48 Fan Page. Unofficial Fan Site.
+        </div>
+    </footer>
+
+    <script src="members.js"></script>
+    <script src="sns_data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
