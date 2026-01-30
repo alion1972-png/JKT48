@@ -4351,9 +4351,9 @@ const membersData = [
     "relationship": "",
     "socials": {
       "x": "https://x.com/pia_jkt48v",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "instagram": "https://www.instagram.com/jkt48v.pia/",
+      "tiktok": "https://www.tiktok.com/@jkt48v.pia",
+      "youtube": "https://www.youtube.com/@PiaMeraleo-JKT48V"
     }
   },
   {
