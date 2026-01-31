@@ -281,7 +281,7 @@ const membersData = [
       "x": "https://x.com/F_FeniJKT48",
       "instagram": "https://www.instagram.com/jkt48feni/",
       "tiktok": "https://www.tiktok.com/@fenijkt48/",
-      "youtube": "https://www.youtube.com/@Quadlips"
+      "youtube": ""
     }
   },
   {
@@ -4344,7 +4344,7 @@ const membersData = [
     "birthdate": "2006-07-30",
     "birthplace": "",
     "generation": "1",
-    "remarks": "",
+    "remarks": "2023-08-22",
     "status": "Regular",
     "team": "JKT48V",
     "graduation_date": null,
@@ -4354,6 +4354,101 @@ const membersData = [
       "instagram": "https://www.instagram.com/jkt48v.pia/",
       "tiktok": "https://www.tiktok.com/@jkt48v.pia",
       "youtube": "https://www.youtube.com/@PiaMeraleo-JKT48V"
+    }
+  },
+  {
+    "id": 8001,
+    "name": "Tana Nonaka",
+    "nickname": "タナTana",
+    "birthdate": "2005-04-22",
+    "birthplace": "",
+    "generation": "1",
+    "remarks": "2023-08-22",
+    "status": "Regular",
+    "team": "JKT48V",
+    "graduation_date": null,
+    "relationship": "",
+    "socials": {
+      "x": "https://x.com/tana_jkt48v",
+      "instagram": "https://www.instagram.com/jkt48v.tana/",
+      "tiktok": "https://tiktok.com/@jkt48v.tana",
+      "youtube": "https://www.youtube.com/@TanaNona-JKT48V"
+    }
+  },
+  {
+    "id": 8002,
+    "name": "Kanaia Asa",
+    "nickname": "カナKana",
+    "birthdate": "2005-03-01",
+    "birthplace": "",
+    "generation": "",
+    "remarks": "jkt48vの1期生",
+    "status": "Graduate",
+    "team": "JKT48V",
+    "graduation_date": "2023-08-22～2025-05-31",
+    "relationship": "",
+    "socials": {
+      "x": "https://x.com/kanaia_jkt48v",
+      "instagram": "https://www.instagram.com/jkt48v.kanaia/",
+      "tiktok": "https://www.tiktok.com/@jkt48v.kanaia",
+      "youtube": "https://www.youtube.com/@KanaiaAsa-JKT48V"
+    }
+  },
+  {
+    "id": 8003,
+    "name": "Isha Kirana",
+    "nickname": "イシャIsha",
+    "birthdate": "2007-11-25",
+    "birthplace": "",
+    "generation": "2",
+    "remarks": "2025-11-19",
+    "status": "Regular",
+    "team": "JKT48V",
+    "graduation_date": null,
+    "relationship": "",
+    "socials": {
+      "x": "https://x.com/isha_jkt48v",
+      "instagram": "https://www.instagram.com/jkt48v.isha/",
+      "tiktok": "https://www.tiktok.com/@jkt48v.isha",
+      "youtube": "https://www.youtube.com/@IshaKirana-JKT48V"
+    }
+  },
+  {
+    "id": 8004,
+    "name": "Maura Nilambari",
+    "nickname": "マウラMaura",
+    "birthdate": "2007-06-21",
+    "birthplace": "",
+    "generation": "2",
+    "remarks": "2025-11-19",
+    "status": "Regular",
+    "team": "JKT48V",
+    "graduation_date": null,
+    "relationship": "",
+    "socials": {
+      "x": "https://x.com/maura_jkt48v",
+      "instagram": "https://www.instagram.com/jkt48v.maura/",
+      "tiktok": "https://www.tiktok.com/@jkt48v.maura",
+      "youtube": "https://www.youtube.com/@MauraNilambari-JKT48V"
+    }
+  },
+  {
+    "id": 8005,
+    "name": "Sami Maono",
+    "nickname": "サミSami",
+    "birthdate": "2009-10-07",
+    "birthplace": "",
+    "generation": "2",
+    "remarks": "2025-11-19",
+    "status": "Regular",
+    "team": "JKT48V",
+    "graduation_date": null,
+    "relationship": "",
+    "socials": {
+      "x": "https://x.com/sami_jkt48v",
+      "instagram": "https://www.instagram.com/jkt48v.sami/",
+      "tiktok": "https://www.tiktok.com/@jkt48v.sami",
+      "youtube": "https://www.youtube.com/@SamiMaono-JKT48V"
     }
   },
   {
