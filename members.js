@@ -1050,13 +1050,13 @@ const membersData = [
     "birthdate": "1993-08-28",
     "birthplace": "西ジャワ州バンドン",
     "generation": "1",
-    "remarks": "J; 2013年1月21日; 辞退&#91;48&#93;元チームJ（初代）; -",
+    "remarks": "学業に専念するため辞退；グループを離れる最初の正規メンバー；チームJ（初代）",
     "status": "Graduate",
-    "graduation_date": "2013-01-21",
+    "graduation_date": "2012-12-23～2013-01-21",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -1068,31 +1068,31 @@ const membersData = [
     "birthdate": "1997-10-23",
     "birthplace": "西ジャワ州バンドン",
     "generation": "2",
-    "remarks": "KIII; 2013年9月9日; 辞退&#91;49&#93;元チームKIII（初代）; -",
+    "remarks": "チームKIII;辞退",
     "status": "Graduate",
-    "graduation_date": "2013-09-09",
+    "graduation_date": "2013-06-25～2013-09-09",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/Pikariinc",
+      "instagram": "https://www.instagram.com/pikariinc",
+      "tiktok": "https://www.tiktok.com/@_littlepika",
       "youtube": ""
     }
   },
   {
     "id": 58,
     "name": "Diasta Priswarini",
-    "nickname": "ニャシュNyash",
+    "nickname": "ディスタDiasta",
     "birthdate": "1991-09-09",
     "birthplace": "西ジャワ州バンドン",
     "generation": "1",
-    "remarks": "J; 2013年12月22日; 当日卒業公演&#91;50&#93;元チームJ（初代）少女コンプレックスの元メンバー（卒業後）&#91;51&#93;MCIPホールディングス（吉本興業出資）所属&#91;52&#93;夫はお笑い芸人のアキラ・コンチネンタル・フィーバー&#91;51&#93;; -",
+    "remarks": "チームJ;卒業；（初代）少女コンプレックスの元メンバー（卒業後）;MCIPホールディングス（吉本興業出資）所属;夫はお笑い芸人のアキラ・コンチネンタル・フィーバー",
     "status": "Graduate",
-    "graduation_date": "2013-12-22",
+    "graduation_date": "2012-12-23～2013-12-22",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "https://x.com/diastapr",
+      "instagram": "https://www.instagram.com/diastadiaa",
       "tiktok": "",
       "youtube": ""
     }
@@ -1104,13 +1104,13 @@ const membersData = [
     "birthdate": "1996-05-18",
     "birthplace": "ジャカルタ",
     "generation": "1",
-    "remarks": "J; 当日卒業公演&#91;50&#93;元チームJ（初代）台湾名&#91;注釈 6&#93;はPan Meijun（潘美君）; -",
+    "remarks": "チームJ;卒業；父親が台湾人；台湾名はPan Meijun（潘美君）；女優、司会者として活動",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2012-12-23～2013-12-22",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "https://x.com/sonyapandr",
+      "instagram": "https://www.instagram.com/sonyapan",
       "tiktok": "",
       "youtube": ""
     }
@@ -1122,15 +1122,15 @@ const membersData = [
     "birthdate": "1994-11-03",
     "birthplace": "中部ジャワ州スマラン",
     "generation": "1",
-    "remarks": "J; 2013年12月28日; 当日卒業公演&#91;50&#93;元チームJ（初代）本名はステラ・コルネリア・ウィナルト妹はソニア・ナタリア（元JKT48・1期生）; -",
+    "remarks": "チームJ;卒業；俳優Fendy Chowと結婚；妹はソニア・ナタリア（元JKT48・1期生）；特撮シリーズ 『ビーマ・サトリア・ガルーダ』のレナ・イスカンダル役",
     "status": "Graduate",
-    "graduation_date": "2013-12-28",
+    "graduation_date": "2012-12-23～2013-12-28",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/stella_scw",
+      "instagram": "https://www.instagram.com/stellarcor",
+      "tiktok": "https://www.tiktok.com/@fendystella",
+      "youtube": "https://www.youtube.com/@fendystella"
     }
   },
   {
@@ -1140,13 +1140,13 @@ const membersData = [
     "birthdate": "1997-10-07",
     "birthplace": "ジャカルタ",
     "generation": "2",
-    "remarks": "KIII; 2014年1月23日; 辞退&#91;53&#93;元チームKIII（初代）; -",
+    "remarks": "辞退;チームKIII（初代）",
     "status": "Graduate",
-    "graduation_date": "2014-01-23",
+    "graduation_date": "2013-06-25～2014-01-23",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/octiosca",
       "tiktok": "",
       "youtube": ""
     }
@@ -1158,15 +1158,15 @@ const membersData = [
     "birthdate": "1997-05-29",
     "birthplace": "ジャカルタ",
     "generation": "1",
-    "remarks": "J; 2014年2月16日; 解雇&#91;54&#93;元チームJ（初代）本名はシンディ・クリスティーナ・グラ; -",
+    "remarks": "JKT48の運営側の承認なくメロドラマの契約を結んだため、JKT48から解雇;チームJ（初代）",
     "status": "Graduate",
-    "graduation_date": "2014-02-16",
+    "graduation_date": "2012-12-23～2014-02-16",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/cindygulla0",
+      "instagram": "https://www.instagram.com/cgulla/",
+      "tiktok": "https://www.tiktok.com/@ci.gul",
+      "youtube": "https://www.youtube.com/cindygulla"
     }
   },
   {
@@ -1176,15 +1176,15 @@ const membersData = [
     "birthdate": "1991-10-03",
     "birthplace": "東京都",
     "generation": "",
-    "remarks": "-; J; 2014年4月24日; 元チームJ（初代）2013年4月28日から兼任解除までAKB48チームB（梅田）兼任元AKB48チームA（初代・'10高橋）アイエス・フィールド所属; -",
+    "remarks": "2008-12-29にakb48正規メンバー昇格;2012-11-01移籍から2014-04-24兼任解除；2016-05-01akb48卒業；プロサッカー選手の高橋祐治、2019年に結婚；ホリプロ所属",
     "status": "Graduate",
-    "graduation_date": "2014-04-24",
+    "graduation_date": "2012-11-01～2014-04-24",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/AKI_WISMALU",
+      "instagram": "https://www.instagram.com/Akiii_takajo",
+      "tiktok": "https://www.tiktok.com/@akicha_official",
+      "youtube": "https://www.youtube.com/@akicya_official"
     }
   },
   {
@@ -1194,14 +1194,14 @@ const membersData = [
     "birthdate": "1998-05-06",
     "birthplace": "東京都",
     "generation": "1",
-    "remarks": "J; AKB48へ移籍元チームJ（初代）2013年6月18日から兼任解除までAKB48チームK（大島）兼任AKB48グループ初の在留邦人メンバー&#91;55&#93;JKT48加入前は東京都・愛知県居住経験あり; -",
+    "remarks": "48グループ初の在留邦人メンバー；2013年6月18日からAKB48と兼任；2014年4月24日兼任解除；海外グループからの初の移籍メンバーとなる；2019-05-06AKB48卒業",
     "status": "Graduate",
-    "graduation_date": "2013-06-18",
+    "graduation_date": "2012-12-23～2014-04-24",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/RENAN0ZAWA",
+      "instagram": "https://www.instagram.com/renanozawa/",
+      "tiktok": "https://www.tiktok.com/@rena.nozawa56",
       "youtube": ""
     }
   },
@@ -1212,15 +1212,15 @@ const membersData = [
     "birthdate": "1991-08-19",
     "birthplace": "西ジャワ州ボゴール",
     "generation": "1",
-    "remarks": "J; 2014年12月7日; 辞退&#91;56&#93;元チームJ（初代）; 7位",
+    "remarks": "2014年12月7日握手会を最後に脱退; 健康上の理由により、JKT48の活動辞退；日本人男性と結婚し、現在は日本に住んでいます",
     "status": "Graduate",
-    "graduation_date": "2014-12-07",
+    "graduation_date": "2012-12-23～2014-12-07",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/Cha_rica19",
+      "instagram": "https://www.instagram.com/rica_tsuji",
+      "tiktok": "https://www.tiktok.com/@leyonarica",
+      "youtube": "https://www.youtube.com/@RicaLeyona19"
     }
   },
   {
@@ -1230,13 +1230,13 @@ const membersData = [
     "birthdate": "1997-11-16",
     "birthplace": "東ジャワ州スラバヤ",
     "generation": "2",
-    "remarks": "KIII; 2015年2月27日; 辞退&#91;57&#93;元チームKIII（初代）; -",
+    "remarks": "辞退、チームKIII（初代）",
     "status": "Graduate",
-    "graduation_date": "2015-02-27",
+    "graduation_date": "2013-06-25～2015-02-27",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "https://x.com/noellastrna",
+      "instagram": "https://www.instagram.com/noellasisterina",
       "tiktok": "",
       "youtube": ""
     }
@@ -1248,13 +1248,13 @@ const membersData = [
     "birthdate": "1995-11-26",
     "birthplace": "バリ州デンパサール",
     "generation": "2",
-    "remarks": "KIII; 2015年8月17日; 辞退&#91;58&#93;元チームKIII（初代・キナル）; -",
+    "remarks": "辞退、チームKIII（初代・キナル）",
     "status": "Graduate",
-    "graduation_date": "2015-08-17",
+    "graduation_date": "2014-05-18～2015-08-17",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -1266,13 +1266,13 @@ const membersData = [
     "birthdate": "1996-12-22",
     "birthplace": "ジャカルタ",
     "generation": "2",
-    "remarks": "KIII; 2015年8月26日; 辞退&#91;59&#93;元チームKIII（初代・キナル）; 13位",
+    "remarks": "辞退、チームKIII",
     "status": "Graduate",
-    "graduation_date": "2015-08-26",
+    "graduation_date": "2013-06-25～2015-08-26",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -1284,13 +1284,13 @@ const membersData = [
     "birthdate": "1997-04-25",
     "birthplace": "中部ジャワ州スマラン",
     "generation": "3",
-    "remarks": "T; 2015年9月4日; 辞退&#91;60&#93;元チームT（初代・仲川）; 4位",
+    "remarks": "病気のためJKT48を脱退、チームT（初代・仲川）",
     "status": "Graduate",
-    "graduation_date": "2015-09-04",
+    "graduation_date": "2015-01-24～2015-09-04",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "https://x.com/andelandel97",
+      "instagram": "https://www.instagram.com/andela.yuw",
       "tiktok": "",
       "youtube": ""
     }
@@ -1302,14 +1302,14 @@ const membersData = [
     "birthdate": "2000-03-02",
     "birthplace": "ジャカルタ",
     "generation": "3",
-    "remarks": "T; 2016年2月1日; 辞退&#91;61&#93;元チームT（仲川）; -",
+    "remarks": "辞退;元チームT（仲川）",
     "status": "Graduate",
-    "graduation_date": "2016-02-01",
+    "graduation_date": "2015-08-01～2016-02-01",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/ninahmdh",
+      "tiktok": "https://www.tiktok.com/@ninahmdh02",
       "youtube": ""
     }
   },
@@ -1320,13 +1320,13 @@ const membersData = [
     "birthdate": "1997-10-25",
     "birthplace": "西ジャワ州ボゴール",
     "generation": "1",
-    "remarks": "J; 2016年3月18日; 解雇&#91;62&#93;元チームJ（初代・シャニア〈第1次〉）; -",
+    "remarks": "JKT48のメンバーとして不適切な行為を行ったとして解雇;チームJ",
     "status": "Graduate",
-    "graduation_date": "2016-03-18",
+    "graduation_date": "2012-12-23～2016-03-18",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -1338,14 +1338,14 @@ const membersData = [
     "birthdate": "1996-04-03",
     "birthplace": "ジャカルタ",
     "generation": "3",
-    "remarks": "J; 2016年4月3日; 当日卒業公演&#91;63&#93;&#91;64&#93;元チームT（初代）元チームJ（シャニア〈第1次〉）; 17位",
+    "remarks": "卒業;チームT（初代）チームJ（シャニア〈第1次〉）",
     "status": "Graduate",
-    "graduation_date": "2016-04-03",
+    "graduation_date": "2015-01-24～2016-04-03",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/Elnhrtnt",
+      "instagram": "https://www.instagram.com/elnhrtnt",
+      "tiktok": "https://www.tiktok.com/@elnhrtnt0",
       "youtube": ""
     }
   },
@@ -1356,15 +1356,15 @@ const membersData = [
     "birthdate": "1999-03-05",
     "birthplace": "リアウ州プカンバル",
     "generation": "3",
-    "remarks": "T; 2016年4月22日; 当日卒業公演&#91;65&#93;&#91;66&#93;元チームT（初代・仲川）本名はグリモニア・マルタ・グラシエラ; -",
+    "remarks": "卒業;チームT（初代・仲川）",
     "status": "Graduate",
-    "graduation_date": "2016-04-22",
+    "graduation_date": "2015-01-24～2016-04-22",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/gmarthagraciela",
+      "instagram": "https://www.instagram.com/gmarthagraciela",
+      "tiktok": "https://www.tiktok.com/@guraisu.com",
+      "youtube": "https://www.youtube.com/channel/UCW5DsRfpDf4Y3WQX4B_woTg"
     }
   },
   {
@@ -1374,32 +1374,32 @@ const membersData = [
     "birthdate": "1998-04-23",
     "birthplace": "西ジャワ州ブカシ",
     "generation": "3",
-    "remarks": "J; 2016年4月27日; 当日卒業公演&#91;63&#93;&#91;67&#93;元チームJ（シャニア〈第1次〉）; -",
+    "remarks": "学業に専念するため卒業；元チームJ（シャニア〈第1次〉）",
     "status": "Graduate",
-    "graduation_date": "2016-04-27",
+    "graduation_date": "2015-08-01～2016-04-27",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "",
+      "instagram": "https://www.instagram.com/sofiamfln",
+      "tiktok": "https://www.tiktok.com/@sofiamfln",
+      "youtube": "https://www.youtube.com/@sofiamfln"
     }
   },
   {
     "id": 75,
     "name": "Chikita Ravenska Mamesah",
-    "nickname": "チカChika",
+    "nickname": "チキタChikita",
     "birthdate": "1996-03-18",
     "birthplace": "ジャカルタ",
     "generation": "3",
-    "remarks": "T; 2016年5月29日; 当日卒業公演&#91;65&#93;&#91;68&#93;元チームT（初代・仲川）; -",
+    "remarks": "卒業；元チームT（初代・仲川）",
     "status": "Graduate",
-    "graduation_date": "2016-05-29",
+    "graduation_date": "2015-01-24～2016-05-29",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/chikitarav",
+      "tiktok": "https://www.tiktok.com/@chikitarm",
       "youtube": ""
     }
   },
@@ -1410,14 +1410,14 @@ const membersData = [
     "birthdate": "1995-11-22",
     "birthplace": "ブンクル州ケパヒアン",
     "generation": "1",
-    "remarks": "J; 2016年9月13日; 当日卒業公演&#91;69&#93;元チームJ（初代・シャニア〈第1次〉）; 30位",
+    "remarks": "卒業；チームJ（初代・シャニア〈第1次〉）； JKT48 Dangdut； JKT48 Band",
     "status": "Graduate",
-    "graduation_date": "2016-09-13",
+    "graduation_date": "2012-12-23～2016-09-13",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/dhikerw",
+      "instagram": "https://www.instagram.com/rwdhike_",
+      "tiktok": "https://www.tiktok.com/@rwdhike",
       "youtube": ""
     }
   },
@@ -1428,14 +1428,14 @@ const membersData = [
     "birthdate": "1998-01-26",
     "birthplace": "南カリマンタン州バンジャルマシン",
     "generation": "2",
-    "remarks": "KIII; 2016年9月27日; 当日卒業公演&#91;70&#93;元チームKIII（初代・キナル）; 15位",
+    "remarks": "卒業；元チームKIII（初代・キナル）",
     "status": "Graduate",
-    "graduation_date": "2016-09-27",
+    "graduation_date": "2013-06-25～2016-09-27",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/hanna.sutiono",
+      "tiktok": "https://www.tiktok.com/@jhs.hannaa",
       "youtube": ""
     }
   },
@@ -1446,14 +1446,14 @@ const membersData = [
     "birthdate": "1995-05-29",
     "birthplace": "バンテン州パンデグラン",
     "generation": "1",
-    "remarks": "J; 2016年11月20日; 当日卒業公演&#91;71&#93;元チームJ（初代・シャニア〈第1次〉）AKB48グループ初の卒業撤回者&#91;注釈 7&#93;; 2位",
+    "remarks": "卒業；元チームJ（初代・シャニア〈第1次〉）； AKB48グループ初の卒業撤回者",
     "status": "Graduate",
-    "graduation_date": "2016-11-20",
+    "graduation_date": "2012-12-23～2016-11-20",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/ghaida_farisya",
+      "tiktok": "https://www.tiktok.com/@ghaida_farisya",
       "youtube": ""
     }
   },
@@ -1464,15 +1464,15 @@ const membersData = [
     "birthdate": "1993-08-12",
     "birthplace": "西ジャワ州ボゴール",
     "generation": "1",
-    "remarks": "J&#91;注釈 8&#93;; 2016年12月1日; 解雇&#91;72&#93;元チームJ（初代・シャニア〈第1次〉）センディ・セニア名義で歌手活動経験あり; 15位",
+    "remarks": "卒業を発表したが、2016年12月1日に契約違反によりJKT48から解雇；元チームJ（初代・シャニア〈第1次〉）； センディ・セニア名義で歌手活動経験あり；JKT48 Dangdut",
     "status": "Graduate",
-    "graduation_date": "2016-12-01",
+    "graduation_date": "2012-12-23～2016-12-01",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/sendyarn93",
+      "instagram": "https://www.instagram.com/sendy.arn",
+      "tiktok": "https://www.tiktok.com/@sendy.ariani",
+      "youtube": "https://www.youtube.com/@sendy.ariani"
     }
   },
   {
@@ -1482,14 +1482,14 @@ const membersData = [
     "birthdate": "1992-02-10",
     "birthplace": "東京都",
     "generation": "",
-    "remarks": "-; J; 2016年12月30日; 当日卒業公演&#91;73&#93;元チームJ（初代・シャニア〈第2次〉）元チームT（仲川）元チームT（仲川）キャプテン元AKB48チームB（初代）元AKB48チームA（'10高橋）電通インドネシア所属; 2位",
+    "remarks": "卒業；チームJ（初代・シャニア〈第2次〉）；チームTキャプテン ；4Gulali；AKB48-3期生；渡り廊下走り隊",
     "status": "Graduate",
-    "graduation_date": "2016-12-30",
+    "graduation_date": "2012-11-01～2016-12-30",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/Haruka_NKGW10",
+      "instagram": "https://www.instagram.com/haruuuu_chan",
+      "tiktok": "https://www.tiktok.com/@haruchan210",
       "youtube": ""
     }
   },
@@ -1500,15 +1500,15 @@ const membersData = [
     "birthdate": "1999-03-07",
     "birthplace": "西スマトラ州パダン",
     "generation": "3",
-    "remarks": "J; 2017年2月16日; 辞退&#91;74&#93;元チームT（初代・仲川）元チームJ（シャニア〈第2次〉）; 32位",
+    "remarks": "辞退;チームT（初代・仲川）元チームJ（シャニア〈第2次〉）",
     "status": "Graduate",
-    "graduation_date": "2017-02-16",
+    "graduation_date": "2015-01-24～2017-02-16",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/nadsalsabila",
+      "instagram": "https://www.instagram.com/ndf.s",
+      "tiktok": "https://www.tiktok.com/@nadseee",
+      "youtube": "https://www.youtube.com/@nadsalsabila"
     }
   },
   {
@@ -1520,7 +1520,7 @@ const membersData = [
     "generation": "3",
     "remarks": "J; 2017年3月2日; &#91;75&#93;元チームT（仲川）元チームJ（シャニア〈第2次〉）; -",
     "status": "Graduate",
-    "graduation_date": "2017-03-02",
+    "graduation_date": "2015-08-01～2017-03-02",
     "relationship": "",
     "socials": {
       "x": "https://twitter.com/REPLACE_ME",
@@ -2114,7 +2114,7 @@ const membersData = [
     "generation": "3",
     "remarks": "KIII; 2019年9月28日; 当日卒業公演&#91;108&#93;元チームT（仲川）元チームKIII（フィニ・ヨナ）元チームJ（シャニア〈第2次〉・シシル・ゲビー）2019年4月12日アカデミー クラスA降格&#91;109&#93;元AKB48留学生&#91;41&#93;（2018年9月17日 - 10月15日）妹はカトリナ・アイリン（JKT48・9期生）; 7位",
     "status": "Graduate",
-    "graduation_date": "2019-09-28",
+    "graduation_date": "2015-08-01～2019-09-28",
     "relationship": "",
     "socials": {
       "x": "https://twitter.com/REPLACE_ME",
@@ -3138,13 +3138,13 @@ const membersData = [
     "birthdate": "1991-07-19",
     "birthplace": "",
     "generation": "1",
-    "remarks": "2012年2月13日; 辞退&#91;127&#93;; -",
+    "remarks": "辞退;JKT48から初めて脱退したメンバー",
     "status": "Graduate",
     "graduation_date": "2012-02-13",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -3156,13 +3156,13 @@ const membersData = [
     "birthdate": "1993-03-11",
     "birthplace": "",
     "generation": "1",
-    "remarks": "辞退&#91;127&#93;本名はシティ・ガヤトリ・アブヒラマ; -",
+    "remarks": "辞退;JKT48から初めて脱退したメンバー;ガールズバンド「プリンセス」の元メンバー;",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2012-02-12",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -3174,13 +3174,13 @@ const membersData = [
     "birthdate": "1990-06-13",
     "birthplace": "",
     "generation": "1",
-    "remarks": "2012年5月10日; 卒業&#91;128&#93;; -",
+    "remarks": "辞退;JKT48の最年長メンバーの一人",
     "status": "Graduate",
     "graduation_date": "2012-05-10",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -3188,17 +3188,17 @@ const membersData = [
   {
     "id": 175,
     "name": "Fahira",
-    "nickname": "フィラFira",
+    "nickname": "フアヒラFahira",
     "birthdate": "1998-07-27",
     "birthplace": "",
     "generation": "1",
-    "remarks": "卒業&#91;128&#93;本名はファヒラ・アルイドゥルス; -",
+    "remarks": "辞退",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2012-05-10",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -3210,14 +3210,14 @@ const membersData = [
     "birthdate": "1999-01-24",
     "birthplace": "バンテン州レバック",
     "generation": "1",
-    "remarks": "2012年11月25日; 辞退&#91;129&#93;; -",
+    "remarks": "辞退；メロドラマ俳優として活躍中",
     "status": "Graduate",
     "graduation_date": "2012-11-25",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/ochi_24",
+      "instagram": "https://www.instagram.com/ochi24",
+      "tiktok": "https://www.tiktok.com/@ochirosdianaaaa",
       "youtube": ""
     }
   },
@@ -3228,15 +3228,15 @@ const membersData = [
     "birthdate": "1993-12-20",
     "birthplace": "ジャカルタ",
     "generation": "1",
-    "remarks": "2012年12月10日; 辞退&#91;130&#93;本名はクレオパトラ・ジャプリ; -",
+    "remarks": "JKT48を脱退；女優、テレビコマーシャル、司会者としてソロ活動",
     "status": "Graduate",
     "graduation_date": "2012-12-10",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/ratucleopatra20",
       "tiktok": "",
-      "youtube": ""
+      "youtube": "https://www.youtube.com/@cleopatrapradhana"
     }
   },
   {
@@ -3246,13 +3246,13 @@ const membersData = [
     "birthdate": "1997-07-11",
     "birthplace": "",
     "generation": "2",
-    "remarks": "2013年1月10日; &#91;131&#93;; -",
+    "remarks": "JKT48を脱退",
     "status": "Graduate",
     "graduation_date": "2013-01-10",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -3264,13 +3264,13 @@ const membersData = [
     "birthdate": "1996-10-18",
     "birthplace": "",
     "generation": "2",
-    "remarks": "&#91;131&#93;; -",
+    "remarks": "JKT48を脱退",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2013-01-10",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -3282,13 +3282,13 @@ const membersData = [
     "birthdate": "1997-05-21",
     "birthplace": "オランダ",
     "generation": "2",
-    "remarks": "2013年4月12日; &#91;132&#93;本名はオリフィア・シャフィラ・ロッブレック; -",
+    "remarks": "病気のためJKT48を脱退；父親がオランダ人",
     "status": "Graduate",
     "graduation_date": "2013-04-12",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -3300,13 +3300,13 @@ const membersData = [
     "birthdate": "1997-10-08",
     "birthplace": "",
     "generation": "2",
-    "remarks": "2013年9月9日; &#91;49&#93;; -",
+    "remarks": "辞退",
     "status": "Graduate",
     "graduation_date": "2013-09-09",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -3318,13 +3318,13 @@ const membersData = [
     "birthdate": "1996-12-19",
     "birthplace": "バンテン州",
     "generation": "2",
-    "remarks": "2013年11月30日; &#91;133&#93;; -",
+    "remarks": "辞退",
     "status": "Graduate",
     "graduation_date": "2013-11-30",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -3336,13 +3336,13 @@ const membersData = [
     "birthdate": "1995-11-24",
     "birthplace": "",
     "generation": "2",
-    "remarks": "&#91;133&#93;; -",
+    "remarks": "辞退",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2013-11-30",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/nadhifa.kar",
       "tiktok": "",
       "youtube": ""
     }
@@ -3354,13 +3354,13 @@ const membersData = [
     "birthdate": "1998-02-06",
     "birthplace": "",
     "generation": "3",
-    "remarks": "2014年3月24日; &#91;134&#93;; -",
+    "remarks": "当時最も在籍期間が短かった（2014年3月15日から24日までの9日間）",
     "status": "Graduate",
     "graduation_date": "2014-03-24",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -3372,13 +3372,13 @@ const membersData = [
     "birthdate": "1998-03-06",
     "birthplace": "",
     "generation": "3",
-    "remarks": "2014年8月11日; &#91;135&#93;; -",
+    "remarks": "辞退",
     "status": "Graduate",
     "graduation_date": "2014-08-11",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/shafanabilar98",
       "tiktok": "",
       "youtube": ""
     }
@@ -3390,14 +3390,14 @@ const membersData = [
     "birthdate": "2001-01-28",
     "birthplace": "ジャカルタ",
     "generation": "3",
-    "remarks": "2014年11月22日; &#91;136&#93;; -",
+    "remarks": "学業多忙のためJKT48を脱退",
     "status": "Graduate",
     "graduation_date": "2014-11-22",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/keiandinta/",
+      "tiktok": "https://www.tiktok.com/@keiandinta",
       "youtube": ""
     }
   },
@@ -3408,13 +3408,13 @@ const membersData = [
     "birthdate": "2000-03-12",
     "birthplace": "西カリマンタン州ポンティアナック",
     "generation": "3",
-    "remarks": "&#91;136&#93;; -",
+    "remarks": "第3世代のエースになると予想されていました；母親がJKT48の運営と合わなくなったため、JKT48を脱退",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2014-11-22",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/mileniachristine/",
       "tiktok": "",
       "youtube": ""
     }
@@ -3426,13 +3426,13 @@ const membersData = [
     "birthdate": "2000-11-10",
     "birthplace": "ジャカルタ",
     "generation": "3",
-    "remarks": "2014年12月26日; &#91;137&#93;; -",
+    "remarks": "最終試験の成績が非常に悪かったため契約を解除しました（当時、中学3年生でした）",
     "status": "Graduate",
     "graduation_date": "2014-12-26",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/zebimgnl",
       "tiktok": "",
       "youtube": ""
     }
@@ -3444,13 +3444,13 @@ const membersData = [
     "birthdate": "1996-03-13",
     "birthplace": "東ジャワ州スラバヤ",
     "generation": "3",
-    "remarks": "2015年3月23日; &#91;138&#93;; -",
+    "remarks": "一身上の都合により活動辞退",
     "status": "Graduate",
     "graduation_date": "2015-03-23",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/anggieputrikrnsr",
       "tiktok": "",
       "youtube": ""
     }
@@ -3462,13 +3462,13 @@ const membersData = [
     "birthdate": "1999-02-19",
     "birthplace": "西ジャワ州ボゴール",
     "generation": "3",
-    "remarks": "&#91;138&#93;; -",
+    "remarks": "一身上の都合により活動辞退",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2015-03-23",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/rizkakhalila",
       "tiktok": "",
       "youtube": ""
     }
@@ -3480,13 +3480,13 @@ const membersData = [
     "birthdate": "1999-07-04",
     "birthplace": "西ジャワ州カラワン",
     "generation": "4",
-    "remarks": "2015年10月31日付&#91;注釈 9&#93;; 研究生候補生; -",
+    "remarks": "退会; 研究生候補生; -",
     "status": "Graduate",
     "graduation_date": "2015-10-31",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/jessicaberlianaa",
       "tiktok": "",
       "youtube": ""
     }
@@ -3498,14 +3498,14 @@ const membersData = [
     "birthdate": "2002-07-09",
     "birthplace": "西ジャワ州バンドン",
     "generation": "4",
-    "remarks": "研究生候補生; -",
+    "remarks": "退会; 研究生候補生",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2015-10-31",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/megasryni__",
+      "tiktok": "https://www.tiktok.com/@megasuryanireal",
       "youtube": ""
     }
   },
@@ -3516,14 +3516,14 @@ const membersData = [
     "birthdate": "1998-05-22",
     "birthplace": "ジャカルタ",
     "generation": "3",
-    "remarks": "2016年2月1日; &#91;61&#93;; -",
+    "remarks": "脱退；約2年間練習生として在籍",
     "status": "Graduate",
     "graduation_date": "2016-02-01",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/alyciafrryn",
+      "instagram": "https://www.instagram.com/alyciafrryn",
+      "tiktok": "https://www.tiktok.com/@alyciafrrynm",
       "youtube": ""
     }
   },
@@ -3534,14 +3534,14 @@ const membersData = [
     "birthdate": "1999-05-11",
     "birthplace": "ジャカルタ",
     "generation": "3",
-    "remarks": "-",
+    "remarks": "脱退；約2年間練習生として在籍",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2016-02-01",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/farina1105",
+      "tiktok": "https://www.tiktok.com/@farina1105",
       "youtube": ""
     }
   },
@@ -3552,14 +3552,14 @@ const membersData = [
     "birthdate": "1998-01-19",
     "birthplace": "西ジャワ州ボゴール",
     "generation": "3",
-    "remarks": "-",
+    "remarks": "脱退；約2年間練習生として在籍",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2016-02-01",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/indaahpermatas",
+      "tiktok": "https://www.tiktok.com/@indaahpsr",
       "youtube": ""
     }
   },
@@ -3570,14 +3570,14 @@ const membersData = [
     "birthdate": "1996-09-05",
     "birthplace": "ジャカルタ",
     "generation": "3",
-    "remarks": "-",
+    "remarks": "脱退；約2年間練習生として在籍",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2016-02-01",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/PutriFarin_K",
+      "instagram": "https://www.instagram.com/putrifarin.k",
+      "tiktok": "https://www.tiktok.com/@putrifarin",
       "youtube": ""
     }
   },
@@ -3588,14 +3588,14 @@ const membersData = [
     "birthdate": "1996-12-06",
     "birthplace": "ジャカルタ",
     "generation": "3",
-    "remarks": "-",
+    "remarks": "脱退；約2年間練習生として在籍；TikTokアプリのコンテンツクリエイターとしても活躍",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2016-02-01",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/triarona",
+      "tiktok": "https://www.tiktok.com/@triarona",
       "youtube": ""
     }
   },
@@ -3606,13 +3606,13 @@ const membersData = [
     "birthdate": "2001-12-26",
     "birthplace": "西ジャワ州バンドン",
     "generation": "5",
-    "remarks": "2016年6月27日; &#91;139&#93;研究生候補生; -",
+    "remarks": "脱退;研究生候補生; -",
     "status": "Graduate",
     "graduation_date": "2016-06-27",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -3624,13 +3624,13 @@ const membersData = [
     "birthdate": "1999-03-20",
     "birthplace": "西ジャワ州ガルット",
     "generation": "5",
-    "remarks": "2016年9月9日; &#91;140&#93;研究生候補生; -",
+    "remarks": "脱退;研究生候補生; -",
     "status": "Graduate",
     "graduation_date": "2016-09-09",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -3642,13 +3642,13 @@ const membersData = [
     "birthdate": "1999-08-04",
     "birthplace": "ジャカルタ",
     "generation": "5",
-    "remarks": "&#91;140&#93;研究生候補生; -",
+    "remarks": "脱退;研究生候補生",
     "status": "Graduate",
     "graduation_date": null,
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "https://x.com/rissandaa",
+      "instagram": "https://www.instagram.com/princessandaa",
       "tiktok": "",
       "youtube": ""
     }
@@ -3660,13 +3660,13 @@ const membersData = [
     "birthdate": "1999-12-29",
     "birthplace": "ジャカルタ",
     "generation": "5",
-    "remarks": "2017年2月16日; &#91;74&#93;; -",
+    "remarks": "研究生辞退;; -",
     "status": "Graduate",
     "graduation_date": "2017-02-16",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "https://x.com/chintya_wirawan",
+      "instagram": "https://www.instagram.com/chintyawirawan",
       "tiktok": "",
       "youtube": ""
     }
@@ -4453,17 +4453,218 @@ const membersData = [
   },
   {
     "id": 9000,
-    "name": "Jiro Inao (Example)",
-    "nickname": "Jiro-san",
+    "name": "Rezza Habibie",
+    "nickname": "-",
     "birthdate": "-",
-    "birthplace": "Japan",
+    "birthplace": "-",
     "generation": "-",
-    "remarks": "General Manager (Sample)",
+    "remarks": "フォトグラファー",
     "status": "Staff",
     "graduation_date": null,
-    "relationship": "General Manager",
+    "relationship": "JOT staff",
     "socials": {
-      "x": "https://twitter.com/example"
+      "x": "https://x.com/rezzahabibie",
+      "instagram": "https://www.instagram.com/nmaxjabieb/",
+      "tiktok": "https://www.tiktok.com/@rezzahabibie",
+      "youtube": "https://www.youtube.com/rezzahabibie"
+    }
+  },
+  {
+    "id": 9001,
+    "name": "Aokuri",
+    "nickname": "-",
+    "birthdate": "-",
+    "birthplace": "-",
+    "generation": "-",
+    "remarks": "クリエイティブプロデューサー",
+    "status": "Staff",
+    "graduation_date": null,
+    "relationship": "JOT staff",
+    "socials": {
+      "x": "https://x.com/aokuri912",
+      "instagram": "https://www.instagram.com/aokuri",
+      "tiktok": "https://www.tiktok.com/@aokuri912",
+      "youtube": "https://www.youtube.com/@Aokuri"
+    }
+  },
+  {
+    "id": 9002,
+    "name": "iinwaode",
+    "nickname": "-",
+    "birthdate": "-",
+    "birthplace": "-",
+    "generation": "-",
+    "remarks": "Choreographer",
+    "status": "Staff",
+    "graduation_date": null,
+    "relationship": "JOT staff",
+    "socials": {
+      "x": "",
+      "instagram": "https://www.instagram.com/iinwaode/",
+      "tiktok": "https://www.tiktok.com/@iinwaode",
+      "youtube": ""
+    }
+  },
+  {
+    "id": 9003,
+    "name": "Rendy White",
+    "nickname": "-",
+    "birthdate": "-",
+    "birthplace": "-",
+    "generation": "-",
+    "remarks": "Choreographer",
+    "status": "Staff",
+    "graduation_date": null,
+    "relationship": "JOT staff",
+    "socials": {
+      "x": "",
+      "instagram": "https://www.instagram.com/rendywhite/",
+      "tiktok": "https://www.tiktok.com/@rendywhite",
+      "youtube": ""
+    }
+  },
+  {
+    "id": 9004,
+    "name": "Arif Surrahman",
+    "nickname": "-",
+    "birthdate": "-",
+    "birthplace": "-",
+    "generation": "-",
+    "remarks": "Choreographer",
+    "status": "Staff",
+    "graduation_date": null,
+    "relationship": "JOT staff",
+    "socials": {
+      "x": "",
+      "instagram": "https://www.instagram.com/arif_surrahman/",
+      "tiktok": "https://www.tiktok.com/@ariefsurahmann",
+      "youtube": ""
+    }
+  },
+  {
+    "id": 9005,
+    "name": "𝐏utri Baeha",
+    "nickname": "-",
+    "birthdate": "-",
+    "birthplace": "-",
+    "generation": "-",
+    "remarks": "プロデューサー",
+    "status": "Staff",
+    "graduation_date": null,
+    "relationship": "元JOT staff",
+    "socials": {
+      "x": "",
+      "instagram": "https://www.instagram.com/pbaeha/",
+      "tiktok": "",
+      "youtube": ""
+    }
+  },
+  {
+    "id": 9006,
+    "name": "Nikita Rosalini",
+    "nickname": "-",
+    "birthdate": "-",
+    "birthplace": "-",
+    "generation": "-",
+    "remarks": "デジタルクリエイター；JKT48卒業生を中心としたマネージメント会社「Hainick」設立者",
+    "status": "Staff",
+    "graduation_date": null,
+    "relationship": "元JOT staff",
+    "socials": {
+      "x": "",
+      "instagram": "https://www.instagram.com/nikita.rosalini/",
+      "tiktok": "https://www.tiktok.com/@nikita.rosalini",
+      "youtube": ""
+    }
+  },
+  {
+    "id": 9007,
+    "name": "Winston Utomo",
+    "nickname": "-",
+    "birthdate": "-",
+    "birthplace": "-",
+    "generation": "-",
+    "remarks": "親会社IDN CEO",
+    "status": "Staff",
+    "graduation_date": null,
+    "relationship": "IDN",
+    "socials": {
+      "x": "",
+      "instagram": "https://www.instagram.com/winstonutomo/",
+      "tiktok": "",
+      "youtube": ""
+    }
+  },
+  {
+    "id": 9008,
+    "name": "William Utomo",
+    "nickname": "-",
+    "birthdate": "-",
+    "birthplace": "-",
+    "generation": "-",
+    "remarks": "親会社IDN COO",
+    "status": "Staff",
+    "graduation_date": null,
+    "relationship": "IDN",
+    "socials": {
+      "x": "",
+      "instagram": "https://www.instagram.com/william.utomo/",
+      "tiktok": "",
+      "youtube": ""
+    }
+  },
+  {
+    "id": 9009,
+    "name": "IDN APP",
+    "nickname": "-",
+    "birthdate": "-",
+    "birthplace": "-",
+    "generation": "-",
+    "remarks": "親会社のlive配信アプリ",
+    "status": "Staff",
+    "graduation_date": null,
+    "relationship": "IDN",
+    "socials": {
+      "x": "https://x.com/idn_app",
+      "instagram": "https://www.instagram.com/idn_app/",
+      "tiktok": "https://www.tiktok.com/@idn.app",
+      "youtube": "https://www.youtube.com/@idnapp"
+    }
+  },
+  {
+    "id": 9010,
+    "name": "IMN",
+    "nickname": "-",
+    "birthdate": "-",
+    "birthplace": "-",
+    "generation": "-",
+    "remarks": "タレントマネジメント会社；卒業生多数在籍",
+    "status": "Staff",
+    "graduation_date": null,
+    "relationship": "IMN",
+    "socials": {
+      "x": "",
+      "instagram": "https://www.instagram.com/imn.talent/",
+      "tiktok": "",
+      "youtube": ""
+    }
+  },
+  {
+    "id": 9011,
+    "name": "hainick",
+    "nickname": "-",
+    "birthdate": "-",
+    "birthplace": "-",
+    "generation": "-",
+    "remarks": "タレントマネジメント会社；卒業生多数在籍",
+    "status": "Staff",
+    "graduation_date": null,
+    "relationship": "関連会社",
+    "socials": {
+      "x": "",
+      "instagram": "https://www.instagram.com/hainickreatif/",
+      "tiktok": "https://www.tiktok.com/@hainick.creative",
+      "youtube": "https://www.youtube.com/@HaiNick"
     }
   }
 ];

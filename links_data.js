@@ -37,6 +37,17 @@ const linksData = [
                 title: "JKT48 Official TikTok",
                 url: "https://www.tiktok.com/@jkt48.official",
                 note: "「JKT48」の公式アカウント。"
+            }
+        ]
+    },
+    {
+        category: "JKT48関連",
+        description: "JKT48関連グッツ、ショップ、サービスなど",
+        items: [
+            {
+                title: "IDN App",
+                url: "https://www.idn.app/",
+                note: "JKT48の個人live配信や劇場公演やコンサートのlive配信などが見れるアプリ。"
             },
             {
                 title: "JKT48 プライベートメッセージ",
@@ -44,9 +55,9 @@ const linksData = [
                 note: "JKT48 プライベートメッセージ「JKT48」の公式アカウント。"
             },
             {
-                title: "IDN App",
-                url: "https://www.idn.app/",
-                note: "JKT48の個人live配信や劇場公演やコンサートのlive配信などが見れるアプリ。"
+                title: "VIDEO CALL WITH JKT48",
+                url: "https://www.youtube.com/@JKT48V_official",
+                note: "JKT48メンバーとのビデオ通話サービス"
             }
         ]
     },
@@ -74,7 +85,6 @@ const linksData = [
                 url: "https://www.instagram.com/jkt48v_official",
                 note: "バーチャルアイドルユニット「JKT48V」の公式アカウント。"
             }
-            // 必要に応じてチームのアカウントを追加してください
         ]
     },
     {
@@ -110,7 +120,7 @@ const linksData = [
     },
     {
         category: "Recommended Media",
-        description: "メンバーが出演した外部チャンネルやおすすめ動画（ファン選）。",
+        description: "メンバーが出演した外部チャンネルやおすすめ動画。",
         items: [
             {
                 title: "Iclub48 NetTV",
@@ -118,10 +128,46 @@ const linksData = [
                 note: "nettvによるメンバー主演の番組、ダンスバトルや小学校の先生になったり、過酷な軍隊入隊体験は必見です。"
             },
             {
+                title: "YOKOSO JKT48",
+                url: "https://www.youtube.com/@YokosoJKT48",
+                note: "日本を紹介する番組「YOKOSO JKT48」の動画。残念ながら宣伝用の短い動画ばかりです"
+            }, {
+                title: "MNCTV Official",
+                url: "https://www.youtube.com/@MNCTVOfficialId/search?query=jkt48",
+                note: "MNCTV OfficialのJKT48の動画。"
+            },
+            {
+                title: "MDTV OFFICIAL",
+                url: "https://www.youtube.com/@mdtelevisi/search?query=jkt48",
+                note: "MDTV OFFICIALのJKT48の動画。（旧NET.TV）人気番組Ini Talk Showなど多数出演"
+            },
+            {
                 title: "VIVA JKT48 2014",
-                url: "https://youtube.com/...",
-                note: "（ここに自由にリンクを追加して、おすすめを紹介できます）"
+                url: "https://www.youtube.com/@OfficialRCTI/search?query=jkt48",
+                note: "RCTIのJKT48の動画。人気番組dahSyatなど多数出演"
+            },
+            {
+                title: "VIVA JKT48 ",
+                url: "https://www.youtube.com/",
+                note: "2014制作の映画。どこかで字幕付きで配信してくれないかな？リンクはないよＷ"
+            }
+        ]
+    },
+    {
+        category: "FanCam",
+        description: "JKT48のファンカム",
+        items: [
+            {
+                title: "dialektikaksara TV",
+                url: "https://www.youtube.com/@dialektikaksaraTV",
+                note: "代表的なJKT48のファンカム。ほとんどのイベントに参戦しているようです。"
+            },
+            {
+                title: "黃偉平Fujiwara",
+                url: "https://www.youtube.com/@Fujiwara",
+                note: "代表的なJKT48のファンカム。ほとんどのイベントに参戦しているようです。"
             }
         ]
     }
+
 ];
