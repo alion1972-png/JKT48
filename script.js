@@ -277,17 +277,24 @@ document.addEventListener('DOMContentLoaded', () => {
         grid.style.gridTemplateColumns = 'repeat(auto-fit, minmax(350px, 1fr))';
         grid.style.gap = '2rem';
 
-        // Total Ranking
+        // Total Ranking Breakdown
         const totalSection = document.createElement('div');
         totalSection.className = 'ranking-section';
         totalSection.innerHTML = `
-            <div class="ranking-header"><h3><i class="fa-solid fa-trophy"></i> Total Followers</h3></div>
+            <div class="ranking-header"><h3><i class="fa-solid fa-trophy"></i> Follower Breakdown</h3></div>
             <div class="ranking-list">
                 ${sortedTotal.slice(0, 10).map((s, i) => `
                     <div class="ranking-item rank-${i + 1}">
                         <div class="rank-num">${i + 1}</div>
-                        <div class="rank-name">${s.name} <span class="rank-team">JKT48</span></div>
-                        <div class="rank-val">
+                        <div class="rank-name" style="flex-grow:1;">
+                            <div>${s.name}</div> 
+                            <div style="font-size:0.75rem; color:#aaa; margin-top:2px;">
+                                <i class="fa-brands fa-instagram"></i> ${s.instagram.toLocaleString()} <span style="font-size:0.7em; color:${s.ig_diff >= 0 ? '#4cd964' : '#aaa'}">(${s.ig_diff >= 0 ? '+' : ''}${s.ig_diff})</span>
+                                &nbsp;|&nbsp; 
+                                <i class="fa-brands fa-tiktok"></i> ${s.tiktok.toLocaleString()} <span style="font-size:0.7em; color:${s.tk_diff >= 0 ? '#4cd964' : '#aaa'}">(${s.tk_diff >= 0 ? '+' : ''}${s.tk_diff})</span>
+                            </div>
+                        </div>
+                        <div class="rank-val" style="min-width:60px;">
                             <span class="main-val">${s.total.toLocaleString()}</span>
                             <span class="diff-val ${s.total_diff >= 0 ? 'pos' : 'neg'}">
                                 ${s.total_diff >= 0 ? '+' : ''}${s.total_diff.toLocaleString()}
@@ -299,18 +306,21 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         grid.appendChild(totalSection);
 
-        // Growth Ranking
+        // Daily Growth Ranking
         const growthSection = document.createElement('div');
         growthSection.className = 'ranking-section';
         growthSection.innerHTML = `
-            <div class="ranking-header"><h3><i class="fa-solid fa-arrow-trend-up"></i> Daily Growth</h3></div>
+            <div class="ranking-header"><h3><i class="fa-solid fa-arrow-trend-up"></i> Daily Growth Leaders</h3></div>
             <div class="ranking-list">
-                ${sortedGrowth.slice(0, 10).map((s, i) => `
+                ${sortedGrowth.slice(0, 5).map((s, i) => `
                     <div class="ranking-item rank-${i + 1}">
                         <div class="rank-num">${i + 1}</div>
                         <div class="rank-name">${s.name}</div>
                         <div class="rank-val">
                             <span class="main-val" style="color:#4cd964">+${s.total_diff.toLocaleString()}</span>
+                            <div style="font-size:0.7rem; color:#aaa; text-align:right;">
+                                IG: +${s.ig_diff} / TK: +${s.tk_diff}
+                            </div>
                         </div>
                     </div>
                 `).join('')}

@@ -125,12 +125,20 @@ function parseCount(str) {
     // Set User Agent to avoid immediate blocking
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
 
+    // Filter for Active Members Only (Reqular, Trainee, JKT48V)
+    // Graduates often have no links or mixed content, and Instagram is too strict.
+    // We will focus on TikTok for Active members to ensure success.
+    const activeMembers = members.filter(m =>
+        ['Regular', 'Trainee', 'JKT48V'].includes(m.status)
+    );
+
     // Load previous stats to use as fallback
     const prevStats = loadPreviousStats();
+    const newStats = {}; // Initialize newStats object
 
-    console.log(`Starting update for ${members.length} members...`);
+    console.log(`Starting update for ${activeMembers.length} active members (TikTok only)...`);
 
-    for (const member of members) {
+    for (const member of activeMembers) {
         console.log(`Checking ${member.name} (ID: ${member.id})...`);
 
         // Get previous data for this member
@@ -143,50 +151,51 @@ function parseCount(str) {
             tk_diff: 0
         };
 
-        let igCount = prev.instagram;
         let tkCount = prev.tiktok;
+        // Keep previous Instagram count since we are skipping it
+        let igCount = prev.instagram;
 
-        // Real Scraping Attempt (Best Effort)
-        if (member.socials) {
-            // Instagram
-            if (member.socials.instagram) {
-                const scrapedIg = await scrapeProfile(page, member.socials.instagram, 'instagram');
-                if (scrapedIg !== null && scrapedIg > 0) {
-                    igCount = scrapedIg;
-                }
-            }
-
-            // TikTok
-            if (member.socials.tiktok) {
-                const scrapedTk = await scrapeProfile(page, member.socials.tiktok, 'tiktok');
-                if (scrapedTk !== null && scrapedTk > 0) {
-                    tkCount = scrapedTk;
-                }
+        // TikTok Scraping Only
+        if (member.socials && member.socials.tiktok) {
+            const scrapedTk = await scrapeProfile(page, member.socials.tiktok, 'tiktok');
+            if (scrapedTk !== null && scrapedTk > 0) {
+                tkCount = scrapedTk;
             }
         }
 
-        // Calculate diffs (Simple comparison)
-        const igDiff = igCount - prev.instagram;
+        // Calculate diffs
         const tkDiff = tkCount - prev.tiktok;
 
         // Update stats
         newStats[member.id] = {
             id: member.id,
             name: member.name,
-            x: prev.x, // X is skipped
+            x: prev.x,
             instagram: igCount,
             tiktok: tkCount,
             total: prev.x + igCount + tkCount,
             x_diff: 0,
-            ig_diff: igDiff,
+            ig_diff: 0, // No update for IG
             tk_diff: tkDiff,
             socials: member.socials,
-            total_diff: igDiff + tkDiff
+            total_diff: tkDiff // Only TikTok growth contributes to daily diff today
         };
 
-        // Logs for debugging
-        console.log(`  -> IG: ${igCount} (${igDiff >= 0 ? '+' : ''}${igDiff}), TK: ${tkCount} (${tkDiff >= 0 ? '+' : ''}${tkDiff})`);
+        console.log(`  -> TK: ${tkCount} (${tkDiff >= 0 ? '+' : ''}${tkDiff})`);
     }
+
+    // Copy over inactive members data (Graduates, etc.) without updating
+    members.forEach(m => {
+        if (!newStats[m.id]) {
+            newStats[m.id] = prevStats[m.id] || {
+                id: m.id,
+                name: m.name,
+                x: 0, instagram: 0, tiktok: 0, total: 0,
+                x_diff: 0, ig_diff: 0, tk_diff: 0,
+                socials: m.socials, total_diff: 0
+            };
+        }
+    });
 
     await browser.close();
 
