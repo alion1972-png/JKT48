@@ -6,7 +6,7 @@ const membersData = [
     "birthdate": "2006-08-26",
     "birthplace": "ジャカルタ",
     "generation": "11",
-    "remarks": "2024年11月01日; 33-; 33-",
+    "remarks": "2024年11月01日昇格",
     "status": "Regular",
     "team": "Tim Love",
     "graduation_date": null,
@@ -26,7 +26,7 @@ const membersData = [
     "birthplace": "東ジャワ州マラン",
     "generation": "10",
     "team": "Tim Dream",
-    "remarks": "2023年05月07日; 33-; 33-",
+    "remarks": "2023年05月07日昇格",
     "status": "Regular",
     "graduation_date": null,
     "relationship": "",
@@ -44,7 +44,7 @@ const membersData = [
     "birthdate": "2005-10-18",
     "birthplace": "西ジャワ州デポック",
     "generation": "11",
-    "remarks": "2024年11月01日; 33-; 33-",
+    "remarks": "2024年11月01日昇格",
     "status": "Regular",
     "team": "Tim Love",
     "graduation_date": null,
@@ -63,7 +63,7 @@ const membersData = [
     "birthdate": "2005-12-05",
     "birthplace": "ジャカルタ",
     "generation": "7",
-    "remarks": "2019年07月21日; 元チームKIII（ヨナ・グラシア）; 13位; 13位",
+    "remarks": "2019年07月21日昇格; 元チームKIII（ヨナ・グラシア）",
     "status": "Regular",
     "team": "Tim Passion",
     "graduation_date": null,
@@ -82,7 +82,7 @@ const membersData = [
     "birthdate": "2002-10-29",
     "birthplace": "ジャカルタ",
     "generation": "10",
-    "remarks": "2023年05月07日; 33-; 33-",
+    "remarks": "2023年05月07日昇格",
     "status": "Regular",
     "team": "Tim Love",
     "graduation_date": null,
@@ -101,7 +101,7 @@ const membersData = [
     "birthdate": "2006-09-14",
     "birthplace": "ジャカルタ",
     "generation": "12",
-    "remarks": "2025年05月01日; 33-; 33-",
+    "remarks": "2025年05月01日昇格",
     "status": "Regular",
     "team": "Tim Love",
     "graduation_date": null,
@@ -120,7 +120,7 @@ const membersData = [
     "birthdate": "2009-05-28",
     "birthplace": "東ジャワ州スラバヤ",
     "generation": "11",
-    "remarks": "2024年11月01日; 33-; 33-",
+    "remarks": "2024年11月01日昇格",
     "status": "Regular",
     "team": "Tim Love",
     "graduation_date": null,
@@ -139,7 +139,7 @@ const membersData = [
     "birthdate": "2007-04-09",
     "birthplace": "バンテン州タンゲラン",
     "generation": "11",
-    "remarks": "2024年11月01日; 33-; 33-",
+    "remarks": "2024年11月01日昇格",
     "status": "Regular",
     "team": "Tim Love",
     "graduation_date": null,
@@ -158,7 +158,7 @@ const membersData = [
     "birthdate": "2009-12-23",
     "birthplace": "オーストラリアニューサウスウェールズ州シドニー",
     "generation": "11",
-    "remarks": "2024年11月01日; 33-; 33-",
+    "remarks": "2024年11月01日昇格",
     "status": "Regular",
     "team": "Tim Dream",
     "graduation_date": null,
@@ -177,7 +177,7 @@ const membersData = [
     "birthdate": "2002-07-26",
     "birthplace": "バンテン州タンゲラン",
     "generation": "8",
-    "remarks": "2020年08月22日; 元チームT（セリーヌ）; 33-; 33-",
+    "remarks": "2020年08月22日昇格; 元チームT（セリーヌ）",
     "status": "Regular",
     "team": "Tim Passion",
     "graduation_date": null,
@@ -196,7 +196,7 @@ const membersData = [
     "birthdate": "2003-11-22",
     "birthplace": "ジャカルタ",
     "generation": "11",
-    "remarks": "2024年11月01日; 33-; 33-",
+    "remarks": "2024年11月01日昇格",
     "status": "Regular",
     "team": "Tim Love",
     "graduation_date": null,
@@ -215,7 +215,7 @@ const membersData = [
     "birthdate": "2005-12-16",
     "birthplace": "西ジャワ州ブカシ",
     "generation": "11",
-    "remarks": "2024年11月01日; デシー・ナタリア（JKT48・11期生）と双子姉妹; 33-; 33-",
+    "remarks": "2024年11月01日昇格; デシー・ナタリア（JKT48・11期生）と双子姉妹",
     "status": "Regular",
     "team": "Tim Passion",
     "graduation_date": null,
@@ -234,7 +234,7 @@ const membersData = [
     "birthdate": "2005-12-16",
     "birthplace": "西ジャワ州ブカシ",
     "generation": "11",
-    "remarks": "2024年11月01日; デナ・ナタリア（JKT48・11期生）と双子姉妹; 33-; 33-",
+    "remarks": "2024年11月01日昇格; デナ・ナタリア（JKT48・11期生）と双子姉妹",
     "status": "Regular",
     "team": "Tim Passion",
     "graduation_date": null,
@@ -253,7 +253,7 @@ const membersData = [
     "birthdate": "2005-02-26",
     "birthplace": "ジャカルタ",
     "generation": "7",
-    "remarks": "2020年08月22日; 元チームT（セリーヌ）; 33-; 33-",
+    "remarks": "2020年08月22日昇格; 元チームT（セリーヌ）",
     "status": "Regular",
     "team": "Tim Dream",
     "graduation_date": null,
@@ -272,7 +272,7 @@ const membersData = [
     "birthdate": "1999-01-16",
     "birthplace": "西ジャワ州チアンジュール",
     "generation": "3",
-    "remarks": "2015年01月24日;Quadlipsのメンバー;2025年8月1日からJKT48としての活動休止中",
+    "remarks": "2015年01月24日昇格;Quadlipsのメンバー;2025年8月1日からJKT48としての活動休止中",
     "status": "Regular",
     "team": "Tim Passion",
     "graduation_date": null,
@@ -291,7 +291,7 @@ const membersData = [
     "birthdate": "2002-02-04",
     "birthplace": "ジャカルタ",
     "generation": "8",
-    "remarks": "2020年08月22日; 元チームT（セリーヌ）; 33-; 33-",
+    "remarks": "2020年08月22日昇格; 元チームT（セリーヌ）",
     "status": "Regular",
     "team": "Tim Love",
     "graduation_date": null,
@@ -310,7 +310,7 @@ const membersData = [
     "birthdate": "2006-02-13",
     "birthplace": "バンテン州タンゲラン",
     "generation": "7",
-    "remarks": "2020年08月22日; 元チームT（セリーヌ）; 33-; 33-",
+    "remarks": "2020年08月22日昇格; 元チームT（セリーヌ）",
     "status": "Regular",
     "team": "Tim Dream",
     "graduation_date": null,
@@ -329,7 +329,7 @@ const membersData = [
     "birthdate": "2006-08-07",
     "birthplace": "ジャカルタ",
     "generation": "10",
-    "remarks": "2023年05月07日; 33-; 33-",
+    "remarks": "2023年05月07日昇格",
     "status": "Regular",
     "team": "Tim Dream",
     "graduation_date": null,
@@ -348,7 +348,7 @@ const membersData = [
     "birthdate": "2010-06-23",
     "birthplace": "ジャカルタ",
     "generation": "11",
-    "remarks": "2024年11月01日; 33-; 33-",
+    "remarks": "2024年11月01日昇格",
     "status": "Regular",
     "team": "Tim Dream",
     "graduation_date": null,
@@ -367,7 +367,7 @@ const membersData = [
     "birthdate": "2001-06-30",
     "birthplace": "ジャカルタ",
     "generation": "6",
-    "remarks": "2019年07月21日; 元チームKIII（ヨナ・グラシア）; 33-; 33-",
+    "remarks": "2019年07月21日昇格; 元チームKIII（ヨナ・グラシア）",
     "status": "Regular",
     "team": "Tim Dream",
     "graduation_date": null,
@@ -386,7 +386,7 @@ const membersData = [
     "birthdate": "2007-10-18",
     "birthplace": "バンテン州タンゲラン",
     "generation": "11",
-    "remarks": "2024年02月01日; 33-; 33-",
+    "remarks": "2024年02月01日昇格",
     "status": "Regular",
     "team": "Tim Love",
     "graduation_date": null,
@@ -405,7 +405,7 @@ const membersData = [
     "birthdate": "2006-01-10",
     "birthplace": "西ジャワ州ボゴール",
     "generation": "11",
-    "remarks": "2024年02月01日; 33-; 33-",
+    "remarks": "2024年02月01日昇格",
     "status": "Regular",
     "team": "Tim Dream",
     "graduation_date": null,
@@ -424,7 +424,7 @@ const membersData = [
     "birthdate": "2000-06-15",
     "birthplace": "西ジャワ州バンドン",
     "generation": "7",
-    "remarks": "2019年08月05日; 元チームKIII（ヨナ・グラシア）; 15位; 15位",
+    "remarks": "2019年08月05日昇格; 元チームKIII（ヨナ・グラシア）",
     "status": "Regular",
     "team": "Tim Dream",
     "graduation_date": null,
@@ -443,7 +443,7 @@ const membersData = [
     "birthdate": "2001-03-20",
     "birthplace": "ジャンビ州ジャンビ",
     "generation": "9",
-    "remarks": "2021年03月15日; 33-; 33-",
+    "remarks": "2021年03月15日昇格",
     "status": "Regular",
     "team": "Tim Love",
     "graduation_date": null,
@@ -462,7 +462,7 @@ const membersData = [
     "birthdate": "2005-09-23",
     "birthplace": "ジャカルタ",
     "generation": "7",
-    "remarks": "2020年08月22日; 元チームT（セリーヌ）; 33-; 33-",
+    "remarks": "2020年08月22日昇格; 元チームT（セリーヌ）",
     "status": "Regular",
     "team": "Tim Passion",
     "graduation_date": null,
@@ -481,7 +481,7 @@ const membersData = [
     "birthdate": "2001-09-13",
     "birthplace": "ジャカルタ",
     "generation": "10",
-    "remarks": "2023年05月07日; 33-; 33-",
+    "remarks": "2023年05月07日昇格",
     "status": "Regular",
     "team": "Tim Dream",
     "graduation_date": null,
@@ -501,7 +501,7 @@ const membersData = [
     "birthplace": "西ジャワ州ブカシ",
     "team": "Tim Passion",
     "generation": "9",
-    "remarks": "2021年03月15日; 姉はステフィ（元JKT48・3期生）",
+    "remarks": "2021年03月15日昇格; 姉はステフィ（元JKT48・3期生）",
     "status": "Regular",
     "graduation_date": null,
     "relationship": "",
@@ -519,7 +519,7 @@ const membersData = [
     "birthdate": "2002-10-23",
     "birthplace": "バンテン州セラン",
     "generation": "8",
-    "remarks": "2020年08月22日; 元チームT（セリーヌ）; 33-; 33-",
+    "remarks": "2020年08月22日昇格; 元チームT（セリーヌ）",
     "status": "Regular",
     "team": "Tim Passion",
     "graduation_date": null,
@@ -538,7 +538,7 @@ const membersData = [
     "birthdate": "2006-01-09",
     "birthplace": "ジャカルタ",
     "generation": "9",
-    "remarks": "2021年03月15日; 33-; 33-",
+    "remarks": "2021年03月15日昇格",
     "status": "Regular",
     "team": "Tim Dream",
     "graduation_date": null,
@@ -557,7 +557,7 @@ const membersData = [
     "birthdate": "2009-04-22",
     "birthplace": "ジャカルタ",
     "generation": "11",
-    "remarks": "2024年11月01日; 33-; 33-",
+    "remarks": "2024年11月01日昇格",
     "status": "Regular",
     "team": "Tim Love",
     "graduation_date": null,
@@ -576,7 +576,7 @@ const membersData = [
     "birthdate": "2004-07-12",
     "birthplace": "ジャカルタ",
     "generation": "7",
-    "remarks": "2019年08月05日; 元チームKIII（ヨナ・グラシア）; 33-; 33-",
+    "remarks": "2019年08月05日昇格; 元チームKIII（ヨナ・グラシア）",
     "status": "Regular",
     "team": "Tim Passion",
     "graduation_date": null,
@@ -595,7 +595,7 @@ const membersData = [
     "birthdate": "2007-11-11",
     "birthplace": "ジャカルタ",
     "generation": "10",
-    "remarks": "2023年05月07日; 姉はカリスタ・アリフィア（元JKT48・10期生）",
+    "remarks": "2023年05月07日昇格; 姉はカリスタ・アリフィア（元JKT48・10期生）",
     "status": "Regular",
     "team": "Tim Passion",
     "graduation_date": null,
@@ -614,13 +614,13 @@ const membersData = [
     "birthdate": "1999-08-31",
     "birthplace": "ジャカルタ",
     "generation": "3",
-    "remarks": "2015年01月24日; JKT48（5代目）キャプテン",
+    "remarks": "卒業; JKT48（5代目）キャプテン；チームKIIIキャプテン",
     "status": "Graduate",
     "graduation_date": "2015-01-24~2025-12-27",
     "relationship": "",
     "socials": {
       "x": "https://x.com/_shaniagracia31",
-      "instagram": "https://www.instagram.com/jkt48gracia/",
+      "instagram": "https://www.instagram.com/shaniagracia31/",
       "tiktok": "https://www.tiktok.com/@_shaniagracia31",
       "youtube": ""
     }
@@ -632,7 +632,7 @@ const membersData = [
     "birthdate": "2008-08-06",
     "birthplace": "ジャカルタ",
     "generation": "12",
-    "remarks": "2026年1月1日",
+    "remarks": "2026年1月1日昇格",
     "status": "Regular",
     "team": "Tim Passion",
     "graduation_date": null,
@@ -651,7 +651,7 @@ const membersData = [
     "birthdate": "2007-09-01",
     "birthplace": "ジャカルタ",
     "generation": "12",
-    "remarks": "2026年1月1日",
+    "remarks": "2026年1月1日昇格",
     "status": "Regular",
     "team": "Tim Dream",
     "graduation_date": null,
@@ -670,7 +670,7 @@ const membersData = [
     "birthdate": "2007-08-21",
     "birthplace": "西ジャワ州ブカシ",
     "generation": "12",
-    "remarks": "2026年1月1日",
+    "remarks": "2026年1月1日昇格",
     "status": "Regular",
     "team": "Tim Passion",
     "graduation_date": null,
@@ -689,7 +689,7 @@ const membersData = [
     "birthdate": "2008-07-28",
     "birthplace": "ジャカルタ",
     "generation": "12",
-    "remarks": "2025年5月1日",
+    "remarks": "2025年5月1日昇格",
     "status": "Regular",
     "team": "Tim Love",
     "graduation_date": null,
@@ -708,7 +708,7 @@ const membersData = [
     "birthdate": "2007-10-19",
     "birthplace": "アメリカニューハンプシャー州",
     "generation": "12",
-    "remarks": "2026年1月1日",
+    "remarks": "2026年1月1日昇格",
     "status": "Regular",
     "team": "Tim Love",
     "graduation_date": null,
@@ -727,7 +727,7 @@ const membersData = [
     "birthdate": "2011-02-16",
     "birthplace": "ジャカルタ",
     "generation": "12",
-    "remarks": "2026年1月1日",
+    "remarks": "2026年1月1日昇格",
     "status": "Regular",
     "team": "Tim Love",
     "graduation_date": null,
@@ -746,7 +746,7 @@ const membersData = [
     "birthdate": "2009-01-24",
     "birthplace": "バンテン州タンゲラン",
     "generation": "12",
-    "remarks": "2026年1月1日",
+    "remarks": "2026年1月1日昇格",
     "status": "Regular",
     "team": "Tim Passion",
     "graduation_date": null,
@@ -765,7 +765,7 @@ const membersData = [
     "birthdate": "2007-06-18",
     "birthplace": "熊本県",
     "generation": "12",
-    "remarks": "2026年1月1日;インドネシアと日本のハーフ",
+    "remarks": "2026年1月1日昇格;インドネシアと日本のハーフ",
     "status": "Regular",
     "team": "Tim Love",
     "graduation_date": null,
@@ -784,7 +784,7 @@ const membersData = [
     "birthdate": "2009-10-16",
     "birthplace": "バリ州デンパサール",
     "generation": "12",
-    "remarks": "2026年1月1日",
+    "remarks": "2026年1月1日昇格",
     "status": "Regular",
     "team": "Tim Dream",
     "graduation_date": null,
@@ -803,7 +803,7 @@ const membersData = [
     "birthdate": "2007-11-03",
     "birthplace": "ジャカルタ",
     "generation": "12",
-    "remarks": "2026年1月1日",
+    "remarks": "2026年1月1日昇格",
     "status": "Regular",
     "team": "Tim Dream",
     "graduation_date": null,
@@ -822,7 +822,7 @@ const membersData = [
     "birthdate": "2009-01-13",
     "birthplace": "西ジャワ州バントン",
     "generation": "12",
-    "remarks": "2026年1月1日",
+    "remarks": "2026年1月1日昇格",
     "status": "Regular",
     "team": "Tim Passion",
     "graduation_date": null,
@@ -841,7 +841,7 @@ const membersData = [
     "birthdate": "2008-09-01",
     "birthplace": "ジャカルタ",
     "generation": "12",
-    "remarks": "2026年1月1日",
+    "remarks": "2026年1月1日昇格",
     "status": "Regular",
     "team": "Tim Dream",
     "graduation_date": null,
@@ -860,7 +860,7 @@ const membersData = [
     "birthdate": "2010-03-08",
     "birthplace": "ジャカルタ",
     "generation": "12",
-    "remarks": "2026年1月1日",
+    "remarks": "2026年1月1日昇格",
     "status": "Regular",
     "team": "Tim Passion",
     "graduation_date": null,
@@ -894,7 +894,7 @@ const membersData = [
   {
     "id": 48,
     "name": "Aulia Riza",
-    "nickname": "Auwiaアウウィア",
+    "nickname": "アウウィアAuwia",
     "birthdate": "2007-07-14",
     "birthplace": "",
     "generation": "13",
@@ -1518,14 +1518,14 @@ const membersData = [
     "birthdate": "1999-06-15",
     "birthplace": "ジャカルタ",
     "generation": "3",
-    "remarks": "J; 2017年3月2日; &#91;75&#93;元チームT（仲川）元チームJ（シャニア〈第2次〉）; -",
+    "remarks": "辞退;チームT（仲川）チームJ（シャニア〈第2次〉）；スタンドアップコメディアンと結婚",
     "status": "Graduate",
     "graduation_date": "2015-08-01～2017-03-02",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/ceseniy",
+      "tiktok": "https://www.tiktok.com/@yanseniy",
       "youtube": ""
     }
   },
@@ -1536,14 +1536,14 @@ const membersData = [
     "birthdate": "1996-01-22",
     "birthplace": "ジャカルタ",
     "generation": "1",
-    "remarks": "J; 2017年3月12日; 当日卒業公演&#91;76&#93;元チームJ（初代・シャニア〈第1・2次〉）本名はジェシカ・ファニア・ウィジャヤ; 16位",
+    "remarks": "卒業;チームJ（初代・シャニア〈第1・2次〉）;jkt48bandのドラマー；ピアノ演奏も得意",
     "status": "Graduate",
-    "graduation_date": "2017-03-12",
+    "graduation_date": "2012-12-23～2017-03-12",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/jessicavaniaw",
+      "tiktok": "https://www.instagram.com/jessicavaniaw",
       "youtube": ""
     }
   },
@@ -1554,14 +1554,14 @@ const membersData = [
     "birthdate": "1993-08-19",
     "birthplace": "ジャカルタ",
     "generation": "1",
-    "remarks": "J; 2017年5月25日; 当日卒業公演&#91;77&#93;元チームJ（初代・シャニア〈第1・2次〉）本名はジェシカ・フェランダ・タヌミハルジャ電通インドネシア所属; 1位",
+    "remarks": "卒業;チームJ（初代・シャニア〈第1・2次〉）",
     "status": "Graduate",
-    "graduation_date": "2017-05-25",
+    "graduation_date": "2012-12-23～2017-05-25",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/jcvrnd19",
+      "instagram": "https://www.instagram.com/jcvrnd19",
+      "tiktok": "https://www.tiktok.com/@jcvrnd19",
       "youtube": ""
     }
   },
@@ -1572,14 +1572,14 @@ const membersData = [
     "birthdate": "1999-11-14",
     "birthplace": "ジャカルタ",
     "generation": "4",
-    "remarks": "T; 2017年10月21日; 当日卒業公演&#91;78&#93;元チームT（メロディー）; -",
+    "remarks": "卒業;チームT（メロディー）",
     "status": "Graduate",
-    "graduation_date": "2017-10-21",
+    "graduation_date": "2016-12-01～2017-10-21",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/chrstychriselle",
+      "instagram": "https://www.instagram.com/christychriselle",
+      "tiktok": "https://www.tiktok.com/@christychriselle",
       "youtube": ""
     }
   },
@@ -1590,14 +1590,14 @@ const membersData = [
     "birthdate": "1999-11-11",
     "birthplace": "ジャカルタ",
     "generation": "1",
-    "remarks": "J; 2017年10月31日; 辞退&#91;79&#93;元チームJ（初代・シャニア〈第1・2次〉）; 6位",
+    "remarks": "健康状態が回復していないことを理由に辞任を発表;チームJ（初代・シャニア〈第1・2次〉）",
     "status": "Graduate",
-    "graduation_date": "2017-10-31",
+    "graduation_date": "2012-12-23～2017-10-31",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/nblh_ayu",
+      "instagram": "https://www.instagram.com/nblh.ayu/",
+      "tiktok": "https://www.tiktok.com/@nblh.ayu",
       "youtube": ""
     }
   },
@@ -1608,13 +1608,13 @@ const membersData = [
     "birthdate": "2001-05-09",
     "birthplace": "ジャカルタ",
     "generation": "5",
-    "remarks": "T; 2017年11月1日; 解雇&#91;80&#93;元チームT（メロディー）; -",
+    "remarks": "JKT48の内部秘密を漏らしたことが発覚し解雇;元チームT（メロディー）",
     "status": "Graduate",
-    "graduation_date": "2017-11-01",
+    "graduation_date": "2016-12-01～2017-11-01",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -1626,13 +1626,13 @@ const membersData = [
     "birthdate": "2000-11-05",
     "birthplace": "ジャカルタ",
     "generation": "4",
-    "remarks": "J; 2017年12月7日; 辞退&#91;81&#93;元チームT（メロディー）元チームJ（シャニア〈第2次〉）; -",
+    "remarks": "辞退;チームT（メロディー）元チームJ（シャニア〈第2次〉）",
     "status": "Graduate",
-    "graduation_date": "2017-12-07",
+    "graduation_date": "2016-12-01～2017-12-07",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/sllsdynti",
       "tiktok": "",
       "youtube": ""
     }
@@ -1644,14 +1644,14 @@ const membersData = [
     "birthdate": "2000-07-10",
     "birthplace": "西ジャワ州バンドン",
     "generation": "4",
-    "remarks": "J; 2018年2月10日; 辞退&#91;82&#93;元チームT（メロディー）元チームJ（シャニア〈第2次〉）; -",
+    "remarks": "健康状態を理由にJKT48を辞退;チームT（メロディー）チームJ（シャニア〈第2次〉）",
     "status": "Graduate",
-    "graduation_date": "2018-02-10",
+    "graduation_date": "2016-12-01～2018-02-10",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/zhryuriva/",
+      "tiktok": "https://www.tiktok.com/@kim_yyuri",
       "youtube": ""
     }
   },
@@ -1662,14 +1662,14 @@ const membersData = [
     "birthdate": "1993-04-23",
     "birthplace": "東京都",
     "generation": "",
-    "remarks": "-; KIII; 2018年3月25日; 3月17日卒業公演&#91;83&#93;&#91;84&#93;元チームKIII（初代・キナル・フィニ・ヨナ）元AKB48チームK（初代・大島）元AKB48チームB（柏木）; 6位",
+    "remarks": "4月24日、JKT48へ移籍;卒業;チームKIII（初代・キナル・フィニ・ヨナ）；AKB48ノ5期生； JKT48 Dangdut",
     "status": "Graduate",
-    "graduation_date": "2018-03-25",
+    "graduation_date": "2014-04-24～2018-03-25",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/chikano.rina",
+      "tiktok": "https://www.tiktok.com/@rinachikano",
       "youtube": ""
     }
   },
@@ -1680,13 +1680,13 @@ const membersData = [
     "birthdate": "1995-07-14",
     "birthplace": "西ジャワ州デポック",
     "generation": "2",
-    "remarks": "KIII; 3月18日卒業公演&#91;85&#93;元チームKIII（初代・キナル・フィニ・ヨナ）; 28位",
+    "remarks": "卒業;チームKIII（初代・キナル・フィニ・ヨナ",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2014-06-18～2018-03-25",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/fakshafa",
       "tiktok": "",
       "youtube": ""
     }
@@ -1698,14 +1698,14 @@ const membersData = [
     "birthdate": "1992-03-24",
     "birthplace": "西ジャワ州バンドン",
     "generation": "1",
-    "remarks": "J/T; 2018年3月31日; 当日卒業公演JKT48劇場支配人（在籍時から現職）元JKT48（初代）キャプテン元チームJ（初代・シャニア〈第1・2次〉）元チームT（メロディー）兼任元チームT（メロディー）キャプテン&#91;19&#93;妹はフリスカ・アナスタシア・ラクサニ（元JKT48・1期生）国立パジャジャラン大学で農業技術を学んだ日本・ASEAN食料・農業友好親善大使元おかやまフルーツ大使&#91;18&#93;&#91;86&#93;; 1位",
+    "remarks": "卒業;劇場支配人（在籍時から現職）JKT48（初代）キャプテン、チームJ（初代・シャニア〈第1・2次〉）チームTキャプテン;妹はフリスカ（元JKT48・1期生）",
     "status": "Graduate",
-    "graduation_date": "2018-03-31",
+    "graduation_date": "2012-12-23～2018-03-31",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/MelodyLaksani",
+      "instagram": "https://www.instagram.com/melodylaksani92",
+      "tiktok": "https://www.tiktok.com/@melodylaksanii",
       "youtube": ""
     }
   },
@@ -1716,13 +1716,13 @@ const membersData = [
     "birthdate": "1997-03-15",
     "birthplace": "西ジャワ州デポック",
     "generation": "2",
-    "remarks": "研; 2018年4月5日; 辞退&#91;87&#93;元チームJ（初代・シャニア〈第1・2次〉）2017年12月1日降格; 14位",
+    "remarks": "2017-12-01研究生に降格;辞退;チームJ（初代・シャニア〈第1・2次〉）",
     "status": "Graduate",
-    "graduation_date": "2018-04-05",
+    "graduation_date": "2014-05-18～2018-04-05",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/dena.sr15",
       "tiktok": "",
       "youtube": ""
     }
@@ -1734,15 +1734,15 @@ const membersData = [
     "birthdate": "2002-02-14",
     "birthplace": "バンテン州タンゲラン",
     "generation": "5",
-    "remarks": "T; 2018年4月13日; 辞退&#91;88&#93;元チームT（メロディー・アヤナ）; -",
+    "remarks": "辞退;チームT（メロディー・アヤナ）",
     "status": "Graduate",
-    "graduation_date": "2018-04-13",
+    "graduation_date": "2016-12-01～2018-04-13",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "",
+      "instagram": "https://www.instagram.com/elizabeth.orii",
+      "tiktok": "https://www.tiktok.com/@elizabeth.orii",
+      "youtube": "https://www.youtube.com/@elizabethorii/featured"
     }
   },
   {
@@ -1752,14 +1752,14 @@ const membersData = [
     "birthdate": "1997-03-24",
     "birthplace": "ジャカルタ",
     "generation": "3",
-    "remarks": "クラスA; 2018年5月23日; 辞退&#91;89&#93;元チームT（初代・仲川）元チームKIII（フィニ）2017年12月1日研究生降格2018年4月15日から辞退までJKT48アカデミークラスA所属; -",
+    "remarks": "辞退;チームT（初代・仲川）元チームKIII（フィニ）；2017年12月1日研究生降格；アカデミークラスA所属",
     "status": "Graduate",
-    "graduation_date": "2018-05-23",
+    "graduation_date": "2015-01-24～2018-05-23",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/amandadwiarist/",
+      "tiktok": "https://www.tiktok.com/@amandadwiarista",
       "youtube": ""
     }
   },
@@ -1770,13 +1770,13 @@ const membersData = [
     "birthdate": "1999-08-25",
     "birthplace": "ジャカルタ",
     "generation": "5",
-    "remarks": "T; 辞退、6月30日挨拶&#91;90&#93;元チームT（メロディー・アヤナ）; -",
+    "remarks": "健康上の理由により辞退;チームT（メロディー・アヤナ）",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2016-12-01～2018-06-30",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "https://x.com/citrapranajaya",
+      "instagram": "https://www.instagram.com/citrayu",
       "tiktok": "",
       "youtube": ""
     }
@@ -1788,13 +1788,13 @@ const membersData = [
     "birthdate": "1998-11-12",
     "birthplace": "バンテン州タンゲラン",
     "generation": "5",
-    "remarks": "T; 辞退、6月30日挨拶&#91;90&#93;元チームT（メロディー・アヤナ）; -",
+    "remarks": "健康上の理由により辞退;チームT（メロディー・アヤナ）",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2016-12-01～2018-06-30",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/ruth.ds",
       "tiktok": "",
       "youtube": ""
     }
@@ -1806,14 +1806,14 @@ const membersData = [
     "birthdate": "1996-01-02",
     "birthplace": "西ジャワ州バンドン",
     "generation": "1",
-    "remarks": "J; 2018年6月30日; 6月28日卒業公演&#91;91&#93;JKT48アカデミー校長元チームJ（初代・シャニア〈第2次〉・シシル）元チームKIII（キナル）元チームJ（初代）キャプテン元チームKIII（キナル）キャプテン; 5位",
+    "remarks": "卒業;JKT48アカデミー校長；チームJ（初代）キャプテン；チームKIIIキャプテン",
     "status": "Graduate",
-    "graduation_date": "2018-06-30",
+    "graduation_date": "2012-12-23～2018-06-30",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/kinalkinal",
+      "instagram": "https://www.instagram.com/kinalputridevi",
+      "tiktok": "https://www.tiktok.com/@kinalkinaru",
       "youtube": ""
     }
   },
@@ -1824,14 +1824,14 @@ const membersData = [
     "birthdate": "2002-01-04",
     "birthplace": "ジャカルタ",
     "generation": "5",
-    "remarks": "T; 2018年7月3日; 辞退&#91;92&#93;元チームT（メロディー・アヤナ）; 19位",
+    "remarks": "辞退;チームT（メロディー・アヤナ）",
     "status": "Graduate",
     "graduation_date": "2018-07-03",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/Violetaa_B",
+      "instagram": "https://www.instagram.com/violet_burhan",
+      "tiktok": "https://www.tiktok.com/@violet_burhan",
       "youtube": ""
     }
   },
@@ -1842,14 +1842,14 @@ const membersData = [
     "birthdate": "1999-04-05",
     "birthplace": "南スマトラ州パレンバン",
     "generation": "2",
-    "remarks": "クラスA; 2018年7月31日; 辞退&#91;93&#93;2018年6月7日降格&#91;94&#93;元チームKIII（初代・キナル）元チームJ（シャニア〈第2次〉・シシル）元チームJ（シシル）キャプテン; 7位",
+    "remarks": "クラスA;健康上の理由によりJKT48からの辞退;2018年6月7日降格;チームKIII（初代・キナル）チームJ（シャニア〈第2次〉・シシル）チームJキャプテン",
     "status": "Graduate",
-    "graduation_date": "2018-07-31",
+    "graduation_date": "2014-05-08～2018-07-31",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/gagitusil",
+      "tiktok": "https://www.tiktok.com/@gagitusil",
       "youtube": ""
     }
   },
@@ -1860,13 +1860,13 @@ const membersData = [
     "birthdate": "1997-11-17",
     "birthplace": "南スマトラ州パレンバン",
     "generation": "2",
-    "remarks": "J; 2018年9月30日; 当日卒業公演&#91;95&#93;元チームKIII（初代・キナル）元チームJ（シャニア〈第2次〉・シシル・ゲビー）; 15位",
+    "remarks": "卒業;チームKIII（初代・キナル）チームJ（シャニア〈第2次〉・シシル・ゲビー）",
     "status": "Graduate",
-    "graduation_date": "2018-09-30",
+    "graduation_date": "2013-06-25～2018-09-30",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/utybonita",
       "tiktok": "",
       "youtube": ""
     }
@@ -1878,13 +1878,13 @@ const membersData = [
     "birthdate": "1998-08-31",
     "birthplace": "北海道",
     "generation": "",
-    "remarks": "-; T; 2018年10月19日; 当日最終公演&#91;96&#93;元チームT（アヤナ）AKB48チーム4（村山）からの交換留学生2018年9月15日短期留学開始&#91;41&#93;; -",
+    "remarks": "2018年9月15日短期留学開始;チームT（アヤナ）；AKB48グループ ドラフト生；AKB48 2020-08-31卒業",
     "status": "Graduate",
-    "graduation_date": "2018-10-19",
+    "graduation_date": "2018-09-15～2018-10-19",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "https://x.com/sayaya_0388",
+      "instagram": "https://www.instagram.com/sayaya_38/",
       "tiktok": "",
       "youtube": ""
     }
@@ -1896,13 +1896,13 @@ const membersData = [
     "birthdate": "1996-08-17",
     "birthplace": "ジャカルタ",
     "generation": "2",
-    "remarks": "KIII; 2018年10月27日; 当日卒業公演&#91;97&#93;元チームKIII（初代・キナル・フィニ・ヨナ）; 30位",
+    "remarks": "卒業;チームKIII（初代・キナル・フィニ・ヨナ）",
     "status": "Graduate",
-    "graduation_date": "2018-10-27",
+    "graduation_date": "2013-06-25～2018-10-27",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "https://x.com/ldjuhandar",
+      "instagram": "https://www.instagram.com/l__d__y",
       "tiktok": "",
       "youtube": ""
     }
@@ -1914,14 +1914,14 @@ const membersData = [
     "birthdate": "2000-11-18",
     "birthplace": "バリ州デンパサール",
     "generation": "4",
-    "remarks": "T; 2018年12月27日; 当日卒業公演&#91;98&#93;元チームT（メロディー・アヤナ）現KLP48&#91;99&#93;; 7位",
+    "remarks": "卒業;チームT（メロディー・アヤナ）現KLP48",
     "status": "Graduate",
-    "graduation_date": "2018-12-27",
+    "graduation_date": "2016-12-01～2018-12-27",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/ningtaradevi",
+      "instagram": "https://www.instagram.com/ningtaradevi",
+      "tiktok": "https://www.tiktok.com/@ningtaradevi",
       "youtube": ""
     }
   },
@@ -1932,14 +1932,14 @@ const membersData = [
     "birthdate": "1996-03-22",
     "birthplace": "ジャカルタ",
     "generation": "2",
-    "remarks": "J; 2018年12月29日; 当日卒業公演&#91;98&#93;元チームKIII（初代・キナル）元チームJ（シャニア〈第2次〉・シシル・ゲビー）; 11位",
+    "remarks": "卒業;チームKIII（初代・キナル）元チームJ（シャニア〈第2次〉・シシル・ゲビー）",
     "status": "Graduate",
-    "graduation_date": "2018-12-29",
+    "graduation_date": "2013-06-25～2018-12-29",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/riskha.fairunissa96",
+      "tiktok": "https://www.tiktok.com/@riskha.fairunissa96",
       "youtube": ""
     }
   },
@@ -1950,14 +1950,14 @@ const membersData = [
     "birthdate": "1994-06-04",
     "birthplace": "ジャカルタ",
     "generation": "2",
-    "remarks": "KIII; 当日卒業公演&#91;98&#93;元チームKIII（初代・フィニ・ヨナ）元チームJ（シャニア〈第1次〉）元チームKIII（初代）キャプテン妹はシンカ・ジュリアニ（元JKT48・2期生）; 23位",
+    "remarks": "卒業;チームKIII（初代）キャプテン；妹はシンカ・ジュリアニ（元JKT48・2期生）",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2013-06-25～2018-12-29",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/ShintaNaomi",
+      "instagram": "https://www.instagram.com/shintanaoimi",
+      "tiktok": "https://www.tiktok.com/@shintanaoimi",
       "youtube": ""
     }
   },
@@ -1968,15 +1968,15 @@ const membersData = [
     "birthdate": "1999-10-15",
     "birthplace": "西ジャワ州ブカシ",
     "generation": "6",
-    "remarks": "KIII; 2019年2月9日; 辞退&#91;100&#93;元チームKIII（ヨナ）; -",
+    "remarks": "学業に専念したいという理由で退会;チームKIII（ヨナ）；期生オーディションの最終審査に参加したが、親の許可が下りず辞退；母親は日本人",
     "status": "Graduate",
-    "graduation_date": "2019-02-09",
+    "graduation_date": "2018-10-28～2019-02-09",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/erika_ebisawa",
+      "instagram": "https://www.instagram.com/erika_ebisawa",
+      "tiktok": "https://www.tiktok.com/@erika__ebisawa",
+      "youtube": "https://www.youtube.com/@Erikacang"
     }
   },
   {
@@ -1986,14 +1986,14 @@ const membersData = [
     "birthdate": "1998-11-15",
     "birthplace": "西ジャワ州ブカシ",
     "generation": "2",
-    "remarks": "J; 2019年3月31日; 当日卒業公演&#91;101&#93;元チームKIII（初代・キナル）元チームJ（シャニア〈第2次〉・シシル・ゲビー）; 27位",
+    "remarks": "卒業;チームKIII（初代・キナル）元チームJ（シャニア〈第2次〉・シシル・ゲビー）",
     "status": "Graduate",
-    "graduation_date": "2019-03-31",
+    "graduation_date": "2013-06-25～2019-03-31",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/della.delilaa",
+      "tiktok": "https://www.tiktok.com/@delladelila15",
       "youtube": ""
     }
   },
@@ -2004,14 +2004,14 @@ const membersData = [
     "birthdate": "1995-10-01",
     "birthplace": "ジャカルタ",
     "generation": "2",
-    "remarks": "J; 当日卒業公演&#91;101&#93;元チームKIII（初代・キナル）元チームJ（シャニア〈第2次〉・シシル・ゲビー）; 9位",
+    "remarks": "卒業;チームKIII（初代・キナル）チームJ（シャニア〈第2次〉・シシル・ゲビー）",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2013-06-25～2019-03-31",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/saktiaoktavni",
+      "instagram": "https://www.instagram.com/saktiaoktvn",
+      "tiktok": "https://www.tiktok.com/@saktiaoktavn",
       "youtube": ""
     }
   },
@@ -2022,14 +2022,14 @@ const membersData = [
     "birthdate": "1999-10-01",
     "birthplace": "ジャカルタ",
     "generation": "3",
-    "remarks": "T; 2019年4月23日; 辞退&#91;102&#93;元チームT（初代・仲川・アヤナ）元チームKIII（フィニ）2017年12月1日研究生降格; 6位",
+    "remarks": "辞退;チームT（初代・仲川・アヤナ）チームKIII（フィニ）2017年12月1日研究生降格；2017年7月1日チームT昇格",
     "status": "Graduate",
-    "graduation_date": "2019-04-23",
+    "graduation_date": "2015-01-24～2019-04-23",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "",
+      "tiktok": "https://www.tiktok.com/@oktasafiraaa",
       "youtube": ""
     }
   },
@@ -2040,14 +2040,14 @@ const membersData = [
     "birthdate": "1998-06-27",
     "birthplace": "中部ジャワ州スラカルタ",
     "generation": "1",
-    "remarks": "J; 2019年4月28日; 当日卒業公演&#91;103&#93;元JKT48（2代目）キャプテン元チームJ（初代・シャニア〈第1・2次〉・シシル・ゲビー）元チームJ（シャニア〈第1・2次〉）キャプテン; 4位",
+    "remarks": "卒業;JKT48（2代目）キャプテン；チームjキャプテン；バドミントン選手と結婚",
     "status": "Graduate",
-    "graduation_date": "2019-04-28",
+    "graduation_date": "2012-12-23～2019-04-28",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/shanju",
+      "instagram": "https://www.instagram.com/shanju",
+      "tiktok": "https://www.tiktok.com/@cshanju",
       "youtube": ""
     }
   },
@@ -2058,13 +2058,13 @@ const membersData = [
     "birthdate": "1996-12-28",
     "birthplace": "ジャカルタ",
     "generation": "2",
-    "remarks": "KIII; 2019年7月20日; 6月30日卒業公演&#91;104&#93;&#91;105&#93;元チームKIII（初代・キナル・フィニ・ヨナ）; 24位",
+    "remarks": "卒業;チームKIII（初代・キナル・フィニ・ヨナ）",
     "status": "Graduate",
-    "graduation_date": "2019-07-20",
+    "graduation_date": "2013-06-25～2019-07-20",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/nananat",
       "tiktok": "",
       "youtube": ""
     }
@@ -2072,19 +2072,19 @@ const membersData = [
   {
     "id": 113,
     "name": "Cindy Yuvia",
-    "nickname": "シンフィア/ユピCinvia / Yupi",
+    "nickname": "ユピ Yupi",
     "birthdate": "1998-01-14",
     "birthplace": "ジャカルタ",
     "generation": "2",
-    "remarks": "J; 2019年7月27日; 当日卒業公演&#91;106&#93;元チームKIII（初代・キナル・フィニ・ヨナ）元チームJ（ゲビー）; 1位",
+    "remarks": "卒業;チームKIII（初代・キナル・フィニ・ヨナ）元チームJ（ゲビー）",
     "status": "Graduate",
-    "graduation_date": "2019-07-27",
+    "graduation_date": "2013-06-25～2019-07-27",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/cindyyuvia",
+      "instagram": "https://www.instagram.com/cindyyuvia",
+      "tiktok": "https://www.tiktok.com/@cindyyuvia",
+      "youtube": "https://www.youtube.com/cindyyuviaa"
     }
   },
   {
@@ -2094,14 +2094,14 @@ const membersData = [
     "birthdate": "1999-05-24",
     "birthplace": "西ジャワ州バンドン",
     "generation": "2",
-    "remarks": "KIII; 2019年8月4日; 当日卒業公演&#91;107&#93;元チームKIII（初代・キナル・フィニ・ヨナ）; 29位",
+    "remarks": "卒業;チームKIII（初代・キナル・フィニ・ヨナ）",
     "status": "Graduate",
-    "graduation_date": "2019-08-04",
+    "graduation_date": "2013-06-25～2019-08-04",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/acakacakan",
+      "instagram": "https://www.instagram.com/acak__",
+      "tiktok": "https://www.tiktok.com/@acak24",
       "youtube": ""
     }
   },
@@ -2112,15 +2112,15 @@ const membersData = [
     "birthdate": "2000-11-19",
     "birthplace": "ジャカルタ",
     "generation": "3",
-    "remarks": "KIII; 2019年9月28日; 当日卒業公演&#91;108&#93;元チームT（仲川）元チームKIII（フィニ・ヨナ）元チームJ（シャニア〈第2次〉・シシル・ゲビー）2019年4月12日アカデミー クラスA降格&#91;109&#93;元AKB48留学生&#91;41&#93;（2018年9月17日 - 10月15日）妹はカトリナ・アイリン（JKT48・9期生）; 7位",
+    "remarks": "卒業;JKT48で3チーム全てを経験した初のメンバー；2019年4月18日 - 2019年9月10日アカデミー クラスA降格;AKB48交換留学生（2018年9月17日 - 10月15日）妹はカトリナ・アイリン（JKT48・9期生）；稲川素子事務所",
     "status": "Graduate",
     "graduation_date": "2015-08-01～2019-09-28",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/sutepiii",
+      "instagram": "https://www.instagram.com/sutepiii",
+      "tiktok": "https://www.tiktok.com/@sutepiii",
+      "youtube": "https://www.youtube.com/@sutepiii"
     }
   },
   {
@@ -2130,15 +2130,15 @@ const membersData = [
     "birthdate": "1996-07-04",
     "birthplace": "ジャカルタ",
     "generation": "2",
-    "remarks": "J; 2019年10月5日; 9月29日卒業公演&#91;110&#93;&#91;111&#93;元チームKIII（初代・キナル）元チームJ（シャニア〈第2次〉・シシル・ゲビー）姉はシンタ・ナオミ（元JKT48・2期生）; 3位",
+    "remarks": "卒業;チームKIII（初代・キナル）元チームJ（シャニア〈第2次〉・シシル・ゲビー）姉はシンタ・ナオミ（元JKT48・2期生）; 4 Gulali",
     "status": "Graduate",
-    "graduation_date": "2019-10-05",
+    "graduation_date": "2013-06-25～2019-10-05",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/sinkajuliani96",
+      "instagram": "https://www.instagram.com/sinkajuliani96",
+      "tiktok": "https://www.tiktok.com/@snk.04",
+      "youtube": "https://www.youtube.com/SinkaJuliani96"
     }
   },
   {
@@ -2148,15 +2148,15 @@ const membersData = [
     "birthdate": "2002-05-20",
     "birthplace": "西ジャワ州バンドン",
     "generation": "5",
-    "remarks": "T; 2019年11月10日; 当日卒業公演&#91;112&#93;元チームT（メロディー・アヤナ）妹はアディスティ・ザラ（元JKT48・5期生）; -",
+    "remarks": "卒業;チームT（メロディー・アヤナ）妹はアディスティ・ザラ（元JKT48・5期生）; -",
     "status": "Graduate",
-    "graduation_date": "2019-11-10",
+    "graduation_date": "2016-12-01～2019-11-10",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "",
+      "instagram": "https://www.instagram.com/hasyakyla/",
+      "tiktok": "https://www.tiktok.com/@kylzies",
+      "youtube": "https://www.youtube.com/@ZaraKyla"
     }
   },
   {
@@ -2166,15 +2166,15 @@ const membersData = [
     "birthdate": "2003-06-21",
     "birthplace": "西ジャワ州バンドン",
     "generation": "5",
-    "remarks": "T; 2019年12月4日; 当日卒業公演&#91;113&#93;元チームT（メロディー・アヤナ）姉はハシャキラ・ウタミ・クスマワルダニ（元JKT48・5期生）; 23位",
+    "remarks": "卒業;チームT（メロディー・アヤナ）姉はハシャキラ・ウタミ・クスマワルダニ（元JKT48・5期生）; 在籍中から現在も女優として活躍中",
     "status": "Graduate",
-    "graduation_date": "2019-12-04",
+    "graduation_date": "2016-12-01～2019-12-04",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/slowdownya",
+      "instagram": "https://www.instagram.com/zaraadhsty/",
+      "tiktok": "https://www.tiktok.com/@zaraanih",
+      "youtube": "https://www.youtube.com/@ZaraKyla"
     }
   },
   {
@@ -2184,14 +2184,14 @@ const membersData = [
     "birthdate": "1999-06-29",
     "birthplace": "ジャカルタ",
     "generation": "2",
-    "remarks": "T; 2019年12月6日; 当日卒業公演&#91;113&#93;元チームJ（初代・シャニア〈第1・2次〉・シシル）元チームT（アヤナ）本名はタリア・イファンカ・エリサベス・フレデリック; 16位",
+    "remarks": "卒業;チームJ（初代・シャニア〈第1・2次〉・シシル）元チームT（アヤナ）",
     "status": "Graduate",
-    "graduation_date": "2019-12-06",
+    "graduation_date": "2014-02-23～2019-12-06",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/vankaaa_a",
+      "instagram": "https://www.instagram.com/thaliaivanka/",
+      "tiktok": "https://www.tiktok.com/@thaliaivankaa",
       "youtube": ""
     }
   },
@@ -2202,14 +2202,14 @@ const membersData = [
     "birthdate": "1997-12-17",
     "birthplace": "中部ジャワ州スマラン",
     "generation": "1",
-    "remarks": "T; 2019年12月7日; 当日卒業公演&#91;113&#93;元チームJ（初代・シャニア〈第1次〉）元チームKIII（フィニ・ヨナ）元チームT（アヤナ）元チームT（アヤナ）副キャプテン姉はステラ・コルネリア（元JKT48・1期生）; 26位",
+    "remarks": "卒業;JKT48の3チーム全てを経験；姉はステラ・コルネリア（元JKT48・1期生）",
     "status": "Graduate",
-    "graduation_date": "2019-12-07",
+    "graduation_date": "2012-12-23～2019-12-07",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/sonianatalia_w",
+      "instagram": "https://www.instagram.com/sonianatalia_w/",
+      "tiktok": "https://www.tiktok.com/@sonianataliaa",
       "youtube": ""
     }
   },
@@ -2218,17 +2218,17 @@ const membersData = [
     "name": "Ayana Shahab",
     "nickname": "アヤナAyana",
     "birthdate": "1997-06-03",
-    "birthplace": "大阪府&#91;114&#93;",
+    "birthplace": "大阪府",
     "generation": "1",
-    "remarks": "T; 2019年12月8日; 当日卒業公演&#91;113&#93;元チームJ（初代・シャニア〈第1次）元チームKIII（フィニ・ヨナ）元チームT（アヤナ）2018年4月1日から6月30日までチームKIII（ヨナ）・チームT（アヤナ）兼任元チームT（アヤナ）キャプテン日本人とアラブ系インドネシア人のハーフ日本名：シャハブ彩菜; 2位",
+    "remarks": "卒業;JKT48の3チーム全てを経験；チームTキャプテン；日本人とアラブ系インドネシア人のハーフ",
     "status": "Graduate",
-    "graduation_date": "2019-12-08",
+    "graduation_date": "2012-12-23～2019-12-08",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/ayanashb0306",
+      "instagram": "https://www.instagram.com/ayanashahab/",
+      "tiktok": "https://www.tiktok.com/@ayanashb",
+      "youtube": "https://www.youtube.com/@ayanachannelofficial"
     }
   },
   {
@@ -2238,14 +2238,14 @@ const membersData = [
     "birthdate": "2000-12-20",
     "birthplace": "ジャカルタ",
     "generation": "3",
-    "remarks": "T; 2019年12月13日; 当日卒業公演&#91;113&#93;元チームT（初代・仲川・アヤナ）元チームJ（シャニア〈第2次〉・シシル）; 32位",
+    "remarks": "卒業；チームT（初代・仲川・アヤナ）チームJ（シャニア〈第2次〉・シシル）；4 Gulali",
     "status": "Graduate",
-    "graduation_date": "2019-12-13",
+    "graduation_date": "2015-01-24～2019-12-13",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/angela_syahfira",
+      "instagram": "https://www.instagram.com/angelsyhfr/",
+      "tiktok": "https://www.tiktok.com/@angelsyhfra",
       "youtube": ""
     }
   },
@@ -2256,14 +2256,14 @@ const membersData = [
     "birthdate": "1994-04-13",
     "birthplace": "西ジャワ州ボゴール",
     "generation": "2",
-    "remarks": "KIII; 2019年12月15日; 当日卒業公演&#91;113&#93;元チームKIII（初代・キナル・ヨナ）元チームJ（シャニア〈第2次〉）元チームKIII（ヨナ）キャプテン; 10位",
+    "remarks": "卒業;チームKIII（初代・キナル・ヨナ）チームJ（シャニア〈第2次〉）チームKIIIキャプテン",
     "status": "Graduate",
-    "graduation_date": "2019-12-15",
+    "graduation_date": "2013-06-25～2019-12-15",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/viviyonaap",
+      "instagram": "https://www.instagram.com/viviyonaap/",
+      "tiktok": "https://www.tiktok.com/@viviyonaap",
       "youtube": ""
     }
   },
@@ -2274,14 +2274,14 @@ const membersData = [
     "birthdate": "1999-04-10",
     "birthplace": "ジャカルタ",
     "generation": "2",
-    "remarks": "KIII; 2020年1月5日; 当日卒業公演&#91;115&#93;元チームJ（初代・シャニア〈第1次〉）元チームKIII（フィニ・ヨナ）; -",
+    "remarks": "卒業;チームJ（初代・シャニア〈第1次〉）チームKIII（フィニ・ヨナ）; -",
     "status": "Graduate",
-    "graduation_date": "2020-01-05",
+    "graduation_date": "2014-02-23～2020-01-05",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/rclnatasyaa",
+      "instagram": "https://www.instagram.com/rclnatasyaa/",
+      "tiktok": "https://www.tiktok.com/@rclnatasyaa",
       "youtube": ""
     }
   },
@@ -2292,15 +2292,15 @@ const membersData = [
     "birthdate": "1999-10-28",
     "birthplace": "ジャカルタ",
     "generation": "3",
-    "remarks": "J; 2020年1月18日; 当日卒業公演&#91;115&#93;元チームT（初代・仲川）元チームJ（シャニア〈第2次〉・シシル・ゲビー）; 12位",
+    "remarks": "卒業;チームT（初代・仲川）チームJ（シャニア〈第2次〉・シシル・ゲビー）",
     "status": "Graduate",
-    "graduation_date": "2020-01-18",
+    "graduation_date": "2015-01-24～2020-01-18",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/michelleeeck99",
+      "instagram": "https://www.instagram.com/michelleeeck99/",
+      "tiktok": "https://www.tiktok.com/@michellechristoo",
+      "youtube": "https://www.youtube.com/@michellechristoo"
     }
   },
   {
@@ -2310,15 +2310,15 @@ const membersData = [
     "birthdate": "1996-02-23",
     "birthplace": "ジャカルタ",
     "generation": "2",
-    "remarks": "KIII; 2020年2月23日; 当日卒業公演&#91;115&#93;元チームKIII（初代・キナル・フィニ・ヨナ）元チームKIII（フィニ）キャプテン&#91;37&#93;2017年10月12日研究生降格; 7位",
+    "remarks": "卒業;チームKIII（初代・キナル・フィニ・ヨナ）チームKIIIキャプテン；（2017年10月12日～2018年02月24日）研究生降格",
     "status": "Graduate",
     "graduation_date": "2020-02-23",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/itskindavienny",
+      "instagram": "https://www.instagram.com/itskindavienny/",
+      "tiktok": "https://www.tiktok.com/@itskindavienny",
+      "youtube": "https://www.youtube.com/@itskindavienny763"
     }
   },
   {
@@ -2328,15 +2328,15 @@ const membersData = [
     "birthdate": "2000-06-07",
     "birthplace": "ジャカルタ",
     "generation": "5",
-    "remarks": "KIII; 2020年5月15日; 当日オンライン卒業イベント&#91;116&#93;&#91;117&#93;元チームT（メロディー・アヤナ）元チームKIII（ヨナ）; 23位",
+    "remarks": "Covid-19の影響でオンライン卒業式となった;チームT（メロディー・アヤナ）チームKIII（ヨナ）；育成マネージャーとしてKLP48スタッフとして参加していた",
     "status": "Graduate",
-    "graduation_date": "2020-05-15",
+    "graduation_date": "2016-12-01～2020-05-15",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/copuco_",
+      "instagram": "https://www.instagram.com/_copuco/",
+      "tiktok": "https://www.tiktok.com/@copuco",
+      "youtube": "https://www.youtube.com/c/COPUCO"
     }
   },
   {
@@ -2346,14 +2346,14 @@ const membersData = [
     "birthdate": "2000-01-01",
     "birthplace": "ジャカルタ",
     "generation": "4",
-    "remarks": "J; 2020年10月24日; 当日卒業公演&#91;118&#93;元チームT（メロディー・アヤナ）元チームJ（ゲビー・フリスカ）; 11位",
+    "remarks": "Covid-19の影響で卒業が延期された。;チームT（メロディー・アヤナ）チームJ（ゲビー・フリスカ）;屋台街で焼き飯を売りながらTikTokでライブ配信し、話題になった。",
     "status": "Graduate",
-    "graduation_date": "2020-10-24",
+    "graduation_date": "2016-12-01～2020-10-24",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/MelatiSesilia",
+      "instagram": "https://www.instagram.com/melati.sesilia/",
+      "tiktok": "https://www.tiktok.com/@melati.sesilia",
       "youtube": ""
     }
   },
@@ -2364,14 +2364,14 @@ const membersData = [
     "birthdate": "2005-07-01",
     "birthplace": "バンテン州タンゲラン",
     "generation": "8",
-    "remarks": "T; 2020年11月9日; 活動辞退&#91;119&#93;元チームT（セリーヌ）; -",
+    "remarks": "家庭の事情によりJKT48活動辞退。;チームT（セリーヌ）;女優として活躍中",
     "status": "Graduate",
-    "graduation_date": "2020-11-09",
+    "graduation_date": "2020-08-22～2020-11-09",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/ratuurafa",
+      "instagram": "https://www.instagram.com/ratuurafa/",
+      "tiktok": "https://www.tiktok.com/@raturafaa",
       "youtube": ""
     }
   },
@@ -2382,15 +2382,15 @@ const membersData = [
     "birthdate": "2001-09-06",
     "birthplace": "西ジャワ州ボゴール",
     "generation": "5",
-    "remarks": "KIII; 2020年11月16日; 解雇&#91;120&#93;元チームT（アヤナ）元チームKIII（ヨナ・グラシア）; 6位",
+    "remarks": "JKT48メンバーとして不適切な行為を行ったため解雇;チームT（アヤナ）チームKIII（ヨナ・グラシア）;最長研修生/アカデミー生記録保持者（938日間）",
     "status": "Graduate",
-    "graduation_date": "2020-11-16",
+    "graduation_date": "2018-12-22～2020-11-16",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "",
+      "instagram": "https://www.instagram.com/g.giselaaa",
+      "tiktok": "https://www.tiktok.com/@g.giselaaa",
+      "youtube": "https://www.youtube.com/@goyandge"
     }
   },
   {
@@ -2400,13 +2400,13 @@ const membersData = [
     "birthdate": "1999-08-08",
     "birthplace": "ジャカルタ",
     "generation": "3",
-    "remarks": "J; 2020年12月13日; 活動辞退&#91;121&#93;元チームT（初代・仲川）元チームKIII（フィニ・ヨナ）元チームJ（ゲビー・フリスカ）; 24位",
+    "remarks": "活動辞退;チームT（初代・仲川）チームKIII（フィニ・ヨナ）チームJ（ゲビー・フリスカ）;JKT48 Acoustic",
     "status": "Graduate",
-    "graduation_date": "2020-12-13",
+    "graduation_date": "2015-01-24～2020-12-13",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "https://x.com/MadeAurellia",
+      "instagram": "https://www.instagram.com/aurell.made",
       "tiktok": "",
       "youtube": ""
     }
@@ -2418,15 +2418,15 @@ const membersData = [
     "birthdate": "1996-12-25",
     "birthplace": "ジョグジャカルタ",
     "generation": "3",
-    "remarks": "KIII; 2020年12月26日; 当日卒業公演&#91;122&#93;元チームT（初代・仲川）元チームKIII（フィニ・ヨナ・グラシア）; 17位",
+    "remarks": "卒業;チームT（初代・仲川）チームKIII（フィニ・ヨナ・グラシア）;TVタレントとして活動中；メンバー中、最も高身長（172cm）",
     "status": "Graduate",
-    "graduation_date": "2020-12-26",
+    "graduation_date": "2015-01-24～2020-12-26",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/desygenoveva_",
+      "instagram": "https://www.instagram.com/desygenoveva_",
+      "tiktok": "https://www.tiktok.com/@desygenoveva_",
+      "youtube": "https://www.youtube.com/@DesyGenoveva_"
     }
   },
   {
@@ -2436,15 +2436,15 @@ const membersData = [
     "birthdate": "1998-09-23",
     "birthplace": "西ジャワ州ボゴール",
     "generation": "2",
-    "remarks": "J; 2021年2月7日; 元チームKIII（初代・キナル・フィニ・ヨナ）元チームJ（ゲビー・フリスカ）; 05位",
+    "remarks": "卒業;チームKIII（初代・キナル・フィニ・ヨナ）チームJ（ゲビー・フリスカ）； JKT48 Acoustic;歌手として積極的に活動中",
     "status": "Graduate",
-    "graduation_date": "2021-02-07",
+    "graduation_date": "2013-06-25～2021-02-07",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/nadilawantari_",
+      "instagram": "https://www.instagram.com/nadilawantari23/",
+      "tiktok": "https://www.tiktok.com/@nadilawantari_",
+      "youtube": "https://www.youtube.com/nadilawantari"
     }
   },
   {
@@ -2454,15 +2454,15 @@ const membersData = [
     "birthdate": "1995-03-19",
     "birthplace": "東ジャワ州パスルアン",
     "generation": "2",
-    "remarks": "J; 2021年2月13日; 元チームKIII（初代・キナル・フィニ・ヨナ）元チームJ（ゲビー・フリスカ）; 11位",
+    "remarks": "卒業;チームKIII（初代・キナル・フィニ・ヨナ）チームJ（ゲビー・フリスカ）;JKT48 Acoustic",
     "status": "Graduate",
-    "graduation_date": "2021-02-13",
+    "graduation_date": "2013-06-25～2021-02-13",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/rona__ang",
+      "instagram": "https://www.instagram.com/rona_ang/",
+      "tiktok": "https://www.tiktok.com/@rona_ang",
+      "youtube": "https://www.youtube.com/@fransrona"
     }
   },
   {
@@ -2472,15 +2472,15 @@ const membersData = [
     "birthdate": "1996-03-04",
     "birthplace": "西ジャワ州バンドン",
     "generation": "1",
-    "remarks": "J; 2021年2月20日; 元チームJ（初代・シャニア〈第1次〉・ゲビー・フリスカ）元チームKIII（フィニ・ヨナ）元チームJ（フリスカ）キャプテン&#91;47&#93;姉はメロディー・ヌランダニ・ラクサニ（元JKT48・1期生、JKT48劇場支配人）; 12位",
+    "remarks": "卒業; チームJ（初代・シャニア〈第1次〉・ゲビー・フリスカ）チームKIII（フィニ・ヨナ）チームJキャプテン;姉はメロディー（JKT48・1期生）",
     "status": "Graduate",
-    "graduation_date": "2021-02-20",
+    "graduation_date": "2012-12-23～2021-02-20",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/thisfrieska",
+      "instagram": "https://www.instagram.com/frieskatch/",
+      "tiktok": "https://www.tiktok.com/@frieskanastasia",
+      "youtube": "https://www.youtube.com/@frieskaanastasia"
     }
   },
   {
@@ -2490,15 +2490,15 @@ const membersData = [
     "birthdate": "1998-03-18",
     "birthplace": "西ジャワ州バンドン",
     "generation": "1",
-    "remarks": "KIII; 2021年2月21日; 元JKT48（3代目）キャプテン元チームJ（初代・シャニア〈第1次〉）元チームKIII（フィニ・ヨナ・グラシア）; 05位",
+    "remarks": "卒業;JKT48（3代目）キャプテン；チームJ（初代・シャニア〈第1次〉）チームKIII（フィニ・ヨナ・グラシア）",
     "status": "Graduate",
-    "graduation_date": "2021-02-21",
+    "graduation_date": "2012-12-23～2021-02-21",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/bchsr_",
+      "instagram": "https://www.instagram.com/bchsr_/",
+      "tiktok": "https://www.tiktok.com/@bchsr_",
+      "youtube": "https://www.youtube.com/@bebychaesara4740"
     }
   },
   {
@@ -2508,15 +2508,15 @@ const membersData = [
     "birthdate": "2006-05-14",
     "birthplace": "バンテン州タンゲラン",
     "generation": "7",
-    "remarks": "T; 2021年3月12日; 元チームJ（ゲビー・フリスカ）元チームT（セリーヌ）; 31位",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）; チームJ（ゲビー・フリスカ）チームT（セリーヌ）；歌手として活動中",
     "status": "Graduate",
-    "graduation_date": "2021-03-12",
+    "graduation_date": "2019-10-07～2021-03-12",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/yoribeneran",
+      "instagram": "https://www.instagram.com/yoribeneran",
+      "tiktok": "https://www.tiktok.com/@yoribeneran",
+      "youtube": "https://www.youtube.com/@ItsYoRI"
     }
   },
   {
@@ -2526,14 +2526,14 @@ const membersData = [
     "birthdate": "2004-03-27",
     "birthplace": "ジャカルタ",
     "generation": "8",
-    "remarks": "T; 元チームT（セリーヌ）; -",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）; 元チームT（セリーヌ）",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2020-08-22～2021-03-12",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/chlsnmbl",
+      "instagram": "https://www.instagram.com/umegaaa/",
+      "tiktok": "https://www.tiktok.com/@chlsnmbl",
       "youtube": ""
     }
   },
@@ -2544,13 +2544,13 @@ const membersData = [
     "birthdate": "2000-11-08",
     "birthplace": "ジャカルタ",
     "generation": "7",
-    "remarks": "T; 元チームT（セリーヌ）; 16位",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）; 元チームT（セリーヌ）",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2020-08-22～2021-03-12",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/vionaafa_/",
       "tiktok": "",
       "youtube": ""
     }
@@ -2562,14 +2562,14 @@ const membersData = [
     "birthdate": "2000-06-16",
     "birthplace": "ジャカルタ",
     "generation": "6",
-    "remarks": "KIII; 2021年3月13日; 元チームKIII（ヨナ・グラシア）; -",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）; 元チームKIII（ヨナ・グラシア）",
     "status": "Graduate",
-    "graduation_date": "2021-03-13",
+    "graduation_date": "2019-07-21～2021-03-13",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/gudetasya",
+      "instagram": "https://www.instagram.com/gudetasya/",
+      "tiktok": "https://www.tiktok.com/@gudetasya",
       "youtube": ""
     }
   },
@@ -2580,15 +2580,15 @@ const membersData = [
     "birthdate": "2001-03-19",
     "birthplace": "西ジャワ州カラワン",
     "generation": "4",
-    "remarks": "KIII; 元チームT（メロディー・アヤナ）元チームKIII（ヨナ・グラシア）; 24位",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）; 元チームT（メロディー・アヤナ）元チームKIII（ヨナ・グラシア）",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2016-12-01～2021-03-13",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/fiachuuu",
+      "instagram": "https://www.instagram.com/fiachuuu/",
+      "tiktok": "https://www.tiktok.com/@fiachuuu",
+      "youtube": "https://www.youtube.com/@fiachuuu"
     }
   },
   {
@@ -2598,14 +2598,14 @@ const membersData = [
     "birthdate": "2003-05-14",
     "birthplace": "ジャカルタ",
     "generation": "6",
-    "remarks": "KIII; 元チームKIII（ヨナ・グラシア）; -",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）; 元チームKIII（ヨナ・グラシア）",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2018-12-29～2021-03-13",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/kandiyaaa",
+      "instagram": "https://www.instagram.com/kandiyaaa/",
+      "tiktok": "https://www.tiktok.com/@kandiyaaa",
       "youtube": ""
     }
   },
@@ -2616,14 +2616,14 @@ const membersData = [
     "birthdate": "1997-10-18",
     "birthplace": "南スマトラ州パレンバン",
     "generation": "5",
-    "remarks": "KIII; 元チームT（メロディー）元チームJ（シャニア〈第2次〉・シシル・ゲビー）元チームKIII（ヨナ・グラシア）; 04位",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）; チームT（メロディー）チームJ（シャニア〈第2次〉・シシル・ゲビー）元チームKIII（ヨナ・グラシア）",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2016-12-01～2021-03-13",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/ayastrophiile",
+      "instagram": "https://www.instagram.com/ayastrophiile/",
+      "tiktok": "https://www.tiktok.com/@ayastrophiile",
       "youtube": ""
     }
   },
@@ -2634,13 +2634,13 @@ const membersData = [
     "birthdate": "2003-09-13",
     "birthplace": "ジャカルタ",
     "generation": "6",
-    "remarks": "KIII; 元チームT（アヤナ）元チームKIII（ヨナ・グラシア）; 32位",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）;チームT（アヤナ）チームKIII（ヨナ・グラシア）",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2018-10-01～2021-03-13",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/rinandasyh",
       "tiktok": "",
       "youtube": ""
     }
@@ -2652,13 +2652,13 @@ const membersData = [
     "birthdate": "2000-05-10",
     "birthplace": "ジャカルタ",
     "generation": "4",
-    "remarks": "J; 2021年3月14日; 元チームT（メロディー・アヤナ）元チームJ（ゲビー・フリスカ）; -",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）;チームT（メロディー・アヤナ）チームJ（ゲビー・フリスカ）",
     "status": "Graduate",
-    "graduation_date": "2021-03-14",
+    "graduation_date": "2016-12-01～2021-03-14",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "https://x.com/lisaadrianii",
+      "instagram": "https://www.instagram.com/theadrni/",
       "tiktok": "",
       "youtube": ""
     }
@@ -2670,14 +2670,14 @@ const membersData = [
     "birthdate": "2006-01-06",
     "birthplace": "ジャカルタ",
     "generation": "8",
-    "remarks": "J; 元チームJ（フリスカ）; -",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）;チームJ（フリスカ）",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2020-08-22～2021-03-14",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/Afiiqaaahh",
+      "instagram": "https://www.instagram.com/amaninaafiqah/",
+      "tiktok": "https://www.tiktok.com/@afiqaah6",
       "youtube": ""
     }
   },
@@ -2688,14 +2688,14 @@ const membersData = [
     "birthdate": "1999-01-05",
     "birthplace": "中部ジャワ州ペカロンガン",
     "generation": "5",
-    "remarks": "J; 元チームJ（ゲビー・フリスカ）; 14位",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）;チームJ（ゲビー・フリスカ）",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2018-10-01～2021-03-14",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/dianiamalia_r",
+      "instagram": "https://www.instagram.com/dianiamalia.r/",
+      "tiktok": "https://www.tiktok.com/@itsdayeni",
       "youtube": ""
     }
   },
@@ -2706,14 +2706,14 @@ const membersData = [
     "birthdate": "2004-07-17",
     "birthplace": "リアウ諸島州バタム",
     "generation": "7",
-    "remarks": "J; 元チームT（アヤナ）元チームJ（ゲビー・フリスカ）; -",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）;チームT（アヤナ）チームJ（ゲビー・フリスカ）",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2019-07-21～2021-03-14",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/gbiyel",
+      "instagram": "https://www.instagram.com/gbiyel/",
+      "tiktok": "https://www.tiktok.com/@gbiyel",
       "youtube": ""
     }
   },
@@ -2726,12 +2726,12 @@ const membersData = [
     "generation": "7",
     "remarks": "J; 元チームT（アヤナ）元チームJ（ゲビー・フリスカ）; 25位",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2019-07-21～2021-03-14",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/kalalaa__/",
+      "tiktok": "https://www.tiktok.com/@kalalaa__",
       "youtube": ""
     }
   },
@@ -2742,13 +2742,13 @@ const membersData = [
     "birthdate": "2000-03-18",
     "birthplace": "中部ジャワ州バニュマス",
     "generation": "6",
-    "remarks": "J; 元チームJ（ゲビー・フリスカ）; 03位",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）;チームJ（ゲビー・フリスカ）",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2019-04-08～2021-03-14",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/___riskamelia/",
       "tiktok": "",
       "youtube": ""
     }
@@ -2760,33 +2760,34 @@ const membersData = [
     "birthdate": "2001-07-18",
     "birthplace": "ジャカルタ",
     "generation": "5",
-    "remarks": "J; 元チームJ（ゲビー・フリスカ）; 19位",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）;チームJ（ゲビー・フリスカ）",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2018-07-01～2021-03-14",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/ehjuliee",
+      "instagram": "https://www.instagram.com/akujulie/",
+      "tiktok": "https://www.tiktok.com/@ehjuliee",
+      "youtube": "https://www.youtube.com/@juliesania3888"
     }
   },
   {
     "id": 152,
     "name": "Zahra Nur",
     "nickname": "アラAra",
+
     "birthdate": "2003-08-05",
     "birthplace": "西ジャワ州プルワカルタ",
     "generation": "8",
-    "remarks": "-; 2021年8月25日; 解雇&#91;123&#93;元チームKIII（グラシア）; -",
+    "remarks": "-;義務および規約違反があったため解雇;チームKIII（グラシア）",
     "status": "Graduate",
-    "graduation_date": "2021-08-25",
+    "graduation_date": "2020-08-22～2021-08-25",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/imzahranur",
+      "instagram": "https://www.instagram.com/itszahranur",
+      "tiktok": "https://www.tiktok.com/@imzahranur",
+      "youtube": "https://www.youtube.com/@itszahranur"
     }
   },
   {
@@ -2796,13 +2797,13 @@ const membersData = [
     "birthdate": "2000-10-12",
     "birthplace": "バリ州デンパサール",
     "generation": "8",
-    "remarks": "-; 2021年11月27日; 元チームT（セリーヌ）; -",
+    "remarks": "卒業; 元チームT（セリーヌ）",
     "status": "Graduate",
-    "graduation_date": "2021-11-27",
+    "graduation_date": "2020-08-22～2021-11-27",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "https://x.com/MirMiraF",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -2814,14 +2815,14 @@ const membersData = [
     "birthdate": "2000-05-12",
     "birthplace": "ジャカルタ",
     "generation": "6",
-    "remarks": "-; 2022年02月12日; 元チームJ（ゲビー・フリスカ）妹はイヴ・アントワネット・イヒワン（元JKT48・5期生）; 29位",
+    "remarks": "姉妹で同日卒業; 2022年02月12日; 元チームJ（ゲビー・フリスカ）妹はイヴ（JKT48・5期生）",
     "status": "Graduate",
-    "graduation_date": "2022-02-12",
+    "graduation_date": "2018-10-01～2022-02-12",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/ariellacalistaa",
+      "instagram": "https://www.instagram.com/ariellacalistaa",
+      "tiktok": "https://www.tiktok.com/@ariellacalistaa",
       "youtube": ""
     }
   },
@@ -2832,14 +2833,14 @@ const membersData = [
     "birthdate": "2003-10-17",
     "birthplace": "ジャカルタ",
     "generation": "5",
-    "remarks": "-; 元チームT（メロディー・アヤナ）元チームJ（ゲビー・フリスカ）2018年11月7日アカデミークラスA降格&#91;124&#93;姉はアリエラ・カリスタ・イヒワン（元JKT48・6期生）; 19位",
+    "remarks": "姉妹で同日卒業; チームT（メロディー・アヤナ）元チームJ（ゲビー・フリスカ）；（2018年11月7日～2019年4月8日）アカデミークラスA降格;姉はアリエル（JKT48・6期生）",
     "status": "Graduate",
-    "graduation_date": "2018-11-07",
+    "graduation_date": "2016-12-01～2022-02-12",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/eveantoinette_",
+      "instagram": "https://www.instagram.com/eveantoinettei",
+      "tiktok": "https://www.tiktok.com/@eveantoinette_",
       "youtube": ""
     }
   },
@@ -2850,15 +2851,16 @@ const membersData = [
     "birthdate": "1999-01-05",
     "birthplace": "南スマトラ州パレンバン",
     "generation": "3",
-    "remarks": "-; 2022年5月29日; 元チームT（初代・仲川・アヤナ・セリーヌ）元チームKIII（フィニ・ヨナ・グラシア）元チームJ（ゲビー・フリスカ）; 10位",
+    "remarks": "卒業;チームT（初代・仲川・アヤナ・セリーヌ）チームKIII（フィニ・ヨナ・グラシア）チームJ（ゲビー・フリスカ）",
     "status": "Graduate",
-    "graduation_date": "2022-05-29",
+    "graduation_date": "2015-01-24～2022-05-29",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/anindthrc",
+      "instagram": "https://www.instagram.com/aanin.dithaa",
+      "instagram2": "https://www.instagram.com/arc.hiv333",
+      "tiktok": "https://www.tiktok.com/@anindthrc",
+      "youtube": "https://www.youtube.com/@anindithacahyadi"
     }
   },
   {
@@ -2868,15 +2870,16 @@ const membersData = [
     "birthdate": "1998-09-13",
     "birthplace": "中部ジャワ州プルウォケルト",
     "generation": "4",
-    "remarks": "-; 2022年7月17日; 元チームT（メロディー）元チームJ（シャニア〈第2次〉・シシル・ゲビー・フリスカ）; 07位",
+    "remarks": "卒業;チームT（メロディー）チームJ（シャニア〈第2次〉・シシル・ゲビー・フリスカ）",
     "status": "Graduate",
-    "graduation_date": "2022-07-17",
+    "graduation_date": "2016-12-01～2022-07-17",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/CindyHapsari_",
+      "instagram": "https://www.instagram.com/cindyhapsari98",
+      "instagram2": "https://www.instagram.com/cins.archives",
+      "tiktok": "https://www.tiktok.com/@cindy.hapsari",
+      "youtube": "https://www.youtube.com/@cindy.hapsari"
     }
   },
   {
@@ -2886,14 +2889,14 @@ const membersData = [
     "birthdate": "2001-08-21",
     "birthplace": "マレーシアジョホール州ジョホールバル",
     "generation": "4",
-    "remarks": "-; 2022年8月14日; 元チームT（メロディー・アヤナ・セリーヌ）元チームJ（ゲビー・フリスカ）元チームT（セリーヌ）キャプテン中国語名：陈紫薇（チェン・ズーウェイ）; 09位",
+    "remarks": "卒業;チームT（メロディー・アヤナ・セリーヌ）チームJ（ゲビー・フリスカ）；チームTキャプテン；中国語名：陈紫薇（チェン・ズーウェイ）",
     "status": "Graduate",
-    "graduation_date": "2022-08-14",
+    "graduation_date": "2016-12-01～2022-08-14",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/Celine_tzh",
+      "instagram": "https://www.instagram.com/celine.chenzw",
+      "tiktok": "https://www.tiktok.com/@celine.tzh",
       "youtube": ""
     }
   },
@@ -2904,15 +2907,15 @@ const membersData = [
     "birthdate": "1998-04-11",
     "birthplace": "ジャカルタ",
     "generation": "1",
-    "remarks": "-; 2022年8月15日; 元JKT48（初代）副キャプテン&#91;125&#93;元チームJ（初代・シャニア・シシル・ゲビー・フリスカ）元チームJ（ゲビー）キャプテン&#91;126&#93;; 13位",
+    "remarks": "卒業; JKT48（初代）副キャプテン;チームJ（初代・シャニア・シシル・ゲビー・フリスカ）；チームJキャプテン;JKT48 Band",
     "status": "Graduate",
-    "graduation_date": "2022-08-15",
+    "graduation_date": "2012-12-23～2022-08-15",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/gabywarouw4",
+      "instagram": "https://www.instagram.com/gaby.warouw",
+      "tiktok": "https://www.tiktok.com/@gabywarouw4",
+      "youtube": "https://www.youtube.com/@gabywarouw"
     }
   },
   {
@@ -2922,15 +2925,15 @@ const membersData = [
     "birthdate": "2001-08-18",
     "birthplace": "ジャカルタ",
     "generation": "7",
-    "remarks": "-; 2023年2月23日; 元チームT（セリーヌ）; 26位",
+    "remarks": "卒業;チームT（セリーヌ）",
     "status": "Graduate",
-    "graduation_date": "2023-02-23",
+    "graduation_date": "2020-08-22～2023-02-23",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/dheaangelialee",
+      "instagram": "https://www.instagram.com/dheaangelialee",
+      "tiktok": "https://www.tiktok.com/@dheaangelialee",
+      "youtube": "https://www.youtube.com/@dheaangelialee"
     }
   },
   {
@@ -2940,15 +2943,15 @@ const membersData = [
     "birthdate": "1999-06-08",
     "birthplace": "ジャカルタ",
     "generation": "4",
-    "remarks": "-; 2023年3月18日; 元JKT48（2代目）副キャプテン元チームT（メロディー・アヤナ）元チームKIII（ヨナ・グラシア）; 12位",
+    "remarks": "卒業; JKT48（2代目）副キャプテン；チームT（メロディー・アヤナ）チームKIII（ヨナ・グラシア）",
     "status": "Graduate",
-    "graduation_date": "2023-03-18",
+    "graduation_date": "2016-12-01～2023-03-18",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/Jinansafa_",
+      "instagram": "https://www.instagram.com/jinan.safaa",
+      "tiktok": "https://www.tiktok.com/@jinan.safa",
+      "youtube": "https://www.youtube.com/@jnnsafa"
     }
   },
   {
@@ -2958,15 +2961,15 @@ const membersData = [
     "birthdate": "2000-04-20",
     "birthplace": "バンテン州南タンゲラン",
     "generation": "7",
-    "remarks": "-; 2023年7月29日; 元チームT（セリーヌ）; -",
+    "remarks": "卒業; 元チームT（セリーヌ）; -",
     "status": "Graduate",
-    "graduation_date": "2023-07-29",
+    "graduation_date": "2020-08-22～2023-07-29",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/jesslynnn_ca",
+      "instagram": "https://www.instagram.com/jecallista",
+      "tiktok": "https://www.tiktok.com/@jecallista",
+      "youtube": "https://www.youtube.com/@ameisame"
     }
   },
   {
@@ -2976,15 +2979,15 @@ const membersData = [
     "birthdate": "2000-02-24",
     "birthplace": "ジャカルタ",
     "generation": "3",
-    "remarks": "-; 2023年9月2日; 元チームT（初代・仲川）元チームKIII（フィニ・ヨナ）元チームJ（ゲビー・フリスカ）; 30位",
+    "remarks": "卒業; チームT（初代・仲川）チームKIII（フィニ・ヨナ）チームJ（ゲビー・フリスカ）;JKT48 Acoustic；歌手として活動中",
     "status": "Graduate",
-    "graduation_date": "2023-09-02",
+    "graduation_date": "2015-01-24～2023-09-02",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/_siscasaras_",
+      "instagram": "https://www.instagram.com/_siscasaras_",
+      "tiktok": "https://www.tiktok.com/@siscasarass",
+      "youtube": "https://www.youtube.com/@SiscaSaras"
     }
   },
   {
@@ -2994,14 +2997,14 @@ const membersData = [
     "birthdate": "2002-09-24",
     "birthplace": "ジャカルタ",
     "generation": "7",
-    "remarks": "-; 2024年1月20日; 元チームKIII（ヨナ・グラシア）; 30位",
+    "remarks": "-; 2024年1月20日; 元チームKIII（ヨナ・グラシア）;スキャンダル活動停止処分",
     "status": "Graduate",
     "graduation_date": "2024-01-20",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/yessicatmra",
+      "instagram": "https://www.instagram.com/ye.chika",
+      "tiktok": "https://www.tiktok.com/@yessicatamara_24",
       "youtube": ""
     }
   },
@@ -3012,15 +3015,15 @@ const membersData = [
     "birthdate": "2005-01-08",
     "birthplace": "ジャカルタ",
     "generation": "9",
-    "remarks": "-; 2024年2月11日; 33-",
+    "remarks": "卒業；女優として活動中",
     "status": "Graduate",
-    "graduation_date": "2024-02-11",
+    "graduation_date": "2021-03-15～2024-02-11",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/asheladz",
+      "instagram": "https://www.instagram.com/asheladz",
+      "tiktok": "https://www.tiktok.com/@asheladz",
+      "youtube": "https://www.youtube.com/@adzanashel"
     }
   },
   {
@@ -3030,15 +3033,15 @@ const membersData = [
     "birthdate": "1998-10-05",
     "birthplace": "中部ジャワ州ケブメン",
     "generation": "3",
-    "remarks": "-; 2024年5月5日; 元JKT48（4代目）キャプテン元チームT（初代・仲川）元チームKIII（フィニ・ヨナ・グラシア）; 01位",
+    "remarks": "卒業;JKT48（4代目）キャプテン；チームT（初代・仲川）チームKIII（フィニ・ヨナ・グラシア）;劇場副総支配人",
     "status": "Graduate",
-    "graduation_date": "2024-05-05",
+    "graduation_date": "2015-01-24～2024-05-05",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
-      "youtube": ""
+      "x": "https://x.com/_shanindira",
+      "instagram": "https://www.instagram.com/_shanindira",
+      "tiktok": "https://www.tiktok.com/@_shanindira",
+      "youtube": "https://www.youtube.com/@shanindiraofficial"
     }
   },
   {
@@ -3048,14 +3051,14 @@ const membersData = [
     "birthdate": "2004-05-16",
     "birthplace": "ジャカルタ",
     "generation": "7",
-    "remarks": "-; 2024年8月25日; 元チームJ（ゲビー・フリスカ）; 33-",
+    "remarks": "卒業; チームJ（ゲビー・フリスカ）；在籍中から女優として活躍",
     "status": "Graduate",
-    "graduation_date": "2024-08-25",
+    "graduation_date": "2019-10-07～2024-08-25",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/_zeeasadel",
+      "instagram": "https://www.instagram.com/zeeasadel",
+      "tiktok": "https://www.tiktok.com/@_zeeasadel",
       "youtube": ""
     }
   },
@@ -3066,14 +3069,14 @@ const membersData = [
     "birthdate": "2006-07-14",
     "birthplace": "ジャカルタ",
     "generation": "8",
-    "remarks": "-; 2024年10月12日; 元チームT（セリーヌ）; 33-",
+    "remarks": "卒業; 元チームT（セリーヌ）",
     "status": "Graduate",
-    "graduation_date": "2024-10-12",
+    "graduation_date": "2020-08-22～2024-10-12",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/adelrevaaa",
+      "instagram": "https://www.instagram.com/adel.revaa",
+      "tiktok": "https://www.tiktok.com/@adel.revaa",
       "youtube": ""
     }
   },
@@ -3084,13 +3087,13 @@ const membersData = [
     "birthdate": "2005-08-08",
     "birthplace": "ジャカルタ",
     "generation": "10",
-    "remarks": "-; 2024年12月20日; 妹はライシャ・シファ（JKT48・10期生）; 33-",
+    "remarks": "辞退; 妹はライシャ・シファ（JKT48・10期生）;2度にわたり活動停止処分",
     "status": "Graduate",
-    "graduation_date": "2024-12-20",
+    "graduation_date": "2023-05-07～2024-12-20",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/callistaliciaa",
       "tiktok": "",
       "youtube": ""
     }
@@ -3102,14 +3105,14 @@ const membersData = [
     "birthdate": "2005-04-04",
     "birthplace": "バンテン州タンゲラン",
     "generation": "8",
-    "remarks": "-; 2025年3月5日; 元チームT（セリーヌ）; 33-",
+    "remarks": "活動辞退; チームT（セリーヌ）; （2024年11月14日～2025年2月10日）の活動停止処分",
     "status": "Graduate",
-    "graduation_date": "2025-03-05",
+    "graduation_date": "2020-08-22～2025-03-05",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/floraaargh",
+      "instagram": "https://www.instagram.com/florashaf",
+      "tiktok": "https://www.tiktok.com/@floshaf",
       "youtube": ""
     }
   },
@@ -3120,13 +3123,13 @@ const membersData = [
     "birthdate": "2004-04-26",
     "birthplace": "西ジャワ州バンドン",
     "generation": "10",
-    "remarks": "-; 2025年9月12日; 33-",
+    "remarks": "卒業;（2024年5月2日から7月11日まで）の活動停止処分",
     "status": "Graduate",
-    "graduation_date": "2025-09-12",
+    "graduation_date": "2023-05-07～2025-09-12",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "https://x.com/indiraseruni__",
+      "instagram": "https://www.instagram.com/indiraseruni__",
       "tiktok": "",
       "youtube": ""
     }
@@ -3678,14 +3681,14 @@ const membersData = [
     "birthdate": "2006-12-20",
     "birthplace": "バンテン州タンゲラン",
     "generation": "10",
-    "remarks": "2023年4月2日; 辞退&#91;141&#93;; -",
+    "remarks": "研究生；辞退",
     "status": "Graduate",
-    "graduation_date": "2023-04-02",
+    "graduation_date": "2023-04-03",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/jisellearn",
+      "tiktok": "https://www.tiktok.com/@jisellearn",
       "youtube": ""
     }
   },
@@ -3696,14 +3699,14 @@ const membersData = [
     "birthdate": "2007-01-19",
     "birthplace": "",
     "generation": "11",
-    "remarks": "辞退&#91;141&#93;; -",
+    "remarks": "研究生；辞退",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2023-04-03",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/auliaaassy/",
+      "tiktok": "https://www.tiktok.com/@auliaaassy",
       "youtube": ""
     }
   },
@@ -3714,13 +3717,13 @@ const membersData = [
     "birthdate": "2006-06-05",
     "birthplace": "ジャカルタ",
     "generation": "11",
-    "remarks": "2024年5月22日; 辞退; -",
+    "remarks": "信頼関係の欠如により解雇",
     "status": "Graduate",
     "graduation_date": "2024-05-22",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -3732,13 +3735,13 @@ const membersData = [
     "birthdate": "2006-01-31",
     "birthplace": "北スマトラ州メダン",
     "generation": "12",
-    "remarks": "2024年6月26日; 辞退; -",
+    "remarks": "健康上の理由と家庭の事情により辞退",
     "status": "Graduate",
     "graduation_date": "2024-06-26",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -3750,14 +3753,14 @@ const membersData = [
     "birthdate": "2010-06-07",
     "birthplace": "ジャカルタ",
     "generation": "12",
-    "remarks": "2025年5月1日; 辞退; -",
+    "remarks": "辞退",
     "status": "Graduate",
     "graduation_date": "2025-05-01",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/_letyciamoreen",
+      "tiktok": "https://www.tiktok.com/@_letyciamoreen",
       "youtube": ""
     }
   },
@@ -3768,13 +3771,13 @@ const membersData = [
     "birthdate": "2009-12-10",
     "birthplace": "中部ジャワ州スラカルタ",
     "generation": "12",
-    "remarks": "2025年8月18日; 辞退; -",
+    "remarks": "健康上の理由により辞退",
     "status": "Graduate",
     "graduation_date": "2025-08-18",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "https://x.com/_reginawilian",
+      "instagram": "https://www.instagram.com/_reginawilian",
       "tiktok": "",
       "youtube": ""
     }
@@ -3786,13 +3789,13 @@ const membersData = [
     "birthdate": "2001-01-13",
     "birthplace": "ジャカルタ",
     "generation": "6",
-    "remarks": "B; 2018年4月21日; &#91;145&#93;",
+    "remarks": "研究生がアカデミー制になり初の辞退者；Bクラス;",
     "status": "Graduate",
     "graduation_date": "2018-04-21",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -3804,13 +3807,13 @@ const membersData = [
     "birthdate": "2001-12-23",
     "birthplace": "ジャカルタ",
     "generation": "6",
-    "remarks": "A; 2018年8月21日; &#91;146&#93;",
+    "remarks": "アカデミーAクラスからの退会",
     "status": "Graduate",
     "graduation_date": "2018-08-21",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -3822,13 +3825,13 @@ const membersData = [
     "birthdate": "2004-11-22",
     "birthplace": "ジョグジャカルタ",
     "generation": "7",
-    "remarks": "B; 2018年10月6日; 入学辞退&#91;147&#93;",
+    "remarks": "JKT48アカデミーBクラス辞退",
     "status": "Graduate",
     "graduation_date": "2018-10-06",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -3840,13 +3843,13 @@ const membersData = [
     "birthdate": "2001-12-25",
     "birthplace": "東ジャワ州スラバヤ",
     "generation": "6",
-    "remarks": "A; 2018年11月1日; 退学&#91;148&#93;",
+    "remarks": "アカデミークラスA退学",
     "status": "Graduate",
     "graduation_date": "2018-11-01",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -3858,13 +3861,13 @@ const membersData = [
     "birthdate": "2003-08-20",
     "birthplace": "",
     "generation": "6",
-    "remarks": "A; 2018年12月12日; &#91;149&#93;",
+    "remarks": "A;JKT48アカデミーからの退会",
     "status": "Graduate",
     "graduation_date": "2018-12-12",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -3876,13 +3879,13 @@ const membersData = [
     "birthdate": "2000-04-16",
     "birthplace": "ジャカルタ",
     "generation": "6",
-    "remarks": "A; 2019年1月24日; &#91;150&#93;",
+    "remarks": "アカデミーAクラス辞退",
     "status": "Graduate",
     "graduation_date": "2019-01-24",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -3894,13 +3897,13 @@ const membersData = [
     "birthdate": "2002-07-15",
     "birthplace": "南カリマンタン州バンジャルマシン",
     "generation": "7",
-    "remarks": "B; &#91;150&#93;",
+    "remarks": "アカデミーBクラス辞退",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2019-01-24",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/callistalea",
       "tiktok": "",
       "youtube": ""
     }
@@ -3912,13 +3915,13 @@ const membersData = [
     "birthdate": "2004-03-05",
     "birthplace": "西ジャワ州ボゴール",
     "generation": "6",
-    "remarks": "A; 2019年6月15日; &#91;151&#93;",
+    "remarks": "アカデミーAクラス退会",
     "status": "Graduate",
     "graduation_date": "2019-06-15",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/graciellarth",
       "tiktok": "",
       "youtube": ""
     }
@@ -3930,13 +3933,13 @@ const membersData = [
     "birthdate": "2000-05-10",
     "birthplace": "西ジャワ州デポック",
     "generation": "7",
-    "remarks": "A; 2019年9月13日; &#91;152&#93;",
+    "remarks": "アカデミーAクラス退会",
     "status": "Graduate",
     "graduation_date": "2019-09-13",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/ftmsr.rf",
       "tiktok": "",
       "youtube": ""
     }
@@ -3948,13 +3951,13 @@ const membersData = [
     "birthdate": "2004-11-03",
     "birthplace": "ジャカルタ",
     "generation": "8",
-    "remarks": "A; 2019年12月30日; &#91;153&#93;",
+    "remarks": "アカデミークラスA退会",
     "status": "Graduate",
     "graduation_date": "2019-12-30",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/revaadrianaaa/",
       "tiktok": "",
       "youtube": ""
     }
@@ -3966,13 +3969,13 @@ const membersData = [
     "birthdate": "2003-10-03",
     "birthplace": "ジャカルタ",
     "generation": "8",
-    "remarks": "A; 2020年2月7日; &#91;154&#93;",
+    "remarks": "アカデミークラスA退会",
     "status": "Graduate",
     "graduation_date": "2020-02-07",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/pamelakrysanthe/",
       "tiktok": "",
       "youtube": ""
     }
@@ -3984,13 +3987,13 @@ const membersData = [
     "birthdate": "2003-10-13",
     "birthplace": "バンテン州タンゲラン",
     "generation": "9",
-    "remarks": "A; 2020年2月17日; &#91;155&#93;",
+    "remarks": "アカデミークラスA退会",
     "status": "Graduate",
     "graduation_date": "2020-02-17",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -4002,13 +4005,13 @@ const membersData = [
     "birthdate": "2001-03-29",
     "birthplace": "ジャカルタ",
     "generation": "9",
-    "remarks": "A; &#91;155&#93;",
+    "remarks": "アカデミークラスA退会",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2020-02-17",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -4020,13 +4023,13 @@ const membersData = [
     "birthdate": "2002-11-22",
     "birthplace": "バリ州デンパサール",
     "generation": "8",
-    "remarks": "A; 2020年3月30日; &#91;156&#93;",
+    "remarks": "アカデミークラスA退会",
     "status": "Graduate",
     "graduation_date": "2020-03-30",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -4038,13 +4041,13 @@ const membersData = [
     "birthdate": "2003-04-18",
     "birthplace": "ジャカルタ",
     "generation": "8",
-    "remarks": "A; 2020年5月16日; &#91;157&#93;",
+    "remarks": "アカデミークラスA退会",
     "status": "Graduate",
     "graduation_date": "2020-05-16",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -4056,13 +4059,13 @@ const membersData = [
     "birthdate": "2002-03-23",
     "birthplace": "西ジャワ州ブカシ",
     "generation": "7",
-    "remarks": "A; 2020年7月29日; &#91;158&#93;",
+    "remarks": "アカデミークラスA退会",
     "status": "Graduate",
     "graduation_date": "2020-07-29",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -4074,13 +4077,13 @@ const membersData = [
     "birthdate": "2000-08-16",
     "birthplace": "ジャカルタ",
     "generation": "8",
-    "remarks": "A; 2020年9月1日; &#91;159&#93;",
+    "remarks": "アカデミークラスA退会",
     "status": "Graduate",
     "graduation_date": "2020-09-01",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "",
       "tiktok": "",
       "youtube": ""
     }
@@ -4092,13 +4095,13 @@ const membersData = [
     "birthdate": "2004-10-07",
     "birthplace": "ジャカルタ",
     "generation": "6",
-    "remarks": "A; 2020年9月22日; 解雇&#91;160&#93;",
+    "remarks": "JKT48メンバーとして不適切な行為を行ったためアカデミークラスA解雇",
     "status": "Graduate",
     "graduation_date": "2020-09-22",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/shalzaaaaaa/",
       "tiktok": "",
       "youtube": ""
     }
@@ -4110,15 +4113,15 @@ const membersData = [
     "birthdate": "2009-03-26",
     "birthplace": "東ジャワ州スラバヤ",
     "generation": "9",
-    "remarks": "A; 2021年3月11日",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）アカデミー クラスA；姉はクリスタベル・ジョセリン；JKT48史上最年少で加入（ 2019年12月1日時点で10歳250日）",
     "status": "Graduate",
     "graduation_date": "2021-03-11",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/caithlyn.g/",
       "tiktok": "",
-      "youtube": ""
+      "youtube": "https://www.youtube.com/@gwynethcaithlyn"
     }
   },
   {
@@ -4128,14 +4131,14 @@ const membersData = [
     "birthdate": "2006-03-01",
     "birthplace": "東ジャワ州シドアルジョ",
     "generation": "9",
-    "remarks": "A",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）アカデミー クラスA；女優として活動",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2021-03-11",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/EllysiaChalista",
+      "instagram": "https://www.instagram.com/chalistaellysia/",
+      "tiktok": "https://www.tiktok.com/@chalista_ellysia",
       "youtube": ""
     }
   },
@@ -4146,14 +4149,14 @@ const membersData = [
     "birthdate": "2007-08-17",
     "birthplace": "東ジャワ州スラバヤ",
     "generation": "9",
-    "remarks": "A",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）アカデミー クラスA；妹はケイトリン・グイネット",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2021-03-11",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/christa.abell/",
+      "tiktok": "https://www.tiktok.com/@christa.abell",
       "youtube": ""
     }
   },
@@ -4164,14 +4167,14 @@ const membersData = [
     "birthdate": "2007-06-09",
     "birthplace": "ジャカルタ",
     "generation": "8",
-    "remarks": "A",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）アカデミー クラスA",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2021-03-11",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/C_Nunu05",
+      "instagram": "https://www.instagram.com/nunu.ydnic/",
+      "tiktok": "https://www.tiktok.com/@nunu.real2",
       "youtube": ""
     }
   },
@@ -4182,14 +4185,14 @@ const membersData = [
     "birthdate": "2000-02-03",
     "birthplace": "ジャカルタ",
     "generation": "7",
-    "remarks": "A",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）アカデミー クラスA",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2021-03-11",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/giraffebiii/",
+      "instagram": "https://www.instagram.com/giraffebiii/",
+      "tiktok": "https://www.tiktok.com/@giraffebiii",
       "youtube": ""
     }
   },
@@ -4200,14 +4203,14 @@ const membersData = [
     "birthdate": "2002-02-17",
     "birthplace": "西ジャワ州ブカシ",
     "generation": "7",
-    "remarks": "A",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）アカデミー クラスA",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2021-03-11",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/Fbrn_bri",
+      "instagram": "https://www.instagram.com/fbrnbrin/",
+      "tiktok": "https://www.tiktok.com/@f_brina",
       "youtube": ""
     }
   },
@@ -4218,14 +4221,14 @@ const membersData = [
     "birthdate": "2002-05-22",
     "birthplace": "ジャカルタ",
     "generation": "8",
-    "remarks": "A",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）アカデミー クラスA",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2021-03-11",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/gabstevany",
+      "instagram": "https://www.instagram.com/gabstevany/",
+      "tiktok": "https://www.tiktok.com/@gabstevany",
       "youtube": ""
     }
   },
@@ -4236,13 +4239,13 @@ const membersData = [
     "birthdate": "2004-11-10",
     "birthplace": "ジャカルタ",
     "generation": "8",
-    "remarks": "A",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）アカデミー クラスA",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2021-03-11",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "https://x.com/_rkeisya",
+      "instagram": "https://www.instagram.com/_rkeisya/",
       "tiktok": "",
       "youtube": ""
     }
@@ -4254,13 +4257,13 @@ const membersData = [
     "birthdate": "2005-06-22",
     "birthplace": "ジャカルタ",
     "generation": "9",
-    "remarks": "A",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）アカデミー クラスA",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2021-03-11",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/nyabirra/",
       "tiktok": "",
       "youtube": ""
     }
@@ -4272,14 +4275,14 @@ const membersData = [
     "birthdate": "2006-05-19",
     "birthplace": "西ジャワ州デポック",
     "generation": "9",
-    "remarks": "A",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）アカデミー クラスA",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2021-03-11",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "",
+      "instagram": "https://www.instagram.com/putriiielzahra_/",
+      "tiktok": "https://www.tiktok.com/@putrielzahra_",
       "youtube": ""
     }
   },
@@ -4290,49 +4293,85 @@ const membersData = [
     "birthdate": "2003-06-07",
     "birthplace": "バンテン州タンゲラン",
     "generation": "9",
-    "remarks": "A",
+    "remarks": "グループの存続のためのJKT48再編（特別卒業式）アカデミー クラスA",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2021-03-11",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
-      "tiktok": "",
+      "x": "https://x.com/shintadvs",
+      "instagram": "https://www.instagram.com/shintaadvs/",
+      "tiktok": "https://www.tiktok.com/@shintadvs",
       "youtube": ""
     }
   },
   {
     "id": 237,
-    "name": "アユ・サフィラ・オクタフィアニ",
-    "nickname": "T",
-    "birthdate": "2019-04-23",
+    "name": "Iris Vevina Prasetio",
+    "nickname": "イリスIris",
+    "birthdate": "2003-08-05",
     "birthplace": "-",
-    "generation": "",
-    "remarks": "",
+    "generation": "9",
+    "remarks": "アカデミークラスB退会",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2019-12-30",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/irisvvina/",
       "tiktok": "",
       "youtube": ""
     }
   },
   {
     "id": 238,
-    "name": "不明",
-    "nickname": "8期",
-    "birthdate": "2020-02-07",
+    "name": "Abieza Syabira",
+    "nickname": "アビエザAbieza",
+    "birthdate": "2002-04-05",
     "birthplace": "-",
-    "generation": "",
-    "remarks": "",
+    "generation": "10",
+    "remarks": "2020年8月27日にライブ配信で10期メンバー11人が発表された。しかし、12月4日、 COVID-19パンデミックによる内部危機のため、10期生は解散される 2021年12月18日、そのうち8人がグループに復帰。彼女は戻ってこなかった",
     "status": "Graduate",
-    "graduation_date": null,
+    "graduation_date": "2020-12-04",
     "relationship": "",
     "socials": {
-      "x": "https://twitter.com/REPLACE_ME",
-      "instagram": "https://instagram.com/REPLACE_ME",
+      "x": "",
+      "instagram": "https://www.instagram.com/abiezasy/",
+      "tiktok": "",
+      "youtube": ""
+    }
+  },
+  {
+    "id": 239,
+    "name": "Danessa Valerie Hertanto",
+    "nickname": "ダネッサDanessa",
+    "birthdate": "2002-04-04",
+    "birthplace": "-",
+    "generation": "10",
+    "remarks": "2020年8月27日にライブ配信で10期メンバー11人が発表された。しかし、12月4日、 COVID-19パンデミックによる内部危機のため、10期生は解散される 2021年12月18日、そのうち8人がグループに復帰。彼女は戻ってこなかった",
+    "status": "Graduate",
+    "graduation_date": "2020-12-04",
+    "relationship": "",
+    "socials": {
+      "x": "",
+      "instagram": "",
+      "tiktok": "",
+      "youtube": ""
+    }
+  },
+  {
+    "id": 240,
+    "name": "Naura Safinatunnajah",
+    "nickname": "ナウラNaura",
+    "birthdate": "2003-08-20",
+    "birthplace": "-",
+    "generation": "10",
+    "remarks": "2020年8月27日にライブ配信で10期メンバー11人が発表された。しかし、12月4日、 COVID-19パンデミックによる内部危機のため、10期生は解散される 2021年12月18日、そのうち8人がグループに復帰。彼女は戻ってこなかった",
+    "status": "Graduate",
+    "graduation_date": "2020-12-04",
+    "relationship": "",
+    "socials": {
+      "x": "",
+      "instagram": "https://www.instagram.com/nauraasfn/",
       "tiktok": "",
       "youtube": ""
     }
