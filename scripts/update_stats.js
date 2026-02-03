@@ -32,19 +32,21 @@ function loadMembers() {
 }
 
 // 既存のsns_data.jsを読み込んで前回のデータを取得
+// 既存のsns_data.jsを読み込んで前回のデータを取得
 function loadPreviousStats() {
     const content = loadFile(path.join(__dirname, '../sns_data.js'));
     if (!content) return {};
 
-    // `const snsStats = {};` ... `(function(){ ... })()` の構造になっている
-    // 単純なJSON構造ではないため、正規表現で過去のデータブロックを探すのは困難
-    // 解決策: sns_data.js は「結果ファイル」として扱い、
-    // 実データは別途 `sns_history.json` などを保存する方が安定的だが、
-    // 今回は簡易化のため、前回の値が取れなければ 0 スタートとする
-
-    // 実運用では、前回の数値を保持するJSONファイルをGitで管理するのがベストです。
-    // 今回はデモとして「毎回取得のみ」にフォーカスし、差分計算は
-    // もし前回のデータがあれば行う、なければ0にする実装にします。
+    // ファイル内容から snsStats オブジェクト部分を抽出してパースする
+    // 想定形式: const snsStats = { ... };
+    try {
+        const match = content.match(/const snsStats\s*=\s*(\{[\s\S]*\});?/);
+        if (match && match[1]) {
+            return eval(`(${match[1]})`);
+        }
+    } catch (e) {
+        console.error("Failed to parse previous sns_data.js", e);
+    }
     return {};
 }
 
@@ -123,48 +125,67 @@ function parseCount(str) {
     // Set User Agent to avoid immediate blocking
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
 
-    const newStats = {};
+    // Load previous stats to use as fallback
+    const prevStats = loadPreviousStats();
 
     console.log(`Starting update for ${members.length} members...`);
 
-    // Loop through members
-    // In real usage, process in chunks to avoid timeouts
-    // For demo, we limit to first 3 to show concept, or mocking the rest
     for (const member of members) {
-        console.log(`Checking ${member.name}...`);
+        console.log(`Checking ${member.name} (ID: ${member.id})...`);
 
-        // Mocking Real Scraping for the demo purpose because
-        // 1. Scraping takes time
-        // 2. Headless browsers in GitHub Actions often get blocked by IG/TikTok
-        // 3. We want to show the USER valid JS output.
+        // Get previous data for this member
+        const prev = prevStats[member.id] || {
+            x: 0,
+            instagram: 0,
+            tiktok: 0,
+            x_diff: 0,
+            ig_diff: 0,
+            tk_diff: 0
+        };
 
-        // logic:
-        // const ig = await scrapeProfile(page, member.socials.instagram, 'instagram');
-        // const tk = await scrapeProfile(page, member.socials.tiktok, 'tiktok');
+        let igCount = prev.instagram;
+        let tkCount = prev.tiktok;
 
-        // 代わりに、デモ用にランダムに微増させるロジックをJSで書きます
-        // 本番ではここを上記の `scrapeProfile` に置き換えます。
+        // Real Scraping Attempt (Best Effort)
+        if (member.socials) {
+            // Instagram
+            if (member.socials.instagram) {
+                const scrapedIg = await scrapeProfile(page, member.socials.instagram, 'instagram');
+                if (scrapedIg !== null && scrapedIg > 0) {
+                    igCount = scrapedIg;
+                }
+            }
 
-        if (!member.socials) continue;
+            // TikTok
+            if (member.socials.tiktok) {
+                const scrapedTk = await scrapeProfile(page, member.socials.tiktok, 'tiktok');
+                if (scrapedTk !== null && scrapedTk > 0) {
+                    tkCount = scrapedTk;
+                }
+            }
+        }
 
-        // Mock data logic (Simulating "Read from Web")
-        // Initialize base if not exists (simulated)
-        const currentTotalMock = 100000;
+        // Calculate diffs (Simple comparison)
+        const igDiff = igCount - prev.instagram;
+        const tkDiff = tkCount - prev.tiktok;
 
+        // Update stats
         newStats[member.id] = {
             id: member.id,
             name: member.name,
-            x: 0, // X is hard to scrape
-            instagram: Math.floor(Math.random() * 500000),
-            tiktok: Math.floor(Math.random() * 500000),
-            total: 0,
-            x_diff: Math.floor(Math.random() * 10),
-            ig_diff: Math.floor(Math.random() * 100),
-            tk_diff: Math.floor(Math.random() * 100),
-            socials: member.socials // Keep links
+            x: prev.x, // X is skipped
+            instagram: igCount,
+            tiktok: tkCount,
+            total: prev.x + igCount + tkCount,
+            x_diff: 0,
+            ig_diff: igDiff,
+            tk_diff: tkDiff,
+            socials: member.socials,
+            total_diff: igDiff + tkDiff
         };
-        newStats[member.id].total = newStats[member.id].x + newStats[member.id].instagram + newStats[member.id].tiktok;
-        newStats[member.id].total_diff = newStats[member.id].x_diff + newStats[member.id].ig_diff + newStats[member.id].tk_diff;
+
+        // Logs for debugging
+        console.log(`  -> IG: ${igCount} (${igDiff >= 0 ? '+' : ''}${igDiff}), TK: ${tkCount} (${tkDiff >= 0 ? '+' : ''}${tkDiff})`);
     }
 
     await browser.close();
