@@ -28,17 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function filterMembers(type) {
-        if (type === 'Ranking') {
-            membersContainer.classList.remove('members-grid');
-            renderRanking();
-            return;
-        } else if (type === 'Links') {
-            membersContainer.classList.remove('members-grid');
-            renderLinks();
-            return;
-        } else {
-            membersContainer.classList.add('members-grid');
-        }
+        // Clear container class - we will handle layout inside render functions
+        membersContainer.className = '';
 
         const filtered = allMembers.filter(member => member.status === type);
 
@@ -59,7 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     return a.localeCompare(b);
                 }
             );
+        } else if (type === 'Ranking') {
+            renderRanking();
+        } else if (type === 'Links') {
+            renderLinks();
         } else {
+            // Trainee and others
             renderGrid(filtered, type === 'Staff');
         }
     }
@@ -68,13 +64,18 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderGrid(members, isStaff) {
         membersContainer.innerHTML = '';
         if (members.length === 0) {
-            membersContainer.innerHTML = '<p style="color:var(--text-muted); text-align:center; grid-column: 1/-1;">No members found.</p>';
+            membersContainer.innerHTML = '<div class="content-container"><p style="color:var(--text-muted); text-align:center;">No members found.</p></div>';
             return;
         }
 
+        const container = document.createElement('div');
+        container.className = 'content-container members-grid'; // Combine width limit and grid layout
+
         members.forEach((member, index) => {
-            membersContainer.appendChild(createCard(member, isStaff, index));
+            container.appendChild(createCard(member, isStaff, index));
         });
+
+        membersContainer.appendChild(container);
     }
 
     function renderGrouped(members, field, titleFn, sortFn = null) {
@@ -108,8 +109,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // ナビゲーション (Chips) の作成 - コンテナ直下（全幅）
         if (keys.length > 3) { // グループが多い場合のみ表示
+            const navWrapper = document.createElement('div');
+            navWrapper.className = 'nav-wrapper';
+
             const nav = document.createElement('div');
             nav.className = 'group-nav';
+
             keys.forEach(key => {
                 const btn = document.createElement('button');
                 btn.className = 'nav-chip';
@@ -134,7 +139,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
                 nav.appendChild(btn);
             });
-            membersContainer.appendChild(nav);
+            navWrapper.appendChild(nav);
+            membersContainer.appendChild(navWrapper);
         }
 
         // コンテンツ用のコンテナを作成（幅制限あり）
