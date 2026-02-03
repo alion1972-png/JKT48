@@ -179,7 +179,148 @@ document.addEventListener('DOMContentLoaded', () => {
         membersContainer.appendChild(contentContainer);
     }
 
-    // ...
+    function createCard(member, isStaff, index) {
+        const card = document.createElement('div');
+        card.className = 'member-card';
+        card.style.animationDelay = `${index * 0.05}s`;
+
+        const content = document.createElement('div');
+        content.className = 'card-content';
+
+        const name = document.createElement('h3');
+        name.className = 'member-name';
+        name.textContent = member.name;
+        content.appendChild(name);
+
+        if (member.nickname) {
+            const nick = document.createElement('div');
+            nick.className = 'member-nickname';
+            nick.textContent = member.nickname;
+            content.appendChild(nick);
+        }
+
+        const details = document.createElement('div');
+        details.className = 'member-details';
+
+        if (member.birthdate) {
+            details.innerHTML += `<span><span class="label">Birth:</span> ${member.birthdate}</span>`;
+        }
+        if (member.bloodType) {
+            details.innerHTML += `<span><span class="label">Blood:</span> ${member.bloodType}</span>`;
+        }
+        if (member.height) {
+            details.innerHTML += `<span><span class="label">Height:</span> ${member.height}</span>`;
+        }
+        if (member.generation) {
+            details.innerHTML += `<span><span class="label">Gen:</span> ${member.generation}</span>`;
+        }
+        content.appendChild(details);
+
+        const badge = document.createElement('span');
+        badge.className = `status-badge status-${member.status}`;
+        badge.textContent = member.status;
+        content.appendChild(badge);
+
+        if (member.socials) {
+            const socialDiv = document.createElement('div');
+            socialDiv.className = 'social-links';
+            Object.keys(member.socials).forEach(platform => {
+                const url = member.socials[platform];
+                if (url) {
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.target = '_blank';
+                    let iconClass = '';
+                    switch (platform) {
+                        case 'x': iconClass = 'fa-brands fa-x-twitter'; break;
+                        case 'tiktok': iconClass = 'fa-brands fa-tiktok'; break;
+                        case 'instagram': iconClass = 'fa-brands fa-instagram'; break;
+                        case 'youtube': iconClass = 'fa-brands fa-youtube'; break;
+                        default: iconClass = 'fa-solid fa-link';
+                    }
+                    a.innerHTML = `<i class="${iconClass}"></i>`;
+                    socialDiv.appendChild(a);
+                }
+            });
+            content.appendChild(socialDiv);
+        }
+
+        card.appendChild(content);
+        return card;
+    }
+
+    function renderRanking() {
+        membersContainer.innerHTML = '';
+        const container = document.createElement('div');
+        container.className = 'content-container';
+
+        const header = document.createElement('h2');
+        header.textContent = 'SNS Follower Ranking';
+        header.style.color = '#fff';
+        header.style.fontFamily = 'var(--font-heading)';
+        header.style.marginBottom = '1.5rem';
+        header.style.borderLeft = '5px solid var(--primary)';
+        header.style.paddingLeft = '1rem';
+        container.appendChild(header);
+
+        if (typeof snsStats === 'undefined' || !snsStats || Object.keys(snsStats).length === 0) {
+            container.innerHTML += '<p style="color:var(--text-muted)">No ranking data available.</p>';
+            membersContainer.appendChild(container);
+            return;
+        }
+
+        const sortedTotal = Object.values(snsStats).sort((a, b) => b.total - a.total);
+        const sortedGrowth = Object.values(snsStats).sort((a, b) => b.total_diff - a.total_diff);
+
+        const grid = document.createElement('div');
+        grid.style.display = 'grid';
+        grid.style.gridTemplateColumns = 'repeat(auto-fit, minmax(350px, 1fr))';
+        grid.style.gap = '2rem';
+
+        // Total Ranking
+        const totalSection = document.createElement('div');
+        totalSection.className = 'ranking-section';
+        totalSection.innerHTML = `
+            <div class="ranking-header"><h3><i class="fa-solid fa-trophy"></i> Total Followers</h3></div>
+            <div class="ranking-list">
+                ${sortedTotal.slice(0, 10).map((s, i) => `
+                    <div class="ranking-item rank-${i + 1}">
+                        <div class="rank-num">${i + 1}</div>
+                        <div class="rank-name">${s.name} <span class="rank-team">JKT48</span></div>
+                        <div class="rank-val">
+                            <span class="main-val">${s.total.toLocaleString()}</span>
+                            <span class="diff-val ${s.total_diff >= 0 ? 'pos' : 'neg'}">
+                                ${s.total_diff >= 0 ? '+' : ''}${s.total_diff.toLocaleString()}
+                            </span>
+                        </div>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+        grid.appendChild(totalSection);
+
+        // Growth Ranking
+        const growthSection = document.createElement('div');
+        growthSection.className = 'ranking-section';
+        growthSection.innerHTML = `
+            <div class="ranking-header"><h3><i class="fa-solid fa-arrow-trend-up"></i> Daily Growth</h3></div>
+            <div class="ranking-list">
+                ${sortedGrowth.slice(0, 10).map((s, i) => `
+                    <div class="ranking-item rank-${i + 1}">
+                        <div class="rank-num">${i + 1}</div>
+                        <div class="rank-name">${s.name}</div>
+                        <div class="rank-val">
+                            <span class="main-val" style="color:#4cd964">+${s.total_diff.toLocaleString()}</span>
+                        </div>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+        grid.appendChild(growthSection);
+
+        container.appendChild(grid);
+        membersContainer.appendChild(container);
+    }
 
     function renderLinks() {
         membersContainer.innerHTML = '';
