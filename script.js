@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // ナビゲーション (Chips) の作成
+        // ナビゲーション (Chips) の作成 - コンテナ直下（全幅）
         if (keys.length > 3) { // グループが多い場合のみ表示
             const nav = document.createElement('div');
             nav.className = 'group-nav';
@@ -137,6 +137,10 @@ document.addEventListener('DOMContentLoaded', () => {
             membersContainer.appendChild(nav);
         }
 
+        // コンテンツ用のコンテナを作成（幅制限あり）
+        const contentContainer = document.createElement('div');
+        contentContainer.className = 'content-container';
+
         keys.forEach(key => {
             // 見出し
             const cleanKey = key.replace(/\s+/g, '-');
@@ -144,223 +148,38 @@ document.addEventListener('DOMContentLoaded', () => {
             header.className = 'generation-section';
             header.id = `group-${cleanKey}`; // Navigation target
             header.innerHTML = `<h3 class="generation-title">${titleFn(key)}</h3>`;
-            membersContainer.appendChild(header);
+            contentContainer.appendChild(header);
 
-            // 中身
+            // 中身 - このセクション用のGridコンテナを作るなどしてもいいが、
+            // シンプルにCardを追加していく。CSS gridレイアウト調整のため、
+            // ここでは generation-section ごとに区切らず、フラットに並べるか、
+            // あるいは generation 単位でサブコンテナを作る。
+            // 既存のCSS (.members-grid) との兼ね合いで、
+            // style.cssで .content-container に .members-grid のようなグリッドを与えるか、
+            // あるいはここでサブコンテナを作る。
+            // 今回は、各グループをサブコンテナにするのが綺麗（見出しとの関係上）。
+
+            const subGrid = document.createElement('div');
+            subGrid.className = 'members-grid'; // Use grid style within container
+            subGrid.style.width = '100%'; // Ensure full width of parent
+            subGrid.style.padding = '0'; // Remove default padding of .members-grid inside here
+
             grouped[key].forEach((member, i) => {
-                membersContainer.appendChild(createCard(member, false, i));
+                subGrid.appendChild(createCard(member, false, i));
             });
-        });
-    }
-
-    function createCard(member, isStaff, delayIndex) {
-        const card = document.createElement('article');
-        card.className = 'member-card';
-        // Reset delay for each section if grouped, but simple delay works too
-        card.style.animationDelay = `${(delayIndex % 20) * 0.05}s`;
-
-        let socialHtml = '';
-        if (member.socials) {
-            // Helper to get non-empty link
-            const getLink = (keys) => {
-                if (!Array.isArray(keys)) keys = [keys];
-                for (const key of keys) {
-                    const val = member.socials[key];
-                    if (val && val.trim() !== "") return val;
-                }
-                return null;
-            };
-
-            const xLink = getLink(['x', 'twitter']);
-            // Support both 'instagram' and 'ig' just in case
-            const igLink = getLink(['instagram', 'ig']);
-            const ttLink = getLink('tiktok');
-            const ytLink = getLink('youtube');
-
-            if (xLink) socialHtml += `<a href="${xLink}" target="_blank" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>`;
-            if (igLink) socialHtml += `<a href="${igLink}" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>`;
-            if (ttLink) socialHtml += `<a href="${ttLink}" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>`;
-            if (ytLink) socialHtml += `<a href="${ytLink}" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>`;
-        }
-
-        // Detail Fields
-        let detailsHtml = '';
-        if (isStaff) {
-            detailsHtml += `<span><span class="label">Role:</span> ${member.relationship || 'Staff'}</span>`;
-        } else {
-            detailsHtml += `<span><span class="label">Gen:</span> ${member.generation}</span>`;
-            detailsHtml += `<span><span class="label">Birthday:</span> ${member.birthdate}</span>`;
-            detailsHtml += `<span><span class="label">Origin:</span> ${member.birthplace || '-'}</span>`; // Separated
-            if (member.graduation_date) {
-                detailsHtml += `<span><span class="label">Graduated:</span> ${member.graduation_date}</span>`;
-            }
-        }
-
-        if (member.remarks) {
-            detailsHtml += `<span class="member-remarks">Note: ${member.remarks}</span>`;
-        }
-
-        card.innerHTML = `
-            <div class="card-content">
-                <span class="status-badge status-${member.status}">${member.status}</span>
-                <h3 class="member-name">${member.name}</h3>
-                ${!isStaff ? `<p class="member-nickname">${member.nickname}</p>` : ''}
-                
-                <div class="member-details">
-                    ${detailsHtml}
-                </div>
-
-                <div class="social-links">
-                    ${socialHtml}
-                </div>
-            </div>
-        `;
-        return card;
-    }
-
-    function renderRanking() {
-        membersContainer.innerHTML = '';
-
-        // 更新日時の表示
-        if (typeof lastUpdated !== 'undefined') {
-            const dateDisplay = document.createElement('div');
-            dateDisplay.style.textAlign = 'right';
-            dateDisplay.style.color = 'var(--text-muted)';
-            dateDisplay.style.marginBottom = '1rem';
-            dateDisplay.style.fontSize = '0.9rem';
-            dateDisplay.innerHTML = `<i class="fa-regular fa-clock"></i> Data updated: ${lastUpdated}`;
-            membersContainer.appendChild(dateDisplay);
-        }
-
-        // Helper to attach stats
-        const attachStats = (members) => members.map(m => {
-            const stats = (typeof snsStats !== 'undefined' && snsStats[m.id]) ? snsStats[m.id] : null;
-            return {
-                ...m,
-                stats: stats || { x: 0, instagram: 0, tiktok: 0, total: 0, x_diff: 0, ig_diff: 0, tk_diff: 0, total_diff: 0 }
-            };
+            contentContainer.appendChild(subGrid);
         });
 
-        // SECTION 1: ACTIVE MEMBERS (Regular + Trainee)
-        // Note: Filter excludes only Staff and Graduate, so Trainees are automatically included if they exist.
-        // Explicitly ensuring Trainees are included by logic: !(Staff or Graduate)
-        const activeMembers = allMembers.filter(m => m.status !== 'Staff' && m.status !== 'Graduate');
-        const activeData = attachStats(activeMembers);
-
-        renderRankingGroup('Active Members Ranking (Regular + Trainee)', activeData);
-
-        // SECTION 2: GRADUATES
-        const gradMembers = allMembers.filter(m => m.status === 'Graduate');
-        const gradData = attachStats(gradMembers);
-
-        // Spacer
-        const spacer = document.createElement('div');
-        spacer.style.height = '4rem';
-        membersContainer.appendChild(spacer);
-
-        renderRankingGroup('Graduates Ranking', gradData);
+        membersContainer.appendChild(contentContainer);
     }
 
-    function renderRankingGroup(groupTitle, membersData) {
-        // Group Header
-        const header = document.createElement('h2');
-        header.textContent = groupTitle;
-        header.style.color = '#fff';
-        header.style.fontFamily = 'var(--font-heading)';
-        header.style.marginBottom = '1.5rem';
-        header.style.borderLeft = '5px solid var(--primary)';
-        header.style.paddingLeft = '1rem';
-        membersContainer.appendChild(header);
-
-        if (membersData.length === 0) {
-            const msg = document.createElement('p');
-            msg.textContent = 'No data available.';
-            msg.style.color = 'var(--text-muted)';
-            membersContainer.appendChild(msg);
-            return;
-        }
-
-        const factory = (title, data, valueFn, diffFn, iconClass) => {
-            const section = document.createElement('div');
-            section.className = 'ranking-section';
-
-            let html = `
-                <div class="ranking-header">
-                    <h3><i class="${iconClass}"></i> ${title}</h3>
-                </div>
-                <div class="ranking-list">
-            `;
-
-            data.forEach((m, idx) => {
-                const val = valueFn(m);
-                const diff = diffFn ? diffFn(m) : null;
-                const rank = idx + 1;
-                let rankClass = 'rank-other';
-                if (rank === 1) rankClass = 'rank-1';
-                else if (rank === 2) rankClass = 'rank-2';
-                else if (rank === 3) rankClass = 'rank-3';
-
-                html += `
-                    <div class="ranking-item ${rankClass}">
-                        <div class="rank-num">${rank}</div>
-                        <div class="rank-name">${m.name} <span class="rank-team">${m.team || m.status}</span></div>
-                        <div class="rank-val">
-                            <span class="main-val">${val.toLocaleString()}</span>
-                            ${diff !== null ? `<span class="diff-val ${diff >= 0 ? 'pos' : 'neg'}">${diff >= 0 ? '+' : ''}${diff.toLocaleString()}</span>` : ''}
-                        </div>
-                    </div>
-                `;
-            });
-            html += '</div>';
-            section.innerHTML = html;
-            return section;
-        };
-
-
-        // Follower Rankings Grid
-        const followerContainer = document.createElement('div');
-        followerContainer.className = 'growth-rankings-grid'; // Use same grid class for consistent width
-
-        // 1. Instagram Ranking
-        const igRank = [...membersData].sort((a, b) => b.stats.instagram - a.stats.instagram).slice(0, 10);
-        followerContainer.appendChild(factory('Instagram Followers', igRank, m => m.stats.instagram, m => m.stats.ig_diff, 'fa-brands fa-instagram'));
-
-        // 2. TikTok Ranking
-        const tkRank = [...membersData].sort((a, b) => b.stats.tiktok - a.stats.tiktok).slice(0, 10);
-        followerContainer.appendChild(factory('TikTok Followers', tkRank, m => m.stats.tiktok, m => m.stats.tk_diff, 'fa-brands fa-tiktok'));
-
-        // 3. X Ranking (Optional - if data exists)
-        const xRank = [...membersData].sort((a, b) => b.stats.x - a.stats.x).slice(0, 10);
-        if (xRank[0].stats.x > 0) {
-            followerContainer.appendChild(factory('X (Twitter) Followers', xRank, m => m.stats.x, m => m.stats.x_diff, 'fa-brands fa-x-twitter'));
-        }
-
-        membersContainer.appendChild(followerContainer);
-
-        // Growth Rankings
-        const growthHeader = document.createElement('h3');
-        growthHeader.textContent = "Daily Growth Leaders";
-        growthHeader.style.color = "var(--primary)";
-        growthHeader.style.marginTop = "2rem";
-        growthHeader.style.fontFamily = "var(--font-heading)";
-        membersContainer.appendChild(growthHeader);
-
-        const growthContainer = document.createElement('div');
-        growthContainer.className = 'growth-rankings-grid';
-
-        // IG Growth
-        const igSort = [...membersData].sort((a, b) => b.stats.ig_diff - a.stats.ig_diff).slice(0, 5);
-        growthContainer.appendChild(factory('Instagram Growth', igSort, m => m.stats.instagram, m => m.stats.ig_diff, 'fa-brands fa-instagram'));
-
-        // TikTok Growth
-        const tkSort = [...membersData].sort((a, b) => b.stats.tk_diff - a.stats.tk_diff).slice(0, 5);
-        growthContainer.appendChild(factory('TikTok Growth', tkSort, m => m.stats.tiktok, m => m.stats.tk_diff, 'fa-brands fa-tiktok'));
-
-        membersContainer.appendChild(growthContainer);
-    }
+    // ...
 
     function renderLinks() {
         membersContainer.innerHTML = '';
+
+        const container = document.createElement('div');
+        container.className = 'content-container';
 
         // Header
         const header = document.createElement('h2');
@@ -370,10 +189,11 @@ document.addEventListener('DOMContentLoaded', () => {
         header.style.marginBottom = '1.5rem';
         header.style.borderLeft = '5px solid var(--primary)';
         header.style.paddingLeft = '1rem';
-        membersContainer.appendChild(header);
+        container.appendChild(header);
 
         if (typeof linksData === 'undefined' || !linksData) {
-            membersContainer.innerHTML += '<p style="color:var(--text-muted)">No links data found.</p>';
+            container.innerHTML += '<p style="color:var(--text-muted)">No links data found.</p>';
+            membersContainer.appendChild(container);
             return;
         }
 
@@ -399,6 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
             grid.appendChild(section);
         });
 
-        membersContainer.appendChild(grid);
+        container.appendChild(grid);
+        membersContainer.appendChild(container);
     }
 });
