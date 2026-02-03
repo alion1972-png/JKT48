@@ -261,6 +261,20 @@ document.addEventListener('DOMContentLoaded', () => {
         header.style.marginBottom = '1.5rem';
         header.style.borderLeft = '5px solid var(--primary)';
         header.style.paddingLeft = '1rem';
+        header.style.display = 'flex';
+        header.style.justifyContent = 'space-between';
+        header.style.alignItems = 'center';
+
+        // Add Last Updated date
+        if (typeof lastUpdated !== 'undefined' && lastUpdated) {
+            const dateSpan = document.createElement('span');
+            dateSpan.textContent = `Updated: ${lastUpdated}`;
+            dateSpan.style.fontSize = '0.8rem';
+            dateSpan.style.color = 'var(--text-muted)';
+            dateSpan.style.fontWeight = 'normal';
+            header.appendChild(dateSpan);
+        }
+
         container.appendChild(header);
 
         if (typeof snsStats === 'undefined' || !snsStats || Object.keys(snsStats).length === 0) {

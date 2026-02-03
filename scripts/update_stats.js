@@ -65,7 +65,36 @@ async function scrapeProfile(page, url, platform) {
         let followerCount = null;
 
         if (platform === 'tiktok') {
-            // Strategy 1: Standard data-e2e selector
+            // Priority 1: Try to find raw JSON data in scripts (SIGI_STATE)
+            // TikTok stores detailed stats in a script tag with ID SIGI_STATE or similar
+            try {
+                const scripts = await page.$$eval('script#SIGI_STATE, script[id*="SIGI"]', els => els.map(e => e.textContent));
+                for (const content of scripts) {
+                    if (content && content.includes('followerCount')) {
+                        // Extract "followerCount":1234567
+                        const match = content.match(/"followerCount":\s*(\d+)/);
+                        if (match && match[1]) {
+                            console.log(`    (Found raw count in JSON: ${match[1]})`);
+                            return parseInt(match[1], 10);
+                        }
+                    }
+                }
+            } catch (e) { }
+
+            // Priority 2: "title" attribute of the count element often has the full number
+            // e.g. <strong title="4,912,345">4.9M</strong>
+            try {
+                const titleVal = await page.$eval('[data-e2e="followers-count"]', el => el.getAttribute('title'));
+                if (titleVal) {
+                    const count = parseCount(titleVal);
+                    if (count > 0) {
+                        console.log(`    (Found distinct count in title: ${count})`);
+                        return count;
+                    }
+                }
+            } catch (e) { }
+
+            // Priority 3: Standard text content (might be 4.9M)
             try {
                 const el = await page.$('[data-e2e="followers-count"]');
                 if (el) {
@@ -74,17 +103,14 @@ async function scrapeProfile(page, url, platform) {
                 }
             } catch (e) { }
 
-            // Strategy 2: Look for 'Followers' text in strong/b tags
+            // Fallbacks (same as before) ...
             if (!followerCount) {
                 try {
                     const elements = await page.$$('strong, b, [class*="Follower"]');
                     for (const el of elements) {
                         const text = await (await el.getProperty('textContent')).jsonValue();
-                        // Check if parent or sibling has "Followers" label, or just try parsing big numbers
-                        // Simplified: TikTok often puts just the number in a strong tag under a count wrapper
                         if (text && text.match(/^[0-9.,KkMm]+$/)) {
-                            // This is a guess, might be risky. 
-                            // Better: Look for meta tags
+                            // Try to parse, but prioritize meta if this looks like a short number
                         }
                     }
                 } catch (e) { }
@@ -100,7 +126,6 @@ async function scrapeProfile(page, url, platform) {
                         // TikTok format: "... 1.2M Followers. ..."
                         const match = content.match(/([\d.,KkMm]+)\s+Followers?/);
                         if (match) {
-                            console.log(`    (Found via meta: ${match[1]})`);
                             followerCount = parseCount(match[1]);
                         }
                     }
@@ -123,6 +148,11 @@ function parseCount(str) {
     // Remove non-numeric characters except . , K M
     str = str.toUpperCase().replace(/[^\d.,KM]/g, '').trim();
 
+    // If it's a pure number with commas (e.g. "4,912,345"), handle strictly
+    if (!str.includes('K') && !str.includes('M')) {
+        return parseInt(str.replace(/,/g, ''), 10) || 0;
+    }
+
     let multiplier = 1;
     if (str.includes('K')) {
         multiplier = 1000;
@@ -132,9 +162,7 @@ function parseCount(str) {
         str = str.replace('M', '');
     }
 
-    // Handle comma/dot variations (1,200 vs 1.2M)
-    // If it has comma and is standard number
-    str = str.replace(/,/g, '');
+    str = str.replace(/,/g, ''); // 1.2M -> 1.2
 
     const val = parseFloat(str);
     if (isNaN(val)) return 0;
