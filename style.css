@@ -549,12 +549,11 @@ body {
 
 /* Group Navigation (Chips) */
 .group-nav {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
     gap: 0.8rem;
-    padding: 1rem 1.5rem;
+    padding: 1.5rem;
     margin-bottom: 2rem;
-    justify-content: flex-start;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(0, 0, 0, 0.2);
     border-radius: 12px;
@@ -564,8 +563,11 @@ body {
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.15);
     color: var(--text-muted);
-    padding: 0.6rem 1.2rem;
-    border-radius: 50px;
+    padding: 0.6rem 0;
+    /* padding左右を削除し、text-alignで中央へ */
+    text-align: center;
+    border-radius: 8px;
+    /* 丸み少し抑える */
     font-size: 0.95rem;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);

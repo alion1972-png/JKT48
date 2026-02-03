@@ -116,6 +116,7 @@ function parseCount(str) {
 
     const browser = await puppeteer.launch({
         headless: "new",
+        channel: 'chrome', // Use system installed Chrome
         args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
     const page = await browser.newPage();
