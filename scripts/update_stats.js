@@ -115,7 +115,8 @@ function parseCount(str) {
     }
 
     const browser = await puppeteer.launch({
-        headless: "new"
+        headless: "new",
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
     const page = await browser.newPage();
     // Set User Agent to avoid immediate blocking

@@ -316,24 +316,28 @@ document.addEventListener('DOMContentLoaded', () => {
             return section;
         };
 
+
+        // Follower Rankings Grid
+        const followerContainer = document.createElement('div');
+        followerContainer.className = 'growth-rankings-grid'; // Use same grid class for consistent width
+
         // 1. Instagram Ranking
         const igRank = [...membersData].sort((a, b) => b.stats.instagram - a.stats.instagram).slice(0, 10);
-        membersContainer.appendChild(factory('Instagram Followers', igRank, m => m.stats.instagram, m => m.stats.ig_diff, 'fa-brands fa-instagram'));
+        followerContainer.appendChild(factory('Instagram Followers', igRank, m => m.stats.instagram, m => m.stats.ig_diff, 'fa-brands fa-instagram'));
 
         // 2. TikTok Ranking
         const tkRank = [...membersData].sort((a, b) => b.stats.tiktok - a.stats.tiktok).slice(0, 10);
-        membersContainer.appendChild(factory('TikTok Followers', tkRank, m => m.stats.tiktok, m => m.stats.tk_diff, 'fa-brands fa-tiktok'));
+        followerContainer.appendChild(factory('TikTok Followers', tkRank, m => m.stats.tiktok, m => m.stats.tk_diff, 'fa-brands fa-tiktok'));
 
-        // 3. X Ranking (Optional)
-        // データが0ばかりでない場合のみ表示、または常に表示するか。
-        // User said "if difficult, okay to skip", but we have mock data so let's show it below.
+        // 3. X Ranking (Optional - if data exists)
         const xRank = [...membersData].sort((a, b) => b.stats.x - a.stats.x).slice(0, 10);
         if (xRank[0].stats.x > 0) {
-            membersContainer.appendChild(factory('X (Twitter) Followers', xRank, m => m.stats.x, m => m.stats.x_diff, 'fa-brands fa-x-twitter'));
+            followerContainer.appendChild(factory('X (Twitter) Followers', xRank, m => m.stats.x, m => m.stats.x_diff, 'fa-brands fa-x-twitter'));
         }
 
-        // Growth Rankings (Optional - keep or remove based on "just ranking"? User asked for "follower ranking". 
-        // Showing growth adds value, keeping it but maybe simplified or separate section)
+        membersContainer.appendChild(followerContainer);
+
+        // Growth Rankings
         const growthHeader = document.createElement('h3');
         growthHeader.textContent = "Daily Growth Leaders";
         growthHeader.style.color = "var(--primary)";
