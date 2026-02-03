@@ -92,13 +92,54 @@ document.addEventListener('DOMContentLoaded', () => {
         if (sortFn) {
             keys.sort(sortFn);
         } else {
-            keys.sort((a, b) => a.localeCompare(b));
+            // 数値が含まれる場合は数値順にソート (例: "1" < "2" < "10")
+            keys.sort((a, b) => {
+                const numA = parseFloat(a);
+                const numB = parseFloat(b);
+                if (!isNaN(numA) && !isNaN(numB)) {
+                    return numA - numB;
+                }
+                return a.localeCompare(b);
+            });
+        }
+
+        // ナビゲーション (Chips) の作成
+        if (keys.length > 3) { // グループが多い場合のみ表示
+            const nav = document.createElement('div');
+            nav.className = 'group-nav';
+            keys.forEach(key => {
+                const btn = document.createElement('button');
+                btn.className = 'nav-chip';
+                // 短いラベルを作成 (Generation -> 期)
+                let label = titleFn(key);
+                if (label.includes('Generation')) {
+                    label = label.replace('Generation', '期').replace('th', '').replace('st', '').replace('nd', '').replace('rd', '');
+                }
+                btn.textContent = label;
+                btn.onclick = () => {
+                    const el = document.getElementById(`group-${key.replace(/\s+/g, '-')}`);
+                    if (el) {
+                        // Header height offset
+                        const headerOffset = 100;
+                        const elementPosition = el.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: "smooth"
+                        });
+                    }
+                };
+                nav.appendChild(btn);
+            });
+            membersContainer.appendChild(nav);
         }
 
         keys.forEach(key => {
             // 見出し
+            const cleanKey = key.replace(/\s+/g, '-');
             const header = document.createElement('div');
             header.className = 'generation-section';
+            header.id = `group-${cleanKey}`; // Navigation target
             header.innerHTML = `<h3 class="generation-title">${titleFn(key)}</h3>`;
             membersContainer.appendChild(header);
 
@@ -176,6 +217,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderRanking() {
         membersContainer.innerHTML = '';
+
+        // 更新日時の表示
+        if (typeof lastUpdated !== 'undefined') {
+            const dateDisplay = document.createElement('div');
+            dateDisplay.style.textAlign = 'right';
+            dateDisplay.style.color = 'var(--text-muted)';
+            dateDisplay.style.marginBottom = '1rem';
+            dateDisplay.style.fontSize = '0.9rem';
+            dateDisplay.innerHTML = `<i class="fa-regular fa-clock"></i> Data updated: ${lastUpdated}`;
+            membersContainer.appendChild(dateDisplay);
+        }
 
         // Helper to attach stats
         const attachStats = (members) => members.map(m => {

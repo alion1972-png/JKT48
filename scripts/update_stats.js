@@ -168,9 +168,14 @@ function parseCount(str) {
     await browser.close();
 
     // Generate sns_data.js content
-    const fileContent = `// SNS Stats Data
-// Updated at: ${new Date().toISOString()}
+    const now = new Date();
+    // JST表示用の文字列を作成 (簡易的)
+    const dateStr = now.toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' });
 
+    const fileContent = `// SNS Stats Data
+// Updated at: ${now.toISOString()}
+
+const lastUpdated = "${dateStr}";
 const snsStats = ${JSON.stringify(newStats, null, 2)};
 `;
 

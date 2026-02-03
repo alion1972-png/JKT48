@@ -2,6 +2,7 @@
 // In a real scenario, this would be updated by a backend script daily.
 // For this demo, we generate mock data based on the existing members.
 
+const lastUpdated = "Initializing..."; // Placeholder until first update
 const snsStats = {};
 
 (function initializeStats() {
