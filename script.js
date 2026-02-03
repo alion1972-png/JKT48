@@ -20,6 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.classList.add('active');
 
             const filterType = btn.getAttribute('data-filter');
+            // Reset scroll to top when switching tabs
+            window.scrollTo(0, 0);
+
             filterMembers(filterType);
         });
     });
@@ -313,25 +316,41 @@ document.addEventListener('DOMContentLoaded', () => {
             return section;
         };
 
-        // 1. Total Follower Ranking
-        const totalSort = [...membersData].sort((a, b) => b.stats.total - a.stats.total).slice(0, 10);
-        membersContainer.appendChild(factory('Total Followers', totalSort, m => m.stats.total, m => m.stats.total_diff, 'fa-solid fa-users'));
+        // 1. Instagram Ranking
+        const igRank = [...membersData].sort((a, b) => b.stats.instagram - a.stats.instagram).slice(0, 10);
+        membersContainer.appendChild(factory('Instagram Followers', igRank, m => m.stats.instagram, m => m.stats.ig_diff, 'fa-brands fa-instagram'));
 
-        // 2. Growth Rankings
+        // 2. TikTok Ranking
+        const tkRank = [...membersData].sort((a, b) => b.stats.tiktok - a.stats.tiktok).slice(0, 10);
+        membersContainer.appendChild(factory('TikTok Followers', tkRank, m => m.stats.tiktok, m => m.stats.tk_diff, 'fa-brands fa-tiktok'));
+
+        // 3. X Ranking (Optional)
+        // データが0ばかりでない場合のみ表示、または常に表示するか。
+        // User said "if difficult, okay to skip", but we have mock data so let's show it below.
+        const xRank = [...membersData].sort((a, b) => b.stats.x - a.stats.x).slice(0, 10);
+        if (xRank[0].stats.x > 0) {
+            membersContainer.appendChild(factory('X (Twitter) Followers', xRank, m => m.stats.x, m => m.stats.x_diff, 'fa-brands fa-x-twitter'));
+        }
+
+        // Growth Rankings (Optional - keep or remove based on "just ranking"? User asked for "follower ranking". 
+        // Showing growth adds value, keeping it but maybe simplified or separate section)
+        const growthHeader = document.createElement('h3');
+        growthHeader.textContent = "Daily Growth Leaders";
+        growthHeader.style.color = "var(--primary)";
+        growthHeader.style.marginTop = "2rem";
+        growthHeader.style.fontFamily = "var(--font-heading)";
+        membersContainer.appendChild(growthHeader);
+
         const growthContainer = document.createElement('div');
         growthContainer.className = 'growth-rankings-grid';
 
         // IG Growth
-        const igSort = [...membersData].sort((a, b) => b.stats.ig_diff - a.stats.ig_diff).slice(0, 10);
-        growthContainer.appendChild(factory('Instagram Growth (Daily)', igSort, m => m.stats.instagram, m => m.stats.ig_diff, 'fa-brands fa-instagram'));
-
-        // X Growth
-        const xSort = [...membersData].sort((a, b) => b.stats.x_diff - a.stats.x_diff).slice(0, 10);
-        growthContainer.appendChild(factory('X Growth (Daily)', xSort, m => m.stats.x, m => m.stats.x_diff, 'fa-brands fa-x-twitter'));
+        const igSort = [...membersData].sort((a, b) => b.stats.ig_diff - a.stats.ig_diff).slice(0, 5);
+        growthContainer.appendChild(factory('Instagram Growth', igSort, m => m.stats.instagram, m => m.stats.ig_diff, 'fa-brands fa-instagram'));
 
         // TikTok Growth
-        const tkSort = [...membersData].sort((a, b) => b.stats.tk_diff - a.stats.tk_diff).slice(0, 10);
-        growthContainer.appendChild(factory('TikTok Growth (Daily)', tkSort, m => m.stats.tiktok, m => m.stats.tk_diff, 'fa-brands fa-tiktok'));
+        const tkSort = [...membersData].sort((a, b) => b.stats.tk_diff - a.stats.tk_diff).slice(0, 5);
+        growthContainer.appendChild(factory('TikTok Growth', tkSort, m => m.stats.tiktok, m => m.stats.tk_diff, 'fa-brands fa-tiktok'));
 
         membersContainer.appendChild(growthContainer);
     }
