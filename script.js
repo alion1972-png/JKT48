@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
         container.className = 'content-container';
 
         const header = document.createElement('h2');
-        header.textContent = 'SNS Follower Ranking';
+        header.textContent = 'TikTok Ranking (Active Members)';
         header.style.color = '#fff';
         header.style.fontFamily = 'var(--font-heading)';
         header.style.marginBottom = '1.5rem';
@@ -269,35 +269,40 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const sortedTotal = Object.values(snsStats).sort((a, b) => b.total - a.total);
-        const sortedGrowth = Object.values(snsStats).sort((a, b) => b.total_diff - a.total_diff);
+        // Active Members Filter
+        const ACTIVE_STATUSES = ['Regular', 'Trainee', 'JKT48V'];
+        const activeMemberIds = allMembers
+            .filter(m => ACTIVE_STATUSES.includes(m.status))
+            .map(m => m.id);
+
+        const activeStats = Object.values(snsStats).filter(s => activeMemberIds.includes(s.id));
+
+        // Sort by TikTok Total
+        const sortedTotal = [...activeStats].sort((a, b) => b.tiktok - a.tiktok);
+        // Sort by TikTok Growth
+        const sortedGrowth = [...activeStats].sort((a, b) => b.tk_diff - a.tk_diff);
 
         const grid = document.createElement('div');
         grid.style.display = 'grid';
         grid.style.gridTemplateColumns = 'repeat(auto-fit, minmax(350px, 1fr))';
         grid.style.gap = '2rem';
 
-        // Total Ranking Breakdown
+        // TikTok Total Ranking
         const totalSection = document.createElement('div');
         totalSection.className = 'ranking-section';
         totalSection.innerHTML = `
-            <div class="ranking-header"><h3><i class="fa-solid fa-trophy"></i> Follower Breakdown</h3></div>
+            <div class="ranking-header"><h3><i class="fa-brands fa-tiktok"></i> TikTok Followers</h3></div>
             <div class="ranking-list">
                 ${sortedTotal.slice(0, 10).map((s, i) => `
                     <div class="ranking-item rank-${i + 1}">
                         <div class="rank-num">${i + 1}</div>
                         <div class="rank-name" style="flex-grow:1;">
                             <div>${s.name}</div> 
-                            <div style="font-size:0.75rem; color:#aaa; margin-top:2px;">
-                                <i class="fa-brands fa-instagram"></i> ${s.instagram.toLocaleString()} <span style="font-size:0.7em; color:${s.ig_diff >= 0 ? '#4cd964' : '#aaa'}">(${s.ig_diff >= 0 ? '+' : ''}${s.ig_diff})</span>
-                                &nbsp;|&nbsp; 
-                                <i class="fa-brands fa-tiktok"></i> ${s.tiktok.toLocaleString()} <span style="font-size:0.7em; color:${s.tk_diff >= 0 ? '#4cd964' : '#aaa'}">(${s.tk_diff >= 0 ? '+' : ''}${s.tk_diff})</span>
-                            </div>
                         </div>
-                        <div class="rank-val" style="min-width:60px;">
-                            <span class="main-val">${s.total.toLocaleString()}</span>
-                            <span class="diff-val ${s.total_diff >= 0 ? 'pos' : 'neg'}">
-                                ${s.total_diff >= 0 ? '+' : ''}${s.total_diff.toLocaleString()}
+                        <div class="rank-val">
+                            <span class="main-val">${s.tiktok.toLocaleString()}</span>
+                            <span class="diff-val ${s.tk_diff >= 0 ? 'pos' : 'neg'}">
+                                ${s.tk_diff >= 0 ? '+' : ''}${s.tk_diff.toLocaleString()}
                             </span>
                         </div>
                     </div>
@@ -306,21 +311,18 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         grid.appendChild(totalSection);
 
-        // Daily Growth Ranking
+        // TikTok Daily Growth Ranking
         const growthSection = document.createElement('div');
         growthSection.className = 'ranking-section';
         growthSection.innerHTML = `
-            <div class="ranking-header"><h3><i class="fa-solid fa-arrow-trend-up"></i> Daily Growth Leaders</h3></div>
+            <div class="ranking-header"><h3><i class="fa-solid fa-arrow-trend-up"></i> Daily Growth (TikTok)</h3></div>
             <div class="ranking-list">
-                ${sortedGrowth.slice(0, 5).map((s, i) => `
+                ${sortedGrowth.slice(0, 10).map((s, i) => `
                     <div class="ranking-item rank-${i + 1}">
                         <div class="rank-num">${i + 1}</div>
                         <div class="rank-name">${s.name}</div>
                         <div class="rank-val">
-                            <span class="main-val" style="color:#4cd964">+${s.total_diff.toLocaleString()}</span>
-                            <div style="font-size:0.7rem; color:#aaa; text-align:right;">
-                                IG: +${s.ig_diff} / TK: +${s.tk_diff}
-                            </div>
+                            <span class="main-val" style="color:#4cd964">+${s.tk_diff.toLocaleString()}</span>
                         </div>
                     </div>
                 `).join('')}

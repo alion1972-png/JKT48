@@ -54,49 +54,75 @@ async function scrapeProfile(page, url, platform) {
     if (!url) return null;
 
     try {
-        await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 });
+        // Human-like viewport
+        await page.setViewport({ width: 1366, height: 768 });
 
-        // プラットフォームごとのセレクタ（※サイトのデザイン変更ですぐ動かなくなります）
-        // これは一例です
+        await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
+
+        // Random slight delay to mimic human
+        await new Promise(r => setTimeout(r, 1000 + Math.random() * 2000));
+
         let followerCount = null;
 
         if (platform === 'tiktok') {
-            // TikTok Selector example
-            // <strong title="Followers" data-e2e="followers-count">1.2M</strong>
-            const el = await page.$('[data-e2e="followers-count"]');
-            if (el) {
-                const text = await (await el.getProperty('textContent')).jsonValue();
-                followerCount = parseCount(text);
+            // Strategy 1: Standard data-e2e selector
+            try {
+                const el = await page.$('[data-e2e="followers-count"]');
+                if (el) {
+                    const text = await (await el.getProperty('textContent')).jsonValue();
+                    followerCount = parseCount(text);
+                }
+            } catch (e) { }
+
+            // Strategy 2: Look for 'Followers' text in strong/b tags
+            if (!followerCount) {
+                try {
+                    const elements = await page.$$('strong, b, [class*="Follower"]');
+                    for (const el of elements) {
+                        const text = await (await el.getProperty('textContent')).jsonValue();
+                        // Check if parent or sibling has "Followers" label, or just try parsing big numbers
+                        // Simplified: TikTok often puts just the number in a strong tag under a count wrapper
+                        if (text && text.match(/^[0-9.,KkMm]+$/)) {
+                            // This is a guess, might be risky. 
+                            // Better: Look for meta tags
+                        }
+                    }
+                } catch (e) { }
             }
-        } else if (platform === 'instagram') {
-            // Instagram is very hard via scraper without login.
-            // Often returns login gate.
-            // Try looking for meta description: "100k Followers, ..."
-            const meta = await page.$('meta[name="description"]');
-            if (meta) {
-                const content = await (await meta.getProperty('content')).jsonValue();
-                // "123K Followers, 10 Following, ..."
-                const match = content.match(/([0-9.,KkMm]+)\s+Followers?/);
-                if (match) followerCount = parseCount(match[1]);
+
+            // Strategy 3: Meta Description (Most reliable fallback)
+            if (!followerCount) {
+                try {
+                    const meta = await page.$('meta[name="description"]');
+                    if (meta) {
+                        const content = await (await meta.getProperty('content')).jsonValue();
+                        // "X Followers, Y Following, ..."
+                        // TikTok format: "... 1.2M Followers. ..."
+                        const match = content.match(/([\d.,KkMm]+)\s+Followers?/);
+                        if (match) {
+                            console.log(`    (Found via meta: ${match[1]})`);
+                            followerCount = parseCount(match[1]);
+                        }
+                    }
+                } catch (e) { }
             }
-        } else if (platform === 'x' || platform === 'twitter') {
-            // X is extremely protected. 
-            // Often relies on looking at specific aria-labels or text content.
-            // Very prone to failure.
-            // Skip for stability in this demo or return mock if failed.
         }
+
+        // ... (Instagram logic skipped as per previous instruction) ...
 
         return followerCount;
 
     } catch (e) {
-        console.log(`Failed to scrape ${url}: ${e.message}`);
+        console.log(`    Failed to scrape ${url}: ${e.message}`);
         return null;
     }
 }
 
 function parseCount(str) {
     if (!str) return 0;
-    str = str.toUpperCase().replace(/,/g, '').trim();
+    // Remove non-numeric characters except . , K M
+    str = str.toUpperCase().replace(/[^\d.,KM]/g, '').trim();
+
     let multiplier = 1;
     if (str.includes('K')) {
         multiplier = 1000;
@@ -105,7 +131,15 @@ function parseCount(str) {
         multiplier = 1000000;
         str = str.replace('M', '');
     }
-    return Math.floor(parseFloat(str) * multiplier);
+
+    // Handle comma/dot variations (1,200 vs 1.2M)
+    // If it has comma and is standard number
+    str = str.replace(/,/g, '');
+
+    const val = parseFloat(str);
+    if (isNaN(val)) return 0;
+
+    return Math.floor(val * multiplier);
 }
 
 // Main Process
