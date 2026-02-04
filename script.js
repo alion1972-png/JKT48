@@ -187,12 +187,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const content = document.createElement('div');
         content.className = 'card-content';
 
+        // 0. Status Badge (Moved to top)
+        const badge = document.createElement('span');
+        badge.className = `status-badge status-${member.status}`;
+        badge.textContent = member.status;
+        content.appendChild(badge);
+
+        // 1. Name
         const name = document.createElement('h3');
         name.className = 'member-name';
         name.textContent = member.name;
         content.appendChild(name);
 
-        if (member.nickname) {
+        // 2. Nickname (Except Staff)
+        if (member.status !== 'Staff' && member.nickname && member.nickname !== '-') {
             const nick = document.createElement('div');
             nick.className = 'member-nickname';
             nick.textContent = member.nickname;
@@ -202,25 +210,35 @@ document.addEventListener('DOMContentLoaded', () => {
         const details = document.createElement('div');
         details.className = 'member-details';
 
-        if (member.birthdate) {
-            details.innerHTML += `<span><span class="label">Birth:</span> ${member.birthdate}</span>`;
+        // Helper to add row
+        const addDetail = (label, value) => {
+            if (value && value !== '-' && value !== '') {
+                details.innerHTML += `<span><span class="label">${label}:</span> ${value}</span>`;
+            }
+        };
+
+        if (member.status === 'Staff') {
+            // Staff: Relation, Remarks
+            addDetail('Relation', member.relationship);
+            addDetail('Remarks', member.remarks);
+        } else if (member.status === 'Graduate') {
+            // Graduate: Gen, Birthday, Birthplace, Grad Date, Remarks
+            addDetail('Gen', member.generation);
+            addDetail('Birth', member.birthdate);
+            addDetail('Origin', member.birthplace);
+            addDetail('Graduated', member.graduation_date);
+            addDetail('Remarks', member.remarks);
+        } else {
+            // Regular, Trainee: Gen, Birthday, Birthplace, Remarks
+            addDetail('Gen', member.generation);
+            addDetail('Birth', member.birthdate);
+            addDetail('Origin', member.birthplace);
+            addDetail('Remarks', member.remarks);
         }
-        if (member.bloodType) {
-            details.innerHTML += `<span><span class="label">Blood:</span> ${member.bloodType}</span>`;
-        }
-        if (member.height) {
-            details.innerHTML += `<span><span class="label">Height:</span> ${member.height}</span>`;
-        }
-        if (member.generation) {
-            details.innerHTML += `<span><span class="label">Gen:</span> ${member.generation}</span>`;
-        }
+
         content.appendChild(details);
 
-        const badge = document.createElement('span');
-        badge.className = `status-badge status-${member.status}`;
-        badge.textContent = member.status;
-        content.appendChild(badge);
-
+        // Socials
         if (member.socials) {
             const socialDiv = document.createElement('div');
             socialDiv.className = 'social-links';
