@@ -382,7 +382,7 @@ const membersData = [
   {
     "id": 21,
     "name": "Grace Octaviani",
-    "nickname": "グラシーGracie",
+    "nickname": "グレイシーGracie",
     "birthdate": "2007-10-18",
     "birthplace": "バンテン州タンゲラン",
     "generation": "11",
