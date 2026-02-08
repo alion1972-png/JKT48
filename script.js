@@ -267,6 +267,19 @@ document.addEventListener('DOMContentLoaded', () => {
         return card;
     }
 
+    function formatCount(num) {
+        if (!num && num !== 0) return '0';
+        if (typeof num === 'string') num = parseInt(num, 10) || 0;
+
+        const full = num.toLocaleString();
+        if (num >= 1000000) {
+            return `${full} <span class="abbr-val">(${(num / 1000000).toFixed(2)}M)</span>`;
+        } else if (num >= 10000) {
+            return `${full} <span class="abbr-val">(${(num / 1000).toFixed(1)}K)</span>`;
+        }
+        return full;
+    }
+
     function renderRanking() {
         membersContainer.innerHTML = '';
         const container = document.createElement('div');
@@ -332,7 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <div>${s.name}</div> 
                         </div>
                         <div class="rank-val">
-                            <span class="main-val">${s.tiktok.toLocaleString()}</span>
+                            <span class="main-val">${formatCount(s.tiktok)}</span>
                             <span class="diff-val ${s.tk_diff >= 0 ? 'pos' : 'neg'}">
                                 ${s.tk_diff >= 0 ? '+' : ''}${s.tk_diff.toLocaleString()}
                             </span>

@@ -510,6 +510,12 @@ body {
     font-size: 1.1rem;
 }
 
+.abbr-val {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
 .diff-val {
     font-size: 0.8rem;
     font-weight: 600;

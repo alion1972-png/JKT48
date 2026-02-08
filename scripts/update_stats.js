@@ -65,32 +65,61 @@ async function scrapeProfile(page, url, platform) {
         let followerCount = null;
 
         if (platform === 'tiktok') {
-            // Priority 1: Try to find raw JSON data in scripts (SIGI_STATE)
-            // TikTok stores detailed stats in a script tag with ID SIGI_STATE or similar
+            // Priority 1: Try to find precise data in script tags (SIGI_STATE or __UNIVERSAL_DATA_FOR_REHYDRATION__)
             try {
-                const scripts = await page.$$eval('script#SIGI_STATE, script[id*="SIGI"]', els => els.map(e => e.textContent));
+                const scripts = await page.$$eval('script#SIGI_STATE, script#__UNIVERSAL_DATA_FOR_REHYDRATION__, script[id*="SIGI"]', els => els.map(e => e.textContent));
+                let bestCount = null;
+
                 for (const content of scripts) {
-                    if (content && content.includes('followerCount')) {
-                        // Extract "followerCount":1234567
-                        const match = content.match(/"followerCount":\s*(\d+)/);
-                        if (match && match[1]) {
-                            console.log(`    (Found raw count in JSON: ${match[1]})`);
-                            return parseInt(match[1], 10);
+                    if (!content) continue;
+
+                    // Match all followerCount occurrences
+                    // TikTok often has "stats":{"followerCount":4900000} AND "statsV2":{"followerCount":"4946894"}
+                    const matches = content.match(/"followerCount":\s*"?(\d+)"?/g);
+                    if (matches) {
+                        for (const m of matches) {
+                            const valMatch = m.match(/\d+/);
+                            if (valMatch) {
+                                const val = parseInt(valMatch[0], 10);
+                                // Prioritize the most "precise" looking number (not ending in many zeros)
+                                // or simply the largest if they are very close
+                                if (!bestCount || (val > bestCount && val < bestCount * 1.05)) {
+                                    // If the new value is slightly larger but close, it's likely the precise one
+                                    bestCount = val;
+                                } else if (val % 1000 !== 0 && (bestCount % 1000 === 0)) {
+                                    // If new value is not rounded but old one was, prefer new
+                                    bestCount = val;
+                                }
+                            }
+                        }
+                    }
+
+                    // Fallback to searching schema.org/JSON-LD if available in scripts
+                    if (content.includes('InteractionCounter')) {
+                        const countMatch = content.match(/"userInteractionCount":\s*(\d+)/);
+                        if (countMatch && countMatch[1]) {
+                            const val = parseInt(countMatch[1], 10);
+                            if (!bestCount || (val > bestCount && val < bestCount * 1.01)) {
+                                bestCount = val;
+                            }
                         }
                     }
                 }
-            } catch (e) { }
 
-            // Priority 2: "title" attribute of the count element often has the full number
-            // e.g. <strong title="4,912,345">4.9M</strong>
+                if (bestCount && bestCount > 0) {
+                    console.log(`    (Found precise count: ${bestCount})`);
+                    return bestCount;
+                }
+            } catch (e) {
+                console.log(`    Script data extraction failed: ${e.message}`);
+            }
+
+            // Priority 2: "title" attribute or other fallbacks (might be rounded)
             try {
                 const titleVal = await page.$eval('[data-e2e="followers-count"]', el => el.getAttribute('title'));
-                if (titleVal) {
+                if (titleVal && !titleVal.includes('フォロワー') && !titleVal.includes('Followers')) {
                     const count = parseCount(titleVal);
-                    if (count > 0) {
-                        console.log(`    (Found distinct count in title: ${count})`);
-                        return count;
-                    }
+                    if (count > 0) return count;
                 }
             } catch (e) { }
 
@@ -103,27 +132,12 @@ async function scrapeProfile(page, url, platform) {
                 }
             } catch (e) { }
 
-            // Fallbacks (same as before) ...
-            if (!followerCount) {
-                try {
-                    const elements = await page.$$('strong, b, [class*="Follower"]');
-                    for (const el of elements) {
-                        const text = await (await el.getProperty('textContent')).jsonValue();
-                        if (text && text.match(/^[0-9.,KkMm]+$/)) {
-                            // Try to parse, but prioritize meta if this looks like a short number
-                        }
-                    }
-                } catch (e) { }
-            }
-
-            // Strategy 3: Meta Description (Most reliable fallback)
+            // Strategy 3: Meta Description (Fallback)
             if (!followerCount) {
                 try {
                     const meta = await page.$('meta[name="description"]');
                     if (meta) {
                         const content = await (await meta.getProperty('content')).jsonValue();
-                        // "X Followers, Y Following, ..."
-                        // TikTok format: "... 1.2M Followers. ..."
                         const match = content.match(/([\d.,KkMm]+)\s+Followers?/);
                         if (match) {
                             followerCount = parseCount(match[1]);
