@@ -67,7 +67,10 @@ async function scrapeProfile(page, url, platform) {
         if (platform === 'tiktok') {
             // Priority 1: Try to find precise data in script tags (SIGI_STATE or __UNIVERSAL_DATA_FOR_REHYDRATION__)
             try {
-                const scripts = await page.$$eval('script#SIGI_STATE, script#__UNIVERSAL_DATA_FOR_REHYDRATION__, script[id*="SIGI"]', els => els.map(e => e.textContent));
+                const scripts = await page.$$eval('script', els =>
+                    els.filter(e => e.textContent.includes('followerCount') || e.textContent.includes('userInteractionCount'))
+                        .map(e => e.textContent)
+                );
                 let bestCount = null;
 
                 for (const content of scripts) {
