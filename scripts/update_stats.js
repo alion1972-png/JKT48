@@ -97,14 +97,19 @@ async function scrapeProfile(page, url, platform) {
                         }
                     }
 
-                    // Fallback to searching schema.org/JSON-LD if available in scripts
-                    if (content.includes('InteractionCounter')) {
-                        const countMatch = content.match(/"userInteractionCount":\s*(\d+)/);
-                        if (countMatch && countMatch[1]) {
-                            const val = parseInt(countMatch[1], 10);
-                            if (!bestCount || (val > bestCount && val < bestCount * 1.01)) {
-                                bestCount = val;
-                            }
+                    // Fallback to searching schema.org/JSON-LD interaction counts
+                    // Must strictly check for FollowAction to avoid picking up LikeAction (heart count)
+                    if (content.includes('InteractionCounter') && content.includes('FollowAction')) {
+                        // Try to match standard Schema.org structure:
+                        // { "@type": "InteractionCounter", "interactionType": "http://schema.org/FollowAction", "userInteractionCount": 12345 }
+                        const interactionMatch = content.match(/"interactionType":"[^"]*FollowAction"[^}]*"userInteractionCount":(\d+)/) ||
+                            content.match(/"userInteractionCount":(\d+)[^}]*"interactionType":"[^"]*FollowAction"/);
+
+                        if (interactionMatch && interactionMatch[1]) {
+                            const val = parseInt(interactionMatch[1], 10);
+                            console.log(`    (Found Schema FollowAction count: ${val})`);
+                            // This is likely the most accurate count if present
+                            bestCount = val;
                         }
                     }
                 }
